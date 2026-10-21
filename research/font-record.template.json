@@ -1,0 +1,39 @@
+{
+  "schema_version": "0.1",
+  "record_kind": "template",
+  "id": null,
+  "family_name": null,
+  "provider": null,
+  "external_ids": {
+    "google_fonts_family": null,
+    "repository_path": null
+  },
+  "status": "not_started",
+  "technical": {
+    "category": null,
+    "weights": null,
+    "italic_available": null,
+    "variable_axes": null,
+    "scripts": null,
+    "license": null,
+    "platform_availability": null
+  },
+  "technical_evidence": {},
+  "intended_uses": [],
+  "judgments": [],
+  "evidence": [],
+  "review": {
+    "reviewed_at": null,
+    "reviewer": null,
+    "recommendation_eligible": false,
+    "eligibility_reason": "Template only; no family researched.",
+    "rubric_version": null,
+    "open_questions": []
+  },
+  "maintenance": {
+    "created_at": null,
+    "updated_at": null,
+    "last_source_check_at": null,
+    "source_revision": null
+  }
+}
