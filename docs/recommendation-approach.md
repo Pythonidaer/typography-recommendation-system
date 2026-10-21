@@ -53,3 +53,7 @@ Retain rejected combinations and short reasons when useful for improving rules. 
 ## Vocabulary discovery update
 
 The original six mood words are not a catalogue-wide filter. Follow attribute-inventory.md for broader discovery and attribute-coverage.md for source availability limits. The 27 candidates are not approved dimensions or required assessment questions. Preserve a person’s unmapped wording. The proposed first-guided-test.md can examine the brief and sample preferences before a scoring system exists.
+
+## Required languages and the family count
+
+Follow [language and style guidance](language-and-style.md). Verify languages by role and actual text before treating a shortlist as usable. A separate script companion counts within the requested 1-3 families. Return exactly the requested count when the requirements can be met; flag unresolved requirements rather than silently adding families. Alternatives are replacements, not additional recommended families. Historical style, documented origin, lettering association, and mood remain separate layers.

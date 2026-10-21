@@ -10,6 +10,8 @@ Johnny asked whether selecting only six words could hide suitable fonts. The ear
 | --- | --- | --- |
 | Practical requirements | Can this family support the required characters, styles, and use? | Confirmed requirements can filter; unknowns need review |
 | Reading and text roles | How does this treatment work for the intended reading task? | Core evidence; test actual content and settings |
+| Lettering association | Does it suggest handwriting, a brush, a typewriter, or a stencil? | Optional style preference; verify described origins separately |
+| Historical style and documented origin | What period does it evoke, and what do reliable sources establish about its history? | Keep visual association separate from release date or revival history |
 | Mood | What feeling does the sample suggest? | Optional preference ranking with adequate evidence |
 | Social impression | What character or manner does it appear to project? | Optional association, never proof of honesty or competence |
 | Formality | How ceremonial, relaxed, or refined does it appear? | Optional association; overlapping concepts need review |
@@ -78,3 +80,7 @@ Source availability, understandable vocabulary, useful distinctions, and recomme
 There is no evidence-based fixed number of dimensions yet. Keep the assessment short through conditional questions, while maintaining a broader internal inventory. Mood associations should help order otherwise suitable choices; an absent mood tag must not automatically eliminate a family.
 
 See [coverage findings](attribute-coverage.md) and the [first guided test](first-guided-test.md).
+
+## Language and style clarification
+
+The 27 candidate terms remain unchanged and unapproved. The layers above now explicitly include lettering associations and distinguish historical appearance from documented origins. Read [language and style guidance](language-and-style.md) for script requirements, the family budget, and how these layers interact. Language support is a practical requirement, not a mood score. No additional attributes have been scored or mapped automatically.
