@@ -16,6 +16,8 @@ The main research challenge is describing fonts consistently enough to support u
 
 ## Project documents
 
+- [Assessment principles](docs/assessment-principles.md): purpose, legibility, and readability, with supporting mood/harmony and hierarchy checks.
+
 - [Product plan](docs/product-plan.md): decisions, proposed workflow, and open questions.
 - [Attribute evidence](docs/attribute-evidence.md): minimum information and source findings before sampling.
 - [Font research](docs/font-research.md): attributes, evidence, and manageable batches.

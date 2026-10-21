@@ -1,37 +1,42 @@
 # Research checkpoint
 
 Updated: October 21, 2026
-Current stage: mood vocabulary and comparison protocol drafted; no tests run.
+Current stage: assessment framework clarified; draft questions and evaluation plan next.
 
-## Completed
+## Latest agreed direction
 
-- Existing source audit, 5-family documentation review, and limited character checks remain available.
-- Reviewed a primary research precedent for attribute-specific font comparisons and relative attribute estimation.
-- Drafted 6 mood words with working definitions and source-mapping caveats: Calm, Playful, Cheerful, Energetic, Elegant, Rugged.
-- Separated mood from style period, business context, attention, reading suitability, and personal liking.
-- Documented the difference between a four-sample grid and a two-axis quadrant map.
-- Drafted a comparison protocol and explicit normal instances for the existing 5 families; no visual rendering or responses collected.
+Johnny confirmed purpose, legibility, and readability as core principles. Mood and harmony, and hierarchy, support the design’s purpose. Audience informs every area. Mood collection must not become the whole assessment.
 
-## Exact next step
+See docs/assessment-principles.md for the map from questions to evidence, evaluation methods, and outputs. The framework is agreed; its specific questions and research methods remain proposals.
 
-Discuss the mood vocabulary with Johnny before implementing comparison UI. Ask which words to keep, rename, or add; clarify definitions using concrete examples when useful. The user explicitly wants moods established first. The six words are a proposal, not a fixed requirement or established scientific taxonomy.
+## Completed and retained
 
-After vocabulary feedback, prepare actual controlled text examples using research/protocols/mood-comparison-draft.json. Verify fonts render, roles and settings are comparable, and the words describe useful distinctions. Only then collect attribute judgments. Project preference questions remain separate.
+- Pinned source audit and five-family pilot documentation/license review.
+- Limited normal-file character-mapping checks.
+- Draft six-word mood vocabulary, four-option comparison protocol, and explicit research instances.
+- Separation of provider tags, human impressions, AI suggestions, project preferences, and preference importance.
+- Added the principles map and aligned product-plan, recommendation-approach, and mood documents with it.
+
+## Exact next task
+
+Draft concise project-brief questions and a bounded evaluation plan covering all areas. Use the proposed informational-website fixture only as a research example, not a fixed product requirement.
+
+Then discuss useful mood words and prepare actual role-specific text examples. Establish mood vocabulary before running mood comparisons, as requested. Keep four-option attribute selection separate from personal liking and reading-performance tasks.
 
 ## Active font batch
 
-Noto Sans, Merriweather, Roboto Mono, Caveat, Abril Fatface. All 5 are needs_review and recommendation_eligible=false. No numeric judgments or combined scores have been assigned. Do not add more families before reviewing this batch.
+Noto Sans, Merriweather, Roboto Mono, Caveat, Abril Fatface. All remain needs_review and recommendation_eligible=false. Do not expand before reviewing this batch. No new numeric scores or font judgments were added.
 
-## Important distinctions
+## Evidence boundaries
 
-A click saying “most playful” concerns perceived character; a click saying “I would use this” concerns preference. Neither directly specifies how important playfulness is for a project. Provider tags, human judgments, AI suggestions, and project preferences must remain separate.
+Character mapping does not demonstrate visual discrimination. Intended use does not demonstrate reading performance. A chosen mood example does not show project suitability. No rendered tests, participant responses, validated mood mappings, combined scores, or pairing results exist.
 
-A four-option winner does not order the 3 unselected options. Repeated choices by one person do not establish population consensus. No arbitrary human/AI vote pooling or source-score conversion is approved.
+Use project requirements to identify eligibility gaps. Keep comfort, accuracy, comprehension, time, and preferences distinct. No formula averaging all areas into one percentage is approved.
 
-## Validation and limits
+## User input
 
-Vocabulary and protocol JSON are draft structures with stable IDs, definitions, and explicit instances. No rendering, participant answers, statistical calibration, or recommendation-model validation has occurred. The existing five-trait coverage gaps remain unresolved. Draft source mappings for related words are not numeric equivalences.
+Bring Johnny concrete question wording, mood definitions, or actual samples when feedback is useful. The last agreement established the overall framework; do not repeatedly ask them to reconfirm it.
 
 ## Deferred
 
-Behance access, systematic competitor comparison, pairing research, system-font expansion, numeric calibration, product UI, and framework selection remain pending.
+Product UI, framework selection, system fonts, calibrated ranking, pairing research, competitor comparison, and blocked Behance examples remain pending.

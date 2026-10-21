@@ -13,6 +13,10 @@ For people who find browsing a large font catalogue difficult. Help them choose 
 - Keep font selection distinct from later sizing experiments.
 - Provide a path toward a typography style guide.
 
+## Assessment structure
+
+Purpose, legibility, and readability are the core principles. Mood and harmony, and hierarchy, support the design’s purpose; audience needs inform all areas. See assessment-principles.md for the proposed questions, evidence, and methods. Mood scores alone must not drive the recommendation.
+
 ## Proposed journey
 
 | Stage | Inputs or activity | Result |

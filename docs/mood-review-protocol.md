@@ -1,5 +1,7 @@
 # Mood review and four-option comparisons
 
+
+Scope: this is one part of the framework in assessment-principles.md. Purpose, legibility, and readability remain the core principles; mood evidence does not replace reading, character, hierarchy, or contextual-fit checks.
 Status: protocol proposal, version 0.1. No comparison interface, votes, personal preference weights, or calibrated trait scores exist. Establish mood words first; prepare examples next.
 
 ## Three different things to measure

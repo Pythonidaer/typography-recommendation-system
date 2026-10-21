@@ -2,6 +2,10 @@
 
 Status: proposal. No engine, calibrated scores, or validated recommendation accuracy exists yet.
 
+## Governing assessment principles
+
+Follow assessment-principles.md: purpose, legibility, and readability are core; mood/harmony and hierarchy contribute supporting evidence. Preserve audience and context throughout. Keep evidence by area; do not collapse everything into one quality percentage. Source-tag matching alone cannot establish role suitability or reader performance.
+
 ## Separate filtering, ranking, and combination review
 
 1. Filter for practical requirements: language, required styles, usage permissions, and availability. Unknown required data needs review; it should not silently pass.

@@ -1,5 +1,7 @@
 # Mood vocabulary for discussion
 
+
+Scope: this is one part of the framework in assessment-principles.md. Purpose, legibility, and readability remain the core principles; mood evidence does not replace reading, character, hierarchy, or contextual-fit checks.
 Status: proposal, version 0.1. No mood definitions, source mappings, rating scale, or scores are approved yet. Establish understandable words before implementing a test.
 
 ## What we mean by mood
