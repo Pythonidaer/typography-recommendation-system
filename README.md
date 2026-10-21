@@ -39,6 +39,7 @@ The main research challenge is describing fonts consistently enough to support u
 - [Response records](docs/response-records.md): raw comparison format and validation limits.
 - [Missing attribute policy](docs/missing-attribute-policy.md): source scope, instance coverage, and unknown values.
 - [Existing tools review](docs/existing-tools-review.md): first documentation pass and approaches to investigate.
+- [Audience needs](docs/audience-needs.md): primary resources, task-based profiles, and proposed assessment questions.
 - [Content and tone brief](docs/content-and-tone.md): knowledgeable, approachable, concise writing, with light playfulness during exploration.
 - [Current checkpoint](research/checkpoint.md): progress and the next bounded task.
 - [Font record template](research/font-record.template.json): a draft record, not a researched font.

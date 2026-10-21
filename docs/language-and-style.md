@@ -12,6 +12,10 @@ Google Fonts exposes script/subset metadata. Use it for discovery, then check th
 
 The current private preview only loads and reviews the English/basic Latin samples. It does not establish Japanese coverage or suitability for any of the displayed families. The earlier editorial shortlist needs language review before it can serve a bilingual project.
 
+## Current example
+
+Japanese is required for the main heading. The user has not requested Japanese for navigation or supporting paragraphs. Scope the Japanese character and pairing checks to that heading before choosing a companion; the requested total remains 3 families. No new Japanese family or bilingual pairing has been selected or validated.
+
 ## Japanese and the family budget
 
 Return the requested number of families, from 1 to 3. If a single family supports the required scripts and fits the assigned roles, it can serve more than one language. If a separate Japanese family is needed, count it as a family in the same budget. A companion for another script is not automatically a free extra family.

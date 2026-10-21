@@ -53,3 +53,11 @@ Added docs/language-and-style.md and clarified the recommendation and inventory 
 The requested family count is exact when requirements can be met: 1, 2, or 3. A separate Japanese companion occupies a slot. Alternatives must be replacements, not extra recommendations. The prior private preview still displays 5 candidates from an exploratory comparison; this does not satisfy the clarified 3-family result presentation. Do not treat those 5 as the recommendation. Any next preview revision should show the actual requested 3, with replacements separately and language requirements addressed or explicitly unresolved.
 
 This pass reviewed Google Fonts API documentation and changed planning documents only. No new family research records, font ratings, Japanese rendering checks, or pairing validation were created. Next: establish Japanese usage by role, then reassess the 3-family editorial shortlist before presenting it as bilingual.
+
+## Audience resources and heading scope, October 21, 2026
+
+Japanese is needed for the example’s main heading, not requested for navigation or supporting paragraphs. Recorded this scope in docs/language-and-style.md. A companion must still fit the requested total of 3 families; none has been selected or tested.
+
+Reviewed GOV.UK’s Learning about users and their needs, W3C WAI’s Diverse Abilities and Barriers, W3C’s cognitive content usability Note, and Microsoft’s Inclusive 101. Added docs/audience-needs.md with source limits, proposed overlapping profile dimensions, functional questions, and links to purpose, legibility, and readability. These resources support research and needs organisation; they are not font-to-demographic recommendation tables or a validated taxonomy.
+
+The next independent preparation can turn a project brief into task-specific evaluation questions. Keep age and diagnoses as optional context, unknown needs explicit, audience profiles separate from font traits, and later styling decisions deferred. No audience persona, human response, font score, Japanese test, or eligibility change was generated. The outstanding preview count correction and language review remain as noted above.
