@@ -21,10 +21,22 @@ assert.deepEqual(P.recommend(headingBrief,coverage).families.map(f=>f.id),['dot'
 assert.ok(P.replacements(1,headingBrief,P.recommend(headingBrief,coverage).families,coverage).some(f=>f.id==='notojp'));
 assert.equal(P.showsJapaneseSample(P.catalog.find(f=>f.id==='notojp')),true);
 assert.equal(P.showsJapaneseSample(P.catalog.find(f=>f.id==='plex')),false);
-assert.ok(P.japaneseTextError({...headingBrief,japaneseText:'sample heading'}));
-assert.equal(P.japaneseTextError({...headingBrief,japaneseText:'見出し Web'}),null);
-assert.equal(P.japaneseTextError({...headingBrief,japaneseText:''}),null);
 const restored=P.normalizeBrief({...headingBrief,count:'2',retro:'3',rough:'1'});
 assert.equal(typeof restored.count,'number');assert.equal(typeof restored.retro,'number');assert.equal(typeof restored.rough,'number');
 assert.deepEqual(P.recommend(restored,coverage).families.map(f=>f.id),['dot','plex']);
-console.log('Heading-only ranking, Japanese specimen eligibility, input guidance, and restored numeric values passed.');
+console.log('Heading-only ranking, Japanese specimen eligibility, language selection, and restored numeric values passed.');
+
+const neutral={...base,primaryLanguage:'english',additionalLanguage:'',additionalScope:'heading',textToCheck:''};
+assert.equal(P.languageError(neutral),null);
+assert.deepEqual(P.requiredScripts('body',{...neutral,additionalLanguage:'japanese'}),['latin']);
+assert.deepEqual(P.requiredScripts('heading',{...neutral,additionalLanguage:'japanese'}),['latin','japanese']);
+assert.ok(P.recommend({...neutral,primaryLanguage:'other'},coverage).error);
+assert.ok(P.recommend({...neutral,additionalLanguage:'other'},coverage).error);
+assert.ok(P.languageError({...neutral,additionalLanguage:'english'}));
+const thai={...neutral,count:2,additionalLanguage:'thai'};
+assert.equal(P.recommend(thai,coverage).families[0].id,'chakra');
+assert.ok(P.recommend({...thai,additionalScope:'both'},coverage).error);
+assert.ok(P.recommend({...neutral,count:2,primaryLanguage:'japanese'},coverage).families.every(f=>f.scripts.includes('japanese')));
+assert.ok(P.recommend({...neutral,count:2,textToCheck:'\u{10ffff}'},coverage).error);
+assert.equal(P.hasText('chakra','กขฃคฅฆงจฉชซฌญฎฏฐฑฒณดตถทธนบปผฝพฟภมยรลวศษสหฬอฮ',coverage),true);
+console.log('Neutral language selection, legacy migration, Thai heading coverage, and unsupported-language checks passed.');

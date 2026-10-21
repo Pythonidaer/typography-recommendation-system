@@ -77,3 +77,9 @@ Next: confirm the Actions deployment and public URL, then Johnny tests the walkt
 Corrected kana visibility for Japanese-capable families in any selected role and removed the Japanese body preference when Japanese is required only in the main heading. Clarified that the Japanese text field checks supplied characters rather than translating English, simplified question labels, explained family count, and preserved numeric slider values after changes and draft restoration. Added regression checks in scripts/test-pilot.cjs. No private test export or participant wording is stored here.
 
 Next: test the revised walkthrough and identify remaining confusing questions and mismatched recommendations. The eight-family pool, editorial priorities, and research eligibility limits remain as documented in docs/walkthrough-pilot.md.
+
+## General assessment 0.2, October 21, 2026
+
+The user clarified that questions should represent the general product rather than assume the portfolio demo’s Japanese requirement. Main and optional additional language dropdowns replace Japanese-specific questions. A follow-up asks where the additional language is used only when selected. Text checking is language-neutral and does not translate. The demo button retains the portfolio configuration. Default count is unselected and both style priorities start at zero.
+
+The existing files provide English, Japanese, and Thai script candidates; unsupported languages and unavailable role combinations stop with a clear explanation. No new fonts or language suitability research were added. Version 0.2 migrates legacy drafts, preserves the corrected Japanese body ranking and specimens, and adds Thai specimens and regression coverage. Next: verify the revised deployment and gather feedback on remaining question clarity and recommendation fit.

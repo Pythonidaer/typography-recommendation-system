@@ -9,23 +9,37 @@ const catalog=[
 {id:'dot',name:'DotGothic16',css:'DotGothic16',scripts:['latin','japanese'],styles:['digital','retro'],body:false,fact:'Its design recalls 16-by-16 bitmap lettering from older games and screens. The supplied file contains Japanese characters.',tradeoff:'The pixel construction may be more literal than a subtle retro reference.',source:'ofl/dotgothic16'},
 {id:'notojp',name:'Noto Sans JP',css:'Noto Sans JP',scripts:['latin','japanese'],styles:['neutral','modern'],body:true,fact:'This Japanese sans-serif family covers hiragana, katakana, kanji, and Latin characters.',tradeoff:'It offers less distinctive retro character than the display candidates.',source:'ofl/notosansjp'}
 ];
-function normalizeBrief(b){return {...b,count:Number(b.count),retro:Number(b.retro),rough:Number(b.rough)}}
-function japaneseTextError(b){return b.language!=='english'&&b.japaneseText.trim()&&!/[\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Han}]/u.test(b.japaneseText)?'Paste the Japanese characters you want to check, or leave this field blank. English text is not translated.':null}
+const languages={english:{name:'English',script:'latin'},japanese:{name:'Japanese',script:'japanese'},thai:{name:'Thai',script:'thai'}};
+function normalizeBrief(b){
+ const {language,japaneseText,...rest}=b;
+ const legacyJapanese=language==='heading'||language==='both';
+ return {...rest,primaryLanguage:b.primaryLanguage||'english',additionalLanguage:b.additionalLanguage??(legacyJapanese?'japanese':''),additionalScope:b.additionalScope||(language==='both'?'both':'heading'),textToCheck:b.textToCheck??japaneseText??'',count:Number(b.count),retro:Number(b.retro),rough:Number(b.rough)};
+}
+function languageError(raw){const b=normalizeBrief(raw);
+ if(!languages[b.primaryLanguage]||(b.additionalLanguage&&!languages[b.additionalLanguage]))return 'This pilot cannot yet recommend fonts for that language. Choose a supported language to explore the current samples.';
+ if(b.additionalLanguage===b.primaryLanguage)return 'Choose a different additional language, or choose None.';
+ if(b.additionalLanguage&&!['heading','both'].includes(b.additionalScope))return 'Choose where the additional language will appear.';
+ return null;
+}
+function requiredScripts(role,raw){const b=normalizeBrief(raw),ids=[b.primaryLanguage];
+ if(b.additionalLanguage&&(b.additionalScope==='both'||role==='heading'||role==='all'))ids.push(b.additionalLanguage);
+ return [...new Set(ids.map(id=>languages[id]?.script).filter(Boolean))];
+}
 function showsJapaneseSample(f){return f.scripts.includes('japanese')}
 function hasText(id,text,coverage){const ranges=coverage&&coverage[id]&&coverage[id].ranges;if(!ranges)return false;return [...text].every(c=>/\s/.test(c)||ranges.some(([a,b])=>{const cp=c.codePointAt(0);return cp>=a&&cp<=b}))}
-function rolePool(role,b,coverage){return catalog.filter(f=>{
-const jp=b.language==='both'||(b.language==='heading'&&role==='heading')||(b.count===1&&b.language!=='english');
-if(jp&&!f.scripts.includes('japanese'))return false;
+function rolePool(role,raw,coverage){const b=normalizeBrief(raw);if(languageError(b))return [];const scripts=requiredScripts(role,b);return catalog.filter(f=>{
+if(!scripts.every(script=>f.scripts.includes(script)))return false;
 if((role==='body'||role==='all')&&!f.body)return false;
 if(!coverage||!coverage[f.id])return false;
-if(b.japaneseText&&jp&&!hasText(f.id,b.japaneseText,coverage))return false;
+const checkText=!b.additionalLanguage||b.additionalScope==='both'||role==='heading'||role==='all';
+if(b.textToCheck&&checkText&&!hasText(f.id,b.textToCheck,coverage))return false;
 return true;
 })}
 function priority(f,role,b){let p=0;
 // Version 0.1 editorial rules: source-linked associations, not personality measurements.
 if(role==='body'||role==='all'){
  if(f.id==='plex')p+=12;
- if(f.id==='notojp'&&(b.language==='both'||(role==='all'&&b.language!=='english')))p+=24;
+ if(f.id==='notojp'&&requiredScripts(role,b).includes('japanese'))p+=24;
  if(f.id==='merri'&&b.style==='editorial')p+=18;
  if(f.id==='merri'&&b.reading==='long')p+=4;
 }else{
@@ -34,26 +48,25 @@ if(role==='body'||role==='all'){
  if(f.styles.some(t=>['digital','retro','print','typewriter'].includes(t)))p+=Number(b.retro)*2;
  if(f.styles.includes('rough'))p+=Number(b.rough)*(role==='accent'?5:2);
  if(role==='heading'&&f.id==='chakra')p+=8;
- if(role==='heading'&&f.id==='dot'&&b.language!=='english')p+=8;
+ if(role==='heading'&&f.id==='dot'&&requiredScripts(role,b).includes('japanese'))p+=8;
  if(role==='accent'&&f.id==='elite')p+=3;
 }
 return p}
 function recommend(b,coverage){
 b=normalizeBrief(b);
-const textError=japaneseTextError(b);if(textError)return {error:textError};
+const issue=languageError(b);if(issue)return {error:issue};
 if(![1,2,3].includes(b.count))return {error:'Choose 1, 2, or 3 families.'};
-if(!['english','heading','both'].includes(b.language))return {error:'Choose the required languages.'};
 const roles=b.count===1?['all']:b.count===2?['heading','body']:['heading','body','accent'];
 const picked=[];
 for(const role of roles){
  const eligible=rolePool(role,b,coverage).filter(f=>!picked.some(x=>x.id===f.id));
  eligible.sort((a,c)=>priority(c,role,b)-priority(a,role,b)||a.name.localeCompare(c.name));
- if(!eligible.length)return {error:b.language==='both'?'This pilot has only 2 Japanese-capable families. Try 1 or 2 families, or limit Japanese to headings.':'This small pool cannot meet every requirement. Check the language text or try fewer families.'};
+ if(!eligible.length)return {error:'This small pool does not have enough distinct families for these languages and text roles. Try fewer families or change where the additional language appears.'};
  picked.push({...eligible[0],role});
 }
-return {families:picked,ruleVersion:'editorial-pilot-0.1.1'};
+return {families:picked,ruleVersion:'editorial-pilot-0.2'};
 }
-function replacements(index,b,picked,coverage){const role=picked[index].role;return rolePool(role,b,coverage).filter(f=>!picked.some(x=>x.id===f.id)).sort((a,c)=>priority(c,role,b)-priority(a,role,b)||a.name.localeCompare(c.name))}
-const api={normalizeBrief,japaneseTextError,showsJapaneseSample,catalog,hasText,rolePool,recommend,replacements};
+function replacements(index,b,picked,coverage){b=normalizeBrief(b);const role=picked[index].role;return rolePool(role,b,coverage).filter(f=>!picked.some(x=>x.id===f.id)).sort((a,c)=>priority(c,role,b)-priority(a,role,b)||a.name.localeCompare(c.name))}
+const api={normalizeBrief,languages,languageError,requiredScripts,showsJapaneseSample,catalog,hasText,rolePool,recommend,replacements};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.FontPilot=api;
 })(typeof window!=='undefined'?window:globalThis);

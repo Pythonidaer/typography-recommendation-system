@@ -1,10 +1,10 @@
 # Font walkthrough pilot
 
-Version: editorial-pilot-0.1.1. Created October 21, 2026 at the user’s request for an immediately testable sequential walkthrough. The public test destination is this repository’s GitHub Pages site. The earlier ChatGPT-hosted preview was a temporary prototype.
+Version: editorial-pilot-0.2. Created October 21, 2026 at the user’s request for an immediately testable sequential walkthrough. The public test destination is this repository’s GitHub Pages site. The earlier ChatGPT-hosted preview was a temporary prototype.
 
 ## Scope
 
-Four steps collect purpose, reading task, languages, 1-3-family count, optional known needs, a visual direction, two preference sliders, and a purpose for a third family. The review step allows correction before results. Results show exactly the requested number when the pool can meet requirements, characters before reasons, in-slot replacements, optional user text, feedback, and a JSON download. No color, weight, size, texture, or motion controls.
+Four steps collect purpose, reading task, a main language and optional additional language with role scope, 1-3-family count, optional known needs, a visual direction, two preference sliders, and a purpose for a third family. The review step allows correction before results. Results show exactly the requested number when the pool can meet requirements, characters before reasons, in-slot replacements, optional user text, feedback, and a JSON download. No color, weight, size, texture, or motion controls.
 
 Eight editorial candidates are available. These are not the five researched JSON pilot records from the project repository, and their inclusion does not change those records’ recommendation eligibility. No calibrated mood ratings, measured reading scores, learned model, or catalogue-wide accuracy is claimed.
 
@@ -39,3 +39,11 @@ The build downloads regular source files from Google Fonts revision 45e3d5269e4a
 Japanese-capable selected families show kana in their character review regardless of assigned role. Script requirements still apply by role. A heading-only Japanese requirement no longer adds a preference to the body slot. The optional Japanese-text field explicitly checks supplied characters without translating English; Latin-only entries receive a correction message. Question labels use plainer wording and explain family count. Slider and count values remain numbers after change events and draft restoration.
 
 Regression checks cover heading-only ranking, Japanese replacement eligibility and specimen display, mixed-script input, blank input, and restored numeric values. These fixes do not establish recommendation quality or reading performance.
+
+## General assessment 0.2
+
+The default assessment has no project, family count, retro priority, rough priority, or additional language selected. English is the initial main language; language dropdowns offer English, Japanese, Thai, and an explicitly unsupported other-language option. Additional-language scope is asked only after one is selected. Unsupported languages and unavailable combinations receive a clear limitation rather than Latin-only recommendations presented as suitable. This is a small script-based pool, not a validated multilingual language catalogue.
+
+The portfolio example button alone fills the English-plus-Japanese brief. Optional text checking uses a general label, accepts the actual supplied text without translation, and checks the roles where the additional language is used (or all roles when there is no additional language). This supersedes the Japanese-specific input restriction in correction 0.1.1. English text in a mixed-language design is allowed; supplied text is not treated as proof of language suitability. Existing 0.1 drafts migrate to the new language fields. Japanese-capable families show kana and Thai-capable families show Thai letters regardless of role.
+
+Run scripts/test-pilot.cjs for primary/additional language scope, legacy-draft migration, heading-only ranking, unsupported language and role combinations, exact family counts, and supplied character checks. Reading needs and free-text purpose remain context for testing rather than learned recommendation inputs.
