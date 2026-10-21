@@ -1,49 +1,38 @@
 # Research checkpoint
 
 Updated: October 21, 2026
-Current stage: actual raster specimens prepared and visually inspected; no participant responses.
+Current stage: five rendered pilot instances; raw response validation and missing-evidence policy prepared. No participant responses or numerical mood ratings.
 
 ## Direction
 
-Johnny delegated continued creation. Continue independent preparation without repeatedly asking them to reconfirm the framework. Purpose, legibility, and readability remain core; mood/harmony and hierarchy support purpose. Mood words and scoring remain provisional.
+Johnny delegated continued creation. Continue bounded research without repeatedly asking them to reconfirm the framework. Purpose, legibility, and readability remain core; mood/harmony and hierarchy support purpose. Ask for 1, 2, or 3 families. Mood words and scoring remain provisional.
 
 ## Completed this pass
 
-- Rendered the 5 pinned normal font instances in heading, paragraph, and character sheets.
-- Added scripts/render_pilot_specimens.py, a reproducible specimen manifest, image assets, text alternatives, sample key, and QA record.
-- Verified source-file hashes, sample character mappings, explicit variable axes, valid images, and sample bounds.
-- Visually inspected all 3 final sheets: all 5 samples present, no observed clipping or missing-glyph boxes.
-- Recorded actual line wraps and nominal-size differences without converting them to suitability or mood scores.
-- Existing audit unit tests pass.
-- Prepared and verified a 5-trial four-option schedule with equal sample and position exposure. Attribute, role, and participant remain unassigned; no trials have run.
+- Added a strict draft raw comparison schema and validator for displayed choices, non-selections, provenance, consistent sessions, duplicates, and specimen hashes.
+- Kept observation input empty. Synthetic unit-test fixtures are rejected by the normal validator.
+- Added response-record documentation explaining review declarations, presentation limits, and separate human/AI evidence.
+- Audited source tag coordinates against the rendered instances: 25 older diagnostic trait checks yielded 3 exact, 6 unlocated, 9 only-other-coordinate, and 7 missing results. This is not a six-mood coverage result or calibration.
+- Added a proposed missing-attribute policy that preserves unknowns and avoids rewarding documentation density as quality.
+- Reviewed Fontjoy documentation and Adobe’s historical recommendation announcement; Fontpair body unavailable. Recorded source depth and useful interaction ideas without claiming product testing.
+- Added pinned research dependencies; no product stack was selected.
 
-## Artifacts
+## Existing artifacts
 
-research/specimens/batch-1/README.md
-research/specimens/batch-1/manifest.json
-research/specimens/batch-1/review.json
-docs/specimen-preparation.md
+The specimen gallery, manifest, visual QA, and balanced five-trial four-option schedule remain unchanged. Three raster sheets show headings, paragraphs, and character samples for the five instances. Equal nominal size produced different apparent sizes and wrapping; this is a condition issue, not a reading conclusion.
 
-The manifest contains source hashes, actual sample text, settings, line breaks, rendering versions, and the numbered key. Font binaries are not committed.
+## Verification
 
-## Important visual observation
-
-Equal nominal size produced noticeably different apparent text sizes and line wraps. Preserve this as a research-condition issue, not a readability conclusion. A separate matched-perceived-size condition may be needed; do not silently modify the original specimens.
+Run the unit suite with dependencies from requirements-research.txt, reproduce the coordinate report, and validate the empty observation array. Tests use synthetic fixtures only. No comparison interface, participant run, reading study, or live competitor test has occurred. Schema validation checks recorded declarations; it cannot prove a vocabulary review or accurate presentation took place.
 
 ## Exact next work
 
-Use these concrete specimens when discussing mood words and comparison instructions. Keep raw attribute association, personal preference, and reading task observations separate. The user asked to establish mood vocabulary before mood tests; no votes have been collected and no vocabulary is approved.
+Prepare concrete mood-definition review materials for the existing specimen set: simple definitions, likely ambiguities, and role-specific instructions for Calm, Playful, Cheerful, Energetic, Elegant, and Rugged. These six words remain draft. Check whether people can distinguish each meaning before collecting attribute votes. Do not silently approve the vocabulary or generate ratings on Johnny’s behalf.
 
-Independent work can refine the response-record format and investigate missing traits. A balanced trial schedule is already prepared in research/protocols/four-option-schedule.json. Any schedule must remain a proposed research artifact until fonts, wording, and presentation conditions are checked. Do not add more families, infer ratings from names, or begin product UI.
+Independent work can also prepare a consistent existing-tool review brief, deepen pairing guidance from primary sources, and design separate reading-observation records. No need to expand the font sample or start product UI. The raw response format is not a scoring model; estimation and uncertainty remain open.
 
-## Active sample
+## Active sample and unresolved work
 
-Noto Sans, Merriweather, Roboto Mono, Caveat, Abril Fatface. All remain needs_review and recommendation_eligible=false. No new scores, human responses, or pairing claims were created.
+Noto Sans, Merriweather, Roboto Mono, Caveat, Abril Fatface. All remain needs_review and recommendation_eligible=false. Unknown attribute values stay unknown. Designer-stated intent, source assignments, raw judgments, project preferences, and reading observations must stay separate.
 
-## Verification boundaries
-
-Raster image generation and inspection are complete for these samples. Browser rendering, mobile enlargement, actual character recognition, reading comfort/comprehension, hierarchy, contextual harmony, and mood judgments remain untested.
-
-## Deferred
-
-Participant feedback, source-score calibration, pairing research, competitor comparison, system-font expansion, product UI, and framework selection remain pending.
+Browser rendering, mobile enlargement, character recognition, reading comfort/comprehension, hierarchy, contextual harmony, and mood judgments remain untested. Source-score calibration, pairing validation, system-font expansion, approved vocabulary, and framework selection remain pending. No input from Johnny is needed to continue the independent preparation listed above.

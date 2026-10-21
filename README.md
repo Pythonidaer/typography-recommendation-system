@@ -33,6 +33,9 @@ The main research challenge is describing fonts consistently enough to support u
 - [Mood review protocol](docs/mood-review-protocol.md): four-option comparisons, personal preferences, and evidence separation.
 - [Rendered specimen gallery](research/specimens/batch-1/README.md): headings, paragraphs, and character samples for the 5 pilot instances.
 - [Specimen preparation](docs/specimen-preparation.md): reproducible rendering and verification limits.
+- [Response records](docs/response-records.md): raw comparison format and validation limits.
+- [Missing attribute policy](docs/missing-attribute-policy.md): source scope, instance coverage, and unknown values.
+- [Existing tools review](docs/existing-tools-review.md): first documentation pass and approaches to investigate.
 - [Current checkpoint](research/checkpoint.md): progress and the next bounded task.
 - [Font record template](research/font-record.template.json): a draft record, not a researched font.
 

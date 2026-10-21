@@ -1,0 +1,323 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.1"
+    },
+    "record_kind": {
+      "const": "attribute_comparison"
+    },
+    "record_status": {
+      "enum": [
+        "synthetic",
+        "observed"
+      ]
+    },
+    "response_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "session_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "participant": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "human",
+            "ai"
+          ]
+        },
+        "model_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "prompt_sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "visual_input_sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "model_id",
+        "prompt_sha256",
+        "visual_input_sha256"
+      ],
+      "additionalProperties": false
+    },
+    "attribute": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "enum": [
+            "calm",
+            "playful",
+            "cheerful",
+            "energetic",
+            "elegant",
+            "rugged"
+          ]
+        },
+        "definition_version": {
+          "const": "0.1"
+        },
+        "definition_review_state": {
+          "enum": [
+            "draft",
+            "reviewed"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "definition_version",
+        "definition_review_state"
+      ],
+      "additionalProperties": false
+    },
+    "role": {
+      "enum": [
+        "heading",
+        "paragraph"
+      ]
+    },
+    "trial_id": {
+      "enum": [
+        "trial-1",
+        "trial-2",
+        "trial-3",
+        "trial-4",
+        "trial-5"
+      ]
+    },
+    "shown_order": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 4,
+      "maxItems": 4,
+      "uniqueItems": true
+    },
+    "stimulus_manifest_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "presentation": {
+      "type": "object",
+      "properties": {
+        "verified": {
+          "type": "boolean"
+        },
+        "mode": {
+          "enum": [
+            "raster",
+            "browser",
+            "synthetic"
+          ]
+        },
+        "condition_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "display_width_px": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "verified",
+        "mode",
+        "condition_id",
+        "display_width_px",
+        "notes"
+      ],
+      "additionalProperties": false
+    },
+    "outcome": {
+      "enum": [
+        "selected_option",
+        "none_fit",
+        "too_similar",
+        "skip"
+      ]
+    },
+    "selected_instance_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "schema_version",
+    "record_kind",
+    "record_status",
+    "response_id",
+    "session_id",
+    "participant",
+    "attribute",
+    "role",
+    "trial_id",
+    "shown_order",
+    "stimulus_manifest_sha256",
+    "presentation",
+    "outcome",
+    "selected_instance_id",
+    "created_at"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Pilot attribute comparison response; no numeric scores",
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "outcome": {
+            "const": "selected_option"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "selected_instance_id": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "selected_instance_id": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_status": {
+            "const": "observed"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "attribute": {
+            "properties": {
+              "definition_review_state": {
+                "const": "reviewed"
+              }
+            }
+          },
+          "presentation": {
+            "properties": {
+              "verified": {
+                "const": true
+              },
+              "mode": {
+                "enum": [
+                  "raster",
+                  "browser"
+                ]
+              },
+              "display_width_px": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "participant": {
+            "properties": {
+              "kind": {
+                "const": "ai"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "participant": {
+            "properties": {
+              "model_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "prompt_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "visual_input_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            }
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "participant": {
+            "properties": {
+              "model_id": {
+                "type": "null"
+              },
+              "prompt_sha256": {
+                "type": "null"
+              },
+              "visual_input_sha256": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

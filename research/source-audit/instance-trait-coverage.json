@@ -1,0 +1,370 @@
+{
+  "status": "evidence_location_audit_not_scores",
+  "checked_on": "2026-10-21",
+  "dimensions": "Earlier five-trait diagnostic set; not an approved mood vocabulary.",
+  "instances": [
+    {
+      "instance_id": "notosans-normal-research",
+      "selected_axes": {
+        "wght": 400,
+        "wdth": 100
+      },
+      "traits": [
+        {
+          "tag": "/Expressive/Calm",
+          "status": "only_other_coordinates_found",
+          "exact_coordinate_rows": [],
+          "partial_coordinate_rows": [],
+          "unlocated_rows": [],
+          "other_coordinate_rows": [
+            21383,
+            21384,
+            21385,
+            21386
+          ],
+          "calibrated_score": null,
+          "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+        },
+        {
+          "tag": "/Expressive/Loud",
+          "status": "only_other_coordinates_found",
+          "exact_coordinate_rows": [],
+          "partial_coordinate_rows": [],
+          "unlocated_rows": [],
+          "other_coordinate_rows": [
+            21395,
+            21396,
+            21397,
+            21398
+          ],
+          "calibrated_score": null,
+          "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+        },
+        {
+          "tag": "/Expressive/Playful",
+          "status": "missing",
+          "exact_coordinate_rows": [],
+          "partial_coordinate_rows": [],
+          "unlocated_rows": [],
+          "other_coordinate_rows": [],
+          "calibrated_score": null,
+          "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+        },
+        {
+          "tag": "/Expressive/Vintage",
+          "status": "missing",
+          "exact_coordinate_rows": [],
+          "partial_coordinate_rows": [],
+          "unlocated_rows": [],
+          "other_coordinate_rows": [],
+          "calibrated_score": null,
+          "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+        },
+        {
+          "tag": "/Expressive/Business",
+          "status": "only_other_coordinates_found",
+          "exact_coordinate_rows": [],
+          "partial_coordinate_rows": [],
+          "unlocated_rows": [],
+          "other_coordinate_rows": [
+            21379,
+            21380,
+            21381,
+            21382
+          ],
+          "calibrated_score": null,
+          "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+        }
+      ]
+    },
+    {
+      "instance_id": "merriweather-normal-research",
+      "selected_axes": {
+        "wght": 400,
+        "wdth": 100,
+        "opsz": 18
+      },
+      "traits": [
+        {
+          "tag": "/Expressive/Calm",
+          "status": "only_other_coordinates_found",
+          "exact_coordinate_rows": [],
+          "partial_coordinate_rows": [],
+          "unlocated_rows": [],
+          "other_coordinate_rows": [
+            16566,
+            16567,
+            16568,
+            16569
+          ],
+          "calibrated_score": null,
+          "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+        },
+        {
+          "tag": "/Expressive/Loud",
+          "status": "only_other_coordinates_found",
+          "exact_coordinate_rows": [],
+          "partial_coordinate_rows": [],
+          "unlocated_rows": [],
+          "other_coordinate_rows": [
+            16578,
+            16579,
+            16580,
+            16581
+          ],
+          "calibrated_score": null,
+          "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+        },
+        {
+          "tag": "/Expressive/Playful",
+          "status": "missing",
+          "exact_coordinate_rows": [],
+          "partial_coordinate_rows": [],
+          "unlocated_rows": [],
+          "other_coordinate_rows": [],
+          "calibrated_score": null,
+          "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+        },
+        {
+          "tag": "/Expressive/Vintage",
+          "status": "only_other_coordinates_found",
+          "exact_coordinate_rows": [],
+          "partial_coordinate_rows": [],
+          "unlocated_rows": [],
+          "other_coordinate_rows": [
+            16588,
+            16589,
+            16590,
+            16591
+          ],
+          "calibrated_score": null,
+          "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+        },
+        {
+          "tag": "/Expressive/Business",
+          "status": "only_other_coordinates_found",
+          "exact_coordinate_rows": [],
+          "partial_coordinate_rows": [],
+          "unlocated_rows": [],
+          "other_coordinate_rows": [
+            16562,
+            16563,
+            16564,
+            16565
+          ],
+          "calibrated_score": null,
+          "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+        }
+      ]
+    },
+    {
+      "instance_id": "robotomono-normal-research",
+      "selected_axes": {
+        "wght": 400
+      },
+      "traits": [
+        {
+          "tag": "/Expressive/Calm",
+          "status": "only_other_coordinates_found",
+          "exact_coordinate_rows": [],
+          "partial_coordinate_rows": [],
+          "unlocated_rows": [],
+          "other_coordinate_rows": [
+            27685,
+            27686
+          ],
+          "calibrated_score": null,
+          "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+        },
+        {
+          "tag": "/Expressive/Loud",
+          "status": "unlocated_assignment_needs_scope_review",
+          "exact_coordinate_rows": [],
+          "partial_coordinate_rows": [],
+          "unlocated_rows": [
+            27691
+          ],
+          "other_coordinate_rows": [],
+          "calibrated_score": null,
+          "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+        },
+        {
+          "tag": "/Expressive/Playful",
+          "status": "only_other_coordinates_found",
+          "exact_coordinate_rows": [],
+          "partial_coordinate_rows": [],
+          "unlocated_rows": [],
+          "other_coordinate_rows": [
+            27692,
+            27693
+          ],
+          "calibrated_score": null,
+          "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+        },
+        {
+          "tag": "/Expressive/Vintage",
+          "status": "unlocated_assignment_needs_scope_review",
+          "exact_coordinate_rows": [],
+          "partial_coordinate_rows": [],
+          "unlocated_rows": [
+            27698
+          ],
+          "other_coordinate_rows": [],
+          "calibrated_score": null,
+          "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+        },
+        {
+          "tag": "/Expressive/Business",
+          "status": "exact_coordinates_found",
+          "exact_coordinate_rows": [
+            27683
+          ],
+          "partial_coordinate_rows": [],
+          "unlocated_rows": [],
+          "other_coordinate_rows": [
+            27682,
+            27684
+          ],
+          "calibrated_score": null,
+          "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+        }
+      ]
+    },
+    {
+      "instance_id": "caveat-normal-research",
+      "selected_axes": {
+        "wght": 400
+      },
+      "traits": [
+        {
+          "tag": "/Expressive/Calm",
+          "status": "exact_coordinates_found",
+          "exact_coordinate_rows": [
+            5901
+          ],
+          "partial_coordinate_rows": [],
+          "unlocated_rows": [],
+          "other_coordinate_rows": [
+            5902
+          ],
+          "calibrated_score": null,
+          "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+        },
+        {
+          "tag": "/Expressive/Loud",
+          "status": "missing",
+          "exact_coordinate_rows": [],
+          "partial_coordinate_rows": [],
+          "unlocated_rows": [],
+          "other_coordinate_rows": [],
+          "calibrated_score": null,
+          "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+        },
+        {
+          "tag": "/Expressive/Playful",
+          "status": "unlocated_assignment_needs_scope_review",
+          "exact_coordinate_rows": [],
+          "partial_coordinate_rows": [],
+          "unlocated_rows": [
+            5913
+          ],
+          "other_coordinate_rows": [],
+          "calibrated_score": null,
+          "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+        },
+        {
+          "tag": "/Expressive/Vintage",
+          "status": "exact_coordinates_found",
+          "exact_coordinate_rows": [
+            5917
+          ],
+          "partial_coordinate_rows": [],
+          "unlocated_rows": [],
+          "other_coordinate_rows": [
+            5918
+          ],
+          "calibrated_score": null,
+          "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+        },
+        {
+          "tag": "/Expressive/Business",
+          "status": "missing",
+          "exact_coordinate_rows": [],
+          "partial_coordinate_rows": [],
+          "unlocated_rows": [],
+          "other_coordinate_rows": [],
+          "calibrated_score": null,
+          "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+        }
+      ]
+    },
+    {
+      "instance_id": "abrilfatface-normal-research",
+      "selected_axes": {},
+      "traits": [
+        {
+          "tag": "/Expressive/Calm",
+          "status": "missing",
+          "exact_coordinate_rows": [],
+          "partial_coordinate_rows": [],
+          "unlocated_rows": [],
+          "other_coordinate_rows": [],
+          "calibrated_score": null,
+          "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+        },
+        {
+          "tag": "/Expressive/Loud",
+          "status": "unlocated_assignment_needs_scope_review",
+          "exact_coordinate_rows": [],
+          "partial_coordinate_rows": [],
+          "unlocated_rows": [
+            108
+          ],
+          "other_coordinate_rows": [],
+          "calibrated_score": null,
+          "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+        },
+        {
+          "tag": "/Expressive/Playful",
+          "status": "missing",
+          "exact_coordinate_rows": [],
+          "partial_coordinate_rows": [],
+          "unlocated_rows": [],
+          "other_coordinate_rows": [],
+          "calibrated_score": null,
+          "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+        },
+        {
+          "tag": "/Expressive/Vintage",
+          "status": "unlocated_assignment_needs_scope_review",
+          "exact_coordinate_rows": [],
+          "partial_coordinate_rows": [],
+          "unlocated_rows": [
+            110
+          ],
+          "other_coordinate_rows": [],
+          "calibrated_score": null,
+          "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+        },
+        {
+          "tag": "/Expressive/Business",
+          "status": "unlocated_assignment_needs_scope_review",
+          "exact_coordinate_rows": [],
+          "partial_coordinate_rows": [],
+          "unlocated_rows": [
+            103
+          ],
+          "other_coordinate_rows": [],
+          "calibrated_score": null,
+          "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "only_other_coordinates_found": 9,
+    "missing": 7,
+    "unlocated_assignment_needs_scope_review": 6,
+    "exact_coordinates_found": 3
+  }
+}

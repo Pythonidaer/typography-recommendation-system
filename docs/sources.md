@@ -39,7 +39,7 @@ Both supplied by Johnny. Automated access returned 403 during planning. Their vi
 - https://typ.io/
 - https://fonts.google.com/knowledge/choosing_type/pairing_typefaces
 
-Starting points for examples and guidance. They are not yet a reviewed comparison of competing recommendation products.
+Starting points for examples and guidance. A first limited documentation comparison is now in existing-tools-review.md; the Fontpair body was unavailable.
 
 ## Pending research
 
@@ -81,3 +81,13 @@ Also reviewed the 2017 Arabic-typeface study abstract and study context as a rem
 https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2017.01229/full
 
 The MDPI emotion-based recommendation paper at https://www.mdpi.com/2076-3417/14/3/1123 returned 429; its methods have not been reviewed and do not support our protocol.
+
+## Instance coverage, response format, and existing tools
+
+The pinned pilot source rows were compared with the rendered axis settings. See missing-attribute-policy.md and research/source-audit/instance-trait-coverage.json. The 25 diagnostic checks are not coverage results for the proposed six-word vocabulary.
+
+Reviewed Fontjoy’s main page and author explanation, and Adobe’s historical 2021 recommendation announcement, on October 21, 2026. Fontpair yielded a page title but no readable body. Exact URLs and review limits are in existing-tools-review.md.
+
+The response schema uses JSON Schema draft 2020-12 conditional validation, documented at:
+https://json-schema.org/understanding-json-schema/reference/conditionals
+Structural checks do not validate psychological constructs or participant judgments.
