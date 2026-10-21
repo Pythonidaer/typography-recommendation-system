@@ -1,48 +1,41 @@
 # Research checkpoint
 
 Updated: October 21, 2026
-Current stage: source audit complete; batch 1 metadata collected, review pending.
+Current stage: batch 1 source review and limited character checks complete; visual/attribute review next.
 
-## Completed this pass
+## Completed
 
-- Pinned Google Fonts revision 45e3d5269e4a17d823f6d84470bc084dc5ae46f6.
-- Audited 34,163 tag rows, 1,941 exact family names, and 74 tags. These are file counts, not complete live catalogue coverage.
-- Recorded per-tag coverage, locations, 8 out-of-range zero rows, and exact UI/data name differences.
-- Read official tagging-process guidance: source values rank human assessments within a tag; they are not calibrated preference probabilities.
-- Added a reproducible audit script and JSON report with source hashes.
-- Proposed 5 independent questionnaire dimensions in docs/assessment-dimensions.md.
-- Created 5 partial font-family records spanning provider categories.
+- Source coverage audit at upstream Google Fonts revision 45e3d5269e4a17d823f6d84470bc084dc5ae46f6.
+- 5 category-spanning family records, now marked needs_review and ineligible for recommendations.
+- Read each pinned provider description and family OFL.txt; read Noto Sans’s longer About article.
+- Recorded attributed intended uses, license source details, exact document blobs, source shortcomings, and scope boundaries.
+- Inspected 1 normal binary per family. Printable ASCII and 3 documented example strings map in all 5; report preserves hashes and axes.
+- Compared availability of the 5 proposed mood traits. Only Roboto Mono has source assignments for all 5; unknowns remain unknown.
 
-## Active batch: 1 (do not expand yet)
+## Active batch (do not expand)
 
-| Record | Category | State |
-| --- | --- | --- |
-| research/fonts/notosans.json | Sans serif | Metadata and raw tags collected |
-| research/fonts/merriweather.json | Serif | Metadata and raw tags collected |
-| research/fonts/robotomono.json | Monospace | Metadata and raw tags collected |
-| research/fonts/caveat.json | Handwriting | Metadata and raw tags collected |
-| research/fonts/abrilfatface.json | Display | Metadata and raw tags collected |
+Noto Sans, Merriweather, Roboto Mono, Caveat, Abril Fatface. Records: research/fonts/<id>.json. See docs/pilot-source-review.md.
 
-All are in_progress and recommendation_eligible=false. No judgments or recommendations have been generated. The original arbitrary named queue remains superseded.
+No personality judgments, combined scores, pairing recommendations, or validated recommendations exist.
 
 ## Exact next task
 
-Start with Noto Sans. Discover and read its About/designer documentation and actual license at the pinned revision. Record short attributed intended-use claims, remaining gaps, and evidence. Then repeat for the remaining 4 families in this batch. Do not create a new batch until reviewing these records.
+Prepare a bounded research comparison protocol for these 5 families with identical content and explicit variants. Separate heading and body settings. Define what each proposed question is intended to measure and prepare concrete examples for Johnny’s feedback. No UI implementation or new family batch is needed yet.
 
-After source review, prepare comparable text examples for the 5 candidate mood questions, checking variant scope. Ask Johnny to judge wording or visual preferences when concrete choices are ready. No user input is currently required for source research.
+Account for source-location differences; do not interpolate scores or turn unlocated assignments into full-family guarantees. Resolve how missing traits will be reviewed or excluded before any combined ranking.
 
 ## Validation
 
-Audit parsed all rows and detected upstream zero-weight exceptions; it found no duplicate family/location/tag keys or malformed axis-location strings. A synthetic fixture checked malformed-row, duplicate, range, and scope detection. All 5 JSON records passed identity, evidence-reference, raw-value-range, no-invented-judgment, and ineligible-status checks. No rendered or reader testing took place.
+All updated JSON records parse and retain resolvable evidence references. Intended uses remain source_stated. Licenses have dated, pinned evidence. The character-check script records exact source-file hashes and limits its claims to cmap presence. Existing audit tests pass. No browser, visual, shaping, or reader verification has been done.
 
-## Remaining uncertainties
+## Findings to preserve
 
-Blank CSV location scope is not guaranteed equivalent to API full-designspace scope. No live API call or catalogue identity join was made. Detailed semantic anchors and repeatability of source scores remain unverified. Purpose-tag coverage is sparse; intended text roles need more evidence. Display is absent as a tag in this file and must be obtained from family metadata.
+Caveat has explicit body-text intent despite being handwriting. Abril Fatface is not the complete Abril family. Noto Sans is not the entire Noto collection. Merriweather’s pinned upstream README is unfilled template text. Raw trait coverage is too uneven for a combined 5-trait ranking of this batch.
 
-## Resume instructions
+## User input
 
-Read AGENTS.md, docs/source-audit.md, docs/pilot-sample.md, and the active record. Preserve raw provider assignments, our judgments, and user preferences separately. Update this checkpoint with exact source paths and next action in every research session.
+No decision is needed for the completed source review. Bring Johnny concrete examples when choosing wording and evaluating appearance; do not ask them to resolve metadata or source-discovery work.
 
 ## Deferred
 
-Behance examples remain unreviewed after 403. Competitor comparison, pairing research, system-font expansion, scoring calibration, UI design, and framework choices remain pending.
+Behance access, competitor comparison, pairing research, system-font expansion, score calibration, UI design, and framework selection remain pending. The earlier arbitrary sample queue remains superseded.

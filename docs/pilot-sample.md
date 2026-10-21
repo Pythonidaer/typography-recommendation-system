@@ -1,6 +1,6 @@
 # Pilot sample: batch 1
 
-Status: inventory and metadata collected; research incomplete. This is a sample to test our method, not recommended fonts for a user’s project.
+Status: documentation and license sources reviewed; limited character mapping checked; visual and suitability review pending. This is a sample to test our method, not recommended fonts for a user’s project.
 
 The source audit supports beginning an exploratory sample. We selected 1 family in each of the 5 broad provider categories, verified using METADATA.pb at revision 45e3d5269e4a17d823f6d84470bc084dc5ae46f6:
 
@@ -22,8 +22,8 @@ Exact identities and categories, styles, weight ranges or static weights, axes, 
 
 Subsets are provider screening labels, not a full verified character inventory. Variable weight ranges come from the axis range, rather than incorrectly reading the per-file 400 entry as the only available weight. License identifiers are metadata claims; terms have not been reviewed.
 
-## Remaining before recommendation trials
+## Current review stage
 
-Read About/designer descriptions and actual licenses; evaluate intended roles and character requirements; review source attributes in context; test actual previews. All 5 records remain in_progress and recommendation_eligible=false.
+See pilot-source-review.md for documentation findings and source gaps. All 5 records are now needs_review and recommendation_eligible=false. Intended uses are attributed source claims; no personality judgments or pairing recommendations have been created.
 
-No numeric judgments or pairing recommendations were generated. The next batch is blocked on reviewing these records, not on collecting more fonts.
+Before recommendation trials, test selected variants and actual content, review missing attribute evidence, and check a real project’s character and reading needs. This batch does not yet support a comparable ranking on all 5 proposed mood dimensions.

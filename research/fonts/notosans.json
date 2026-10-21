@@ -8,7 +8,7 @@
     "google_fonts_family": "Noto Sans",
     "repository_path": "ofl/notosans"
   },
-  "status": "in_progress",
+  "status": "needs_review",
   "technical": {
     "category": "SANS_SERIF",
     "weights": {
@@ -46,7 +46,11 @@
     "scripts": null,
     "license": {
       "metadata_identifier": "OFL",
-      "terms_reviewed": false
+      "terms_reviewed": true,
+      "identifier": "OFL-1.1",
+      "review_scope": "Read the family OFL.txt for research and preview planning; no distribution integration has been checked.",
+      "reserved_font_names": [],
+      "notice_required_for_redistribution": true
     },
     "platform_availability": null
   },
@@ -70,10 +74,21 @@
       "metadata"
     ],
     "license": [
-      "metadata"
+      "metadata",
+      "license"
     ]
   },
-  "intended_uses": [],
+  "intended_uses": [
+    {
+      "role": "general_text",
+      "statement": "The provider describes Noto Sans for Latin, Cyrillic, and Greek text and as a companion to script-specific Noto Sans families.",
+      "evidence_ids": [
+        "description",
+        "about_article"
+      ],
+      "status": "source_stated"
+    }
+  ],
   "judgments": [],
   "source_tags": [
     {
@@ -503,7 +518,7 @@
       "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
       "source_blob": "87f93924f3fa3dbdfd2a5e38329d409159fa5126",
       "source_kind": "provider_metadata",
-      "paraphrase": "Family identity, category, styles, variable ranges where present, subset labels, and license identifier. License terms and font binaries have not been checked."
+      "paraphrase": "Family identity, category, styles, variable ranges where present, subset labels, and metadata license identifier. See the separate license evidence for terms."
     },
     {
       "id": "tags",
@@ -512,25 +527,78 @@
       "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
       "source_kind": "provider_human_assessed_tags",
       "paraphrase": "Exact family-name match. Raw assignments retain variant locations; quality tags excluded from the exploratory record."
+    },
+    {
+      "id": "description",
+      "url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/notosans/DESCRIPTION.en_us.html",
+      "retrieved_at": "2026-10-21",
+      "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+      "source_blob": "c66d77c92819176bfff260103b1ad733e28d7647",
+      "source_kind": "provider_description",
+      "paraphrase": "The provider describes Noto Sans for Latin, Cyrillic, and Greek text and as a companion to script-specific Noto Sans families."
+    },
+    {
+      "id": "license",
+      "url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/notosans/OFL.txt",
+      "retrieved_at": "2026-10-21",
+      "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+      "source_blob": "6843f31878c9945e1e71e1baa275546b4eefead8",
+      "source_kind": "font_license",
+      "paraphrase": "The family file contains SIL Open Font License 1.1, including use, embedding, redistribution, notice, naming, and standalone-sale conditions."
+    },
+    {
+      "id": "character_check",
+      "url": "../source-audit/pilot-character-checks.json",
+      "retrieved_at": "2026-10-21",
+      "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+      "source_kind": "local_cmap_check",
+      "paraphrase": "The selected normal file maps printable ASCII and the 3 documented example strings. No shaping or visual-reading assessment was made."
+    },
+    {
+      "id": "about_article",
+      "url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/notosans/article/ARTICLE.en_us.html",
+      "retrieved_at": "2026-10-21",
+      "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+      "source_blob": "0660974a2948d12d8e6a9e635db69a09adc2e11e",
+      "source_kind": "provider_about_article",
+      "paraphrase": "The About article repeats the Latin, Cyrillic, Greek text and cross-script companion intent."
     }
   ],
   "review": {
     "reviewed_at": null,
     "reviewer": null,
     "recommendation_eligible": false,
-    "eligibility_reason": "Metadata and raw tags collected only. Intended role, license terms, required characters, and context-specific appearance need review.",
+    "eligibility_reason": "Documentation and license sources reviewed; initial character mapping checked. Appearance, role performance, source-tag scope, and project-specific requirements still need review.",
     "rubric_version": null,
     "open_questions": [
-      "Read family About and designer documentation for intended uses.",
-      "Check license text and character coverage for a specific brief.",
-      "Review source tag scope and the 5 proposed preference dimensions.",
-      "No rendered text or pairing tests performed."
-    ]
+      "Check intended roles with real content at the planned size and style.",
+      "Validate any preference dimension used for comparison; missing source tags remain unknown.",
+      "Check actual required language characters, shaping, and selected variants for a project.",
+      "No rendered text, reader, or pairing tests have been performed."
+    ],
+    "source_review": {
+      "completed_at": "2026-10-21",
+      "reviewer": "Codex",
+      "stage": "documentation_and_limited_character_mapping",
+      "notes": [
+        "The description names Latin, Cyrillic, and Greek, while metadata also lists a Devanagari subset. Do not claim complete script coverage without checking actual required characters.",
+        "Do not attribute the full Noto collection’s global script coverage to this single family."
+      ]
+    }
   },
   "maintenance": {
     "created_at": "2026-10-21",
     "updated_at": "2026-10-21",
     "last_source_check_at": "2026-10-21",
     "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6"
+  },
+  "character_checks": {
+    "report": "../source-audit/pilot-character-checks.json",
+    "record_id": "notosans",
+    "evidence_ids": [
+      "character_check"
+    ],
+    "all_documented_samples_mapped": true,
+    "scope": "One normal binary only; character mapping, not legibility or language completeness."
   }
 }

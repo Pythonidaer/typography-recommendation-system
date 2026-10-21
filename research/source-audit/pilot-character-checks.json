@@ -1,0 +1,198 @@
+{
+  "upstream_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+  "checked_on": "2026-10-21",
+  "scope": "Unicode cmap presence in 1 normal file per family; no shaping, visual distinction, language completeness, italic-file, or reading-performance tests",
+  "families": [
+    {
+      "id": "notosans",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/notosans/NotoSans%5Bwdth%2Cwght%5D.ttf",
+      "sha256": "bfb7bb691513f12e734dc346c03a03f784912432d7e3fa8e56efcf906fe86b3d",
+      "file_bytes": 2049096,
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 100.0,
+          "default": 400.0,
+          "max": 900.0
+        },
+        {
+          "tag": "wdth",
+          "min": 62.5,
+          "default": 100.0,
+          "max": 100.0
+        }
+      ],
+      "samples": {
+        "printable_ascii": {
+          "text": " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~",
+          "mapped": true,
+          "missing": []
+        },
+        "english_ui_example": {
+          "text": "Choose your fonts. Save changes. 12:45 PM $19.99",
+          "mapped": true,
+          "missing": []
+        },
+        "character_distinction_sample": {
+          "text": "Il1 O0 rn m {} [] () , . : ;",
+          "mapped": true,
+          "missing": []
+        },
+        "extended_example": {
+          "text": "Café naïve résumé — “Hello” € £ ©",
+          "mapped": true,
+          "missing": []
+        }
+      }
+    },
+    {
+      "id": "merriweather",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/merriweather/Merriweather%5Bopsz%2Cwdth%2Cwght%5D.ttf",
+      "sha256": "d0ed0e359e396af7ad05e73dffd11a3a4c326ea0d0283c56bd9361cb2cc86a96",
+      "file_bytes": 4628080,
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 300.0,
+          "default": 300.0,
+          "max": 900.0
+        },
+        {
+          "tag": "wdth",
+          "min": 87.0,
+          "default": 100.0,
+          "max": 112.0
+        },
+        {
+          "tag": "opsz",
+          "min": 18.0,
+          "default": 18.0,
+          "max": 144.0
+        }
+      ],
+      "samples": {
+        "printable_ascii": {
+          "text": " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~",
+          "mapped": true,
+          "missing": []
+        },
+        "english_ui_example": {
+          "text": "Choose your fonts. Save changes. 12:45 PM $19.99",
+          "mapped": true,
+          "missing": []
+        },
+        "character_distinction_sample": {
+          "text": "Il1 O0 rn m {} [] () , . : ;",
+          "mapped": true,
+          "missing": []
+        },
+        "extended_example": {
+          "text": "Café naïve résumé — “Hello” € £ ©",
+          "mapped": true,
+          "missing": []
+        }
+      }
+    },
+    {
+      "id": "robotomono",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/robotomono/RobotoMono%5Bwght%5D.ttf",
+      "sha256": "66a80e79d17e4c7cabd162e2916578a4cc08fd19eef6e2a643305eae9c567b2b",
+      "file_bytes": 183700,
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 100.0,
+          "default": 400.0,
+          "max": 700.0
+        }
+      ],
+      "samples": {
+        "printable_ascii": {
+          "text": " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~",
+          "mapped": true,
+          "missing": []
+        },
+        "english_ui_example": {
+          "text": "Choose your fonts. Save changes. 12:45 PM $19.99",
+          "mapped": true,
+          "missing": []
+        },
+        "character_distinction_sample": {
+          "text": "Il1 O0 rn m {} [] () , . : ;",
+          "mapped": true,
+          "missing": []
+        },
+        "extended_example": {
+          "text": "Café naïve résumé — “Hello” € £ ©",
+          "mapped": true,
+          "missing": []
+        }
+      }
+    },
+    {
+      "id": "caveat",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/caveat/Caveat%5Bwght%5D.ttf",
+      "sha256": "0bdb6b660482d31531b3945849fba5916b3ef8695da7024a9e6b9ee3c4157988",
+      "file_bytes": 403648,
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 400.0,
+          "default": 400.0,
+          "max": 700.0
+        }
+      ],
+      "samples": {
+        "printable_ascii": {
+          "text": " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~",
+          "mapped": true,
+          "missing": []
+        },
+        "english_ui_example": {
+          "text": "Choose your fonts. Save changes. 12:45 PM $19.99",
+          "mapped": true,
+          "missing": []
+        },
+        "character_distinction_sample": {
+          "text": "Il1 O0 rn m {} [] () , . : ;",
+          "mapped": true,
+          "missing": []
+        },
+        "extended_example": {
+          "text": "Café naïve résumé — “Hello” € £ ©",
+          "mapped": true,
+          "missing": []
+        }
+      }
+    },
+    {
+      "id": "abrilfatface",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/abrilfatface/AbrilFatface-Regular.ttf",
+      "sha256": "5971d4a3758a922a9fedc7f6fb825a96341a2e718c45a4b2c9a6b417c8c4dbe9",
+      "file_bytes": 67364,
+      "axes": [],
+      "samples": {
+        "printable_ascii": {
+          "text": " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~",
+          "mapped": true,
+          "missing": []
+        },
+        "english_ui_example": {
+          "text": "Choose your fonts. Save changes. 12:45 PM $19.99",
+          "mapped": true,
+          "missing": []
+        },
+        "character_distinction_sample": {
+          "text": "Il1 O0 rn m {} [] () , . : ;",
+          "mapped": true,
+          "missing": []
+        },
+        "extended_example": {
+          "text": "Café naïve résumé — “Hello” € £ ©",
+          "mapped": true,
+          "missing": []
+        }
+      }
+    }
+  ]
+}

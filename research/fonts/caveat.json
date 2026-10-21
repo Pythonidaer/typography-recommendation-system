@@ -8,7 +8,7 @@
     "google_fonts_family": "Caveat",
     "repository_path": "ofl/caveat"
   },
-  "status": "in_progress",
+  "status": "needs_review",
   "technical": {
     "category": "HANDWRITING",
     "weights": {
@@ -36,7 +36,11 @@
     "scripts": null,
     "license": {
       "metadata_identifier": "OFL",
-      "terms_reviewed": false
+      "terms_reviewed": true,
+      "identifier": "OFL-1.1",
+      "review_scope": "Read the family OFL.txt for research and preview planning; no distribution integration has been checked.",
+      "reserved_font_names": [],
+      "notice_required_for_redistribution": true
     },
     "platform_availability": null
   },
@@ -60,10 +64,28 @@
       "metadata"
     ],
     "license": [
-      "metadata"
+      "metadata",
+      "license"
     ]
   },
-  "intended_uses": [],
+  "intended_uses": [
+    {
+      "role": "annotations",
+      "statement": "The provider identifies short annotations as an intended use.",
+      "evidence_ids": [
+        "description"
+      ],
+      "status": "source_stated"
+    },
+    {
+      "role": "body_text",
+      "statement": "The provider identifies body text as an intended use.",
+      "evidence_ids": [
+        "description"
+      ],
+      "status": "source_stated"
+    }
+  ],
   "judgments": [],
   "source_tags": [
     {
@@ -350,7 +372,7 @@
       "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
       "source_blob": "027e2e08a3e3c4d45c5c38c92e90ab5780e223b4",
       "source_kind": "provider_metadata",
-      "paraphrase": "Family identity, category, styles, variable ranges where present, subset labels, and license identifier. License terms and font binaries have not been checked."
+      "paraphrase": "Family identity, category, styles, variable ranges where present, subset labels, and metadata license identifier. See the separate license evidence for terms."
     },
     {
       "id": "tags",
@@ -359,25 +381,69 @@
       "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
       "source_kind": "provider_human_assessed_tags",
       "paraphrase": "Exact family-name match. Raw assignments retain variant locations; quality tags excluded from the exploratory record."
+    },
+    {
+      "id": "description",
+      "url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/caveat/DESCRIPTION.en_us.html",
+      "retrieved_at": "2026-10-21",
+      "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+      "source_blob": "a0f8be6a246f129682e1f4b1b62acd3bbe8c5221",
+      "source_kind": "provider_description",
+      "paraphrase": "The provider identifies short annotations and body text as intended uses."
+    },
+    {
+      "id": "license",
+      "url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/caveat/OFL.txt",
+      "retrieved_at": "2026-10-21",
+      "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+      "source_blob": "6e5220c9576d98dfc684e550ddf0d87f68b3edc5",
+      "source_kind": "font_license",
+      "paraphrase": "The family file contains SIL Open Font License 1.1, including use, embedding, redistribution, notice, naming, and standalone-sale conditions."
+    },
+    {
+      "id": "character_check",
+      "url": "../source-audit/pilot-character-checks.json",
+      "retrieved_at": "2026-10-21",
+      "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+      "source_kind": "local_cmap_check",
+      "paraphrase": "The selected normal file maps printable ASCII and the 3 documented example strings. No shaping or visual-reading assessment was made."
     }
   ],
   "review": {
     "reviewed_at": null,
     "reviewer": null,
     "recommendation_eligible": false,
-    "eligibility_reason": "Metadata and raw tags collected only. Intended role, license terms, required characters, and context-specific appearance need review.",
+    "eligibility_reason": "Documentation and license sources reviewed; initial character mapping checked. Appearance, role performance, source-tag scope, and project-specific requirements still need review.",
     "rubric_version": null,
     "open_questions": [
-      "Read family About and designer documentation for intended uses.",
-      "Check license text and character coverage for a specific brief.",
-      "Review source tag scope and the 5 proposed preference dimensions.",
-      "No rendered text or pairing tests performed."
-    ]
+      "Check intended roles with real content at the planned size and style.",
+      "Validate any preference dimension used for comparison; missing source tags remain unknown.",
+      "Check actual required language characters, shaping, and selected variants for a project.",
+      "No rendered text, reader, or pairing tests have been performed."
+    ],
+    "source_review": {
+      "completed_at": "2026-10-21",
+      "reviewer": "Codex",
+      "stage": "documentation_and_limited_character_mapping",
+      "notes": [
+        "Body-text intent does not establish comfort at small sizes or for long passages. Test in context.",
+        "The upstream README adds no detailed role explanation; its Caveat Brush warning concerns a separate family."
+      ]
+    }
   },
   "maintenance": {
     "created_at": "2026-10-21",
     "updated_at": "2026-10-21",
     "last_source_check_at": "2026-10-21",
     "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6"
+  },
+  "character_checks": {
+    "report": "../source-audit/pilot-character-checks.json",
+    "record_id": "caveat",
+    "evidence_ids": [
+      "character_check"
+    ],
+    "all_documented_samples_mapped": true,
+    "scope": "One normal binary only; character mapping, not legibility or language completeness."
   }
 }

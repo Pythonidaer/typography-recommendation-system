@@ -23,7 +23,8 @@ The main research challenge is describing fonts consistently enough to support u
 - [Sources](docs/sources.md): references and what has or has not been reviewed.
 - [Source audit](docs/source-audit.md): coverage, data-quality findings, and reproducible checks.
 - [Candidate questions](docs/assessment-dimensions.md): proposed dimensions and source mappings.
-- [Pilot sample](docs/pilot-sample.md): 5 partial records across provider categories.
+- [Pilot sample](docs/pilot-sample.md): 5 records across provider categories, awaiting visual and suitability review.
+- [Pilot documentation review](docs/pilot-source-review.md): intended uses, license sources, character checks, and attribute gaps.
 - [Current checkpoint](research/checkpoint.md): progress and the next bounded task.
 - [Font record template](research/font-record.template.json): a draft record, not a researched font.
 

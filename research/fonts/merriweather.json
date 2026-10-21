@@ -8,7 +8,7 @@
     "google_fonts_family": "Merriweather",
     "repository_path": "ofl/merriweather"
   },
-  "status": "in_progress",
+  "status": "needs_review",
   "technical": {
     "category": "SERIF",
     "weights": {
@@ -48,7 +48,13 @@
     "scripts": null,
     "license": {
       "metadata_identifier": "OFL",
-      "terms_reviewed": false
+      "terms_reviewed": true,
+      "identifier": "OFL-1.1",
+      "review_scope": "Read the family OFL.txt for research and preview planning; no distribution integration has been checked.",
+      "reserved_font_names": [
+        "Merriweather"
+      ],
+      "notice_required_for_redistribution": true
     },
     "platform_availability": null
   },
@@ -72,10 +78,20 @@
       "metadata"
     ],
     "license": [
-      "metadata"
+      "metadata",
+      "license"
     ]
   },
-  "intended_uses": [],
+  "intended_uses": [
+    {
+      "role": "screen_text",
+      "statement": "The provider describes Merriweather as a text face developed for screen reading.",
+      "evidence_ids": [
+        "description"
+      ],
+      "status": "source_stated"
+    }
+  ],
   "judgments": [],
   "source_tags": [
     {
@@ -582,7 +598,7 @@
       "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
       "source_blob": "4a3fa62b7f2f30b18b43c8665b9d347292442448",
       "source_kind": "provider_metadata",
-      "paraphrase": "Family identity, category, styles, variable ranges where present, subset labels, and license identifier. License terms and font binaries have not been checked."
+      "paraphrase": "Family identity, category, styles, variable ranges where present, subset labels, and metadata license identifier. See the separate license evidence for terms."
     },
     {
       "id": "tags",
@@ -591,25 +607,69 @@
       "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
       "source_kind": "provider_human_assessed_tags",
       "paraphrase": "Exact family-name match. Raw assignments retain variant locations; quality tags excluded from the exploratory record."
+    },
+    {
+      "id": "description",
+      "url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/merriweather/DESCRIPTION.en_us.html",
+      "retrieved_at": "2026-10-21",
+      "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+      "source_blob": "c080bf851a9d82128615d13bfdd5e62a6ea266ac",
+      "source_kind": "provider_description",
+      "paraphrase": "The provider describes Merriweather as a text face developed for screen reading."
+    },
+    {
+      "id": "license",
+      "url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/merriweather/OFL.txt",
+      "retrieved_at": "2026-10-21",
+      "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+      "source_blob": "17d2c5151b6a31ca53721fc253708caf5cf0329a",
+      "source_kind": "font_license",
+      "paraphrase": "The family file contains SIL Open Font License 1.1, including use, embedding, redistribution, notice, naming, and standalone-sale conditions."
+    },
+    {
+      "id": "character_check",
+      "url": "../source-audit/pilot-character-checks.json",
+      "retrieved_at": "2026-10-21",
+      "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+      "source_kind": "local_cmap_check",
+      "paraphrase": "The selected normal file maps printable ASCII and the 3 documented example strings. No shaping or visual-reading assessment was made."
     }
   ],
   "review": {
     "reviewed_at": null,
     "reviewer": null,
     "recommendation_eligible": false,
-    "eligibility_reason": "Metadata and raw tags collected only. Intended role, license terms, required characters, and context-specific appearance need review.",
+    "eligibility_reason": "Documentation and license sources reviewed; initial character mapping checked. Appearance, role performance, source-tag scope, and project-specific requirements still need review.",
     "rubric_version": null,
     "open_questions": [
-      "Read family About and designer documentation for intended uses.",
-      "Check license text and character coverage for a specific brief.",
-      "Review source tag scope and the 5 proposed preference dimensions.",
-      "No rendered text or pairing tests performed."
-    ]
+      "Check intended roles with real content at the planned size and style.",
+      "Validate any preference dimension used for comparison; missing source tags remain unknown.",
+      "Check actual required language characters, shaping, and selected variants for a project.",
+      "No rendered text, reader, or pairing tests have been performed."
+    ],
+    "source_review": {
+      "completed_at": "2026-10-21",
+      "reviewer": "Codex",
+      "stage": "documentation_and_limited_character_mapping",
+      "notes": [
+        "The pinned upstream README is unfinished template content, so it adds no intended-use evidence.",
+        "The provider description links an older repository; metadata points to Merriweather4. Retain both references and avoid assuming all historical design details describe this release."
+      ]
+    }
   },
   "maintenance": {
     "created_at": "2026-10-21",
     "updated_at": "2026-10-21",
     "last_source_check_at": "2026-10-21",
     "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6"
+  },
+  "character_checks": {
+    "report": "../source-audit/pilot-character-checks.json",
+    "record_id": "merriweather",
+    "evidence_ids": [
+      "character_check"
+    ],
+    "all_documented_samples_mapped": true,
+    "scope": "One normal binary only; character mapping, not legibility or language completeness."
   }
 }

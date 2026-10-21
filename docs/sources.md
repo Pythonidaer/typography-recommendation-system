@@ -63,3 +63,9 @@ The tag-data README distinguishes human-assessed tags from machine-assessed meas
 On October 21, 2026, audited all families.csv rows at Google Fonts revision 45e3d5269e4a17d823f6d84470bc084dc5ae46f6 against its tag dictionary and UI mappings. Also inspected upstream tag tests, GF Tagger implementation, and https://googlefonts.github.io/gf-guide/tags.html for process context. Documentation describes relative human comparison within a tag; calibration against reader preference has not been established.
 
 Metadata from that same revision seeded 5 partial family records. No font binaries, license terms, family About descriptions, or actual previews were reviewed in this batch. See source-audit.md for coverage denominators and limitations, and each family record for pinned evidence.
+
+## Pilot documentation and character pass
+
+Reviewed each pilot family’s pinned DESCRIPTION.en_us.html and OFL.txt and Noto Sans’s article/ARTICLE.en_us.html. Additional pinned upstream README checks and limitations are in pilot-source-review.md. Sources support intended-use attribution, not measured readability claims.
+
+Inspected 1 normal binary per family using fontTools; hashes, source URLs, axis defaults, and sample strings are in research/source-audit/pilot-character-checks.json. This checks Unicode character mappings only. No visual, shaping, italic-file, or reader tests were completed.
