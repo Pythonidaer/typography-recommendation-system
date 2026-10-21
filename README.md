@@ -17,6 +17,7 @@ The main research challenge is describing fonts consistently enough to support u
 ## Project documents
 
 - [Product plan](docs/product-plan.md): decisions, proposed workflow, and open questions.
+- [Attribute evidence](docs/attribute-evidence.md): minimum information and source findings before sampling.
 - [Font research](docs/font-research.md): attributes, evidence, and manageable batches.
 - [Recommendation approach](docs/recommendation-approach.md): proposed filters, ranking, and combination checks.
 - [Sources](docs/sources.md): references and what has or has not been reviewed.

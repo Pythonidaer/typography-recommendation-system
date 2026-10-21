@@ -45,7 +45,7 @@ Lists use null when not researched; an empty list means checked and none found. 
 
 ## Bounded batch workflow
 
-1. Select at most 5 families and list them in the checkpoint.
+1. Complete the attribute evidence and source coverage audit first. Then select at most 5 families and list them in the checkpoint.
 2. Gather factual metadata and source descriptions first.
 3. Save each family separately; keep short paraphrases rather than copied descriptions.
 4. Flag ambiguous claims for review. Do not force a score.
@@ -63,9 +63,9 @@ When a source changes, revisit affected factual fields and intended-use claims. 
 
 Store pairing evidence under research/pairings/ when collected, referencing family IDs, assigned roles, variants, context, source, and review status. Do not claim every pair among individually suitable fonts works.
 
-## Recommended first experiment
+## Research order before sampling
 
-Research 3-5 contrasting families, draft a small rubric, and have the same examples reviewed consistently. Expand only after that reveals which judgments are repeatable and which remain ambiguous.
+First apply the evidence criteria in attribute-evidence.md, audit the available sources, and define what information supports each proposed attribute. Then choose a subset across categories in batches of at most 5 families. Review consistency before expanding. The original named five-font queue is superseded.
 
 ## Entry shapes for the draft record
 
@@ -78,3 +78,7 @@ Each judgment uses: attribute, value (nullable), rubric_version (nullable), evid
 Add technical_evidence as a mapping from technical field names to evidence IDs when populating a real record. Every non-null technical fact needs evidence. Dates and source revisions should make changed claims traceable.
 
 Draft research statuses: not_started, in_progress, needs_review, reviewed, and blocked. A reviewed record can still be ineligible for recommendations; explain why. Keep unfinished evidence and next actions in the checkpoint rather than silently treating a partial record as complete.
+
+## Source tags
+
+Google Fonts provides existing human-assessed tags. Preserve provider tags, raw weights, and variant scope separately from reviewer judgments. See attribute-evidence.md before importing or mapping them to questionnaire scores.

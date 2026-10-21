@@ -44,3 +44,16 @@ Starting points for examples and guidance. They are not yet a reviewed compariso
 ## Pending research
 
 Compare existing tools by their questions, inputs, font coverage, explanations, pairing behavior, and editable previews. Record direct observations with dates, limitations, and primary URLs. Distinguish catalogue filtering, curated pairing galleries, and preference-driven recommendations.
+
+## Attribute evidence pass, October 21, 2026
+
+Reviewed API tag documentation, metadata guidance, About-content guidance, tag-data README, tag dictionary, and UI mappings. A limited families.csv excerpt confirmed weighted expressive and typographic assignments and variant locations. Full coverage and calibration remain unreviewed.
+
+- https://developers.google.com/fonts/docs/developer_api#tags
+- https://googlefonts.github.io/gf-guide/metadata.html
+- https://github.com/google/fonts/blob/main/tags/all/README.md
+- https://github.com/google/fonts/blob/main/tags/all/families.csv
+- https://github.com/google/fonts/blob/main/tags/tags_metadata.csv
+- https://github.com/google/fonts/blob/main/tags/tags_ui_details.textproto
+
+The tag-data README distinguishes human-assessed tags from machine-assessed measurements. Raw weights are not our preference-match scores. Detailed limitations and inspected blob identities are in attribute-evidence.md.
