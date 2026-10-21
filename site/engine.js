@@ -13,7 +13,7 @@ const languages={english:{name:'English',script:'latin'},japanese:{name:'Japanes
 function normalizeBrief(b){
  const {language,japaneseText,...rest}=b;
  const legacyJapanese=language==='heading'||language==='both';
- return {...rest,primaryLanguage:b.primaryLanguage||'english',additionalLanguage:b.additionalLanguage??(legacyJapanese?'japanese':''),additionalScope:b.additionalScope||(language==='both'?'both':'heading'),textToCheck:b.textToCheck??japaneseText??'',count:Number(b.count),retro:Number(b.retro),rough:Number(b.rough)};
+ return {...rest,primaryLanguage:b.primaryLanguage||'english',additionalLanguage:b.additionalLanguage??(legacyJapanese?'japanese':''),additionalScope:b.additionalScope??(language==='both'?'both':language==='heading'?'heading':''),textToCheck:b.textToCheck??japaneseText??'',count:Number(b.count),retro:Number(b.retro),rough:Number(b.rough)};
 }
 function languageError(raw){const b=normalizeBrief(raw);
  if(!languages[b.primaryLanguage]||(b.additionalLanguage&&!languages[b.additionalLanguage]))return 'This pilot cannot yet recommend fonts for that language. Choose a supported language to explore the current samples.';

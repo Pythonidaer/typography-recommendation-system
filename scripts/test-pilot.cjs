@@ -40,3 +40,7 @@ assert.ok(P.recommend({...neutral,count:2,primaryLanguage:'japanese'},coverage).
 assert.ok(P.recommend({...neutral,count:2,textToCheck:'\u{10ffff}'},coverage).error);
 assert.equal(P.hasText('chakra','กขฃคฅฆงจฉชซฌญฎฏฐฑฒณดตถทธนบปผฝพฟภมยรลวศษสหฬอฮ',coverage),true);
 console.log('Neutral language selection, legacy migration, Thai heading coverage, and unsupported-language checks passed.');
+
+assert.ok(P.languageError({...neutral,additionalLanguage:'japanese',additionalScope:''}));
+assert.equal(P.normalizeBrief({language:'heading',count:2,retro:0,rough:0}).additionalScope,'heading');
+assert.equal(P.normalizeBrief({count:2,retro:0,rough:0}).additionalScope,'');
