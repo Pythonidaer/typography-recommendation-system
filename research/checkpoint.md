@@ -71,3 +71,9 @@ The editorial-pilot-0.1 pool includes Chakra Petch, IBM Plex Sans, Special Elite
 The flow collects purpose, reading task, language and character requirements, requested count, optional reading needs, a visual direction, and independent retro/rough priorities. It returns 1-3 distinct families, provides source-linked reasons after the character review, and supports in-slot replacements and locally downloadable feedback. No color, weight, size, motion, or texture controls were added. Japanese font files and sample coverage were checked in the earlier private prototype; this deployment builds pinned assets and reruns count, coverage, replacement, and unsupported-case checks. Browser QA of the full example path completed before migration.
 
 Next: confirm the Actions deployment and public URL, then Johnny tests the walkthrough. Preserve actual feedback separately from synthetic tests. Explain that purpose/open text supplies context and roles; this pilot does not perform semantic matching or turn reading needs into unsupported font ratings. A request for 3 families with Japanese throughout is explicitly unsupported by the 2-family Japanese subset in this pool.
+
+## Walkthrough correction 0.1.1, October 21, 2026
+
+Corrected kana visibility for Japanese-capable families in any selected role and removed the Japanese body preference when Japanese is required only in the main heading. Clarified that the Japanese text field checks supplied characters rather than translating English, simplified question labels, explained family count, and preserved numeric slider values after changes and draft restoration. Added regression checks in scripts/test-pilot.cjs. No private test export or participant wording is stored here.
+
+Next: test the revised walkthrough and identify remaining confusing questions and mismatched recommendations. The eight-family pool, editorial priorities, and research eligibility limits remain as documented in docs/walkthrough-pilot.md.

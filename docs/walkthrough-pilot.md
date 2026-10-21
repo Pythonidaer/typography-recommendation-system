@@ -1,6 +1,6 @@
 # Font walkthrough pilot
 
-Version: editorial-pilot-0.1. Created October 21, 2026 at the user’s request for an immediately testable sequential walkthrough. The public test destination is this repository’s GitHub Pages site. The earlier ChatGPT-hosted preview was a temporary prototype.
+Version: editorial-pilot-0.1.1. Created October 21, 2026 at the user’s request for an immediately testable sequential walkthrough. The public test destination is this repository’s GitHub Pages site. The earlier ChatGPT-hosted preview was a temporary prototype.
 
 ## Scope
 
@@ -10,12 +10,12 @@ Eight editorial candidates are available. These are not the five researched JSON
 
 ## Rules and their meaning
 
-engine.js is the executable source of truth. Its weights are unvalidated editorial tie-breaking priorities, not personality measurements or match probabilities. Version changes require count, script, and replacement regression checks in test-engine.cjs.
+engine.js is the executable source of truth. Its weights are unvalidated editorial tie-breaking priorities, not personality measurements or match probabilities. Version changes require count, script, and replacement regression checks in scripts/test-pilot.cjs.
 
 1. Restrict slots by required scripts and exact supplied-text character coverage. Restrict supporting-text slots to the editorial body-text shortlist. Unknown coverage does not pass.
 2. A source-linked style association matching the chosen main direction adds 20 priority units to a display slot. Retro emphasis adds 2 units per step to earlier-print or digital associations. Rough emphasis adds 2 per step to headings or 5 to accent slots for typewriter, marker, or stencil associations.
 3. A contrasting third-family slot does not repeat the main-direction bonus; rough candidates receive 20 additional units only when rough emphasis is above zero. This is an editorial heuristic, not evidence of pairing quality.
-4. Supporting-text defaults favour IBM Plex Sans; Japanese requirements favour Noto Sans JP. Editorial direction can favour Merriweather. DotGothic16 has a small Japanese display preference. All tie breaks are deterministic.
+4. Supporting-text defaults favour IBM Plex Sans; Japanese requirements favour Noto Sans JP only in supporting-text roles that require Japanese. Editorial direction can favour Merriweather. DotGothic16 has a small Japanese display preference. All tie breaks are deterministic.
 5. Keep all selected families unique. Replacements must meet the same slot requirements and preserve the family count. There are only 2 Japanese-capable families; a request for 3 bilingual-throughout roles returns an explicit pool limitation, not a padded result.
 
 Reading-needs answers are retained for follow-up evaluation, not automatically converted into font ratings. Purpose and open text provide the brief and proposed roles, not semantic AI matching. This prototype does not fully model multiple scene moods. The rough-lettering priority plus contrasting-heading role provides one limited exploration of that request.
@@ -33,3 +33,9 @@ English and Japanese heading example was checked in the browser. All 3 selected 
 The source is site/. Run python -m pip install fonttools==4.61.1, then python scripts/build_pilot_site.py and node scripts/test-pilot.cjs. Serve site/ with a static file server for local testing. All paths are relative so the repository subpath works. GitHub Actions repeats the build and checks before uploading site/ to Pages.
 
 The build downloads regular source files from Google Fonts revision 45e3d5269e4a17d823f6d84470bc084dc5ae46f6, locks variable axes to their defaults except weight 400, includes licenses, and generates fonts.css, coverage.json, and a source-hash manifest. The reference font settings remain fixed. Generated assets are not checked into the source repository.
+
+## Pilot correction 0.1.1
+
+Japanese-capable selected families show kana in their character review regardless of assigned role. Script requirements still apply by role. A heading-only Japanese requirement no longer adds a preference to the body slot. The optional Japanese-text field explicitly checks supplied characters without translating English; Latin-only entries receive a correction message. Question labels use plainer wording and explain family count. Slider and count values remain numbers after change events and draft restoration.
+
+Regression checks cover heading-only ranking, Japanese replacement eligibility and specimen display, mixed-script input, blank input, and restored numeric values. These fixes do not establish recommendation quality or reading performance.
