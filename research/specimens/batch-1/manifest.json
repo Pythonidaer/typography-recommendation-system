@@ -1,0 +1,467 @@
+{
+  "status": "raster_specimens_rendered_no_participant_testing",
+  "created_at": "2026-10-21",
+  "upstream_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+  "renderer": {
+    "pillow": "12.3.0",
+    "fonttools": "4.61.1",
+    "layout": "RAQM",
+    "label_font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "label_font_sha256": "ae7b7855e115a5966d8b1b3f80f254ccc117ec86f9965e202ee2940453837280"
+  },
+  "reference_canvas_width_px": 480,
+  "content_width_reference_px": 360,
+  "raster_scale": 2,
+  "foreground": "#202124",
+  "background": "#ffffff",
+  "instances": [
+    {
+      "sample": 1,
+      "instance": {
+        "id": "notosans-normal-research",
+        "family_id": "notosans",
+        "style": "normal",
+        "axis_settings": {
+          "wght": 400,
+          "wdth": 100
+        },
+        "static_weight": null,
+        "scope": "Research instance; not a family-wide mood claim.",
+        "render_verified": false
+      },
+      "source_sha256": "bfb7bb691513f12e734dc346c03a03f784912432d7e3fa8e56efcf906fe86b3d",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/notosans/NotoSans%5Bwdth%2Cwght%5D.ttf"
+    },
+    {
+      "sample": 2,
+      "instance": {
+        "id": "merriweather-normal-research",
+        "family_id": "merriweather",
+        "style": "normal",
+        "axis_settings": {
+          "wght": 400,
+          "wdth": 100,
+          "opsz": 18
+        },
+        "static_weight": null,
+        "scope": "Research instance; not a family-wide mood claim.",
+        "render_verified": false
+      },
+      "source_sha256": "d0ed0e359e396af7ad05e73dffd11a3a4c326ea0d0283c56bd9361cb2cc86a96",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/merriweather/Merriweather%5Bopsz%2Cwdth%2Cwght%5D.ttf"
+    },
+    {
+      "sample": 3,
+      "instance": {
+        "id": "robotomono-normal-research",
+        "family_id": "robotomono",
+        "style": "normal",
+        "axis_settings": {
+          "wght": 400
+        },
+        "static_weight": null,
+        "scope": "Research instance; not a family-wide mood claim.",
+        "render_verified": false
+      },
+      "source_sha256": "66a80e79d17e4c7cabd162e2916578a4cc08fd19eef6e2a643305eae9c567b2b",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/robotomono/RobotoMono%5Bwght%5D.ttf"
+    },
+    {
+      "sample": 4,
+      "instance": {
+        "id": "caveat-normal-research",
+        "family_id": "caveat",
+        "style": "normal",
+        "axis_settings": {
+          "wght": 400
+        },
+        "static_weight": null,
+        "scope": "Research instance; not a family-wide mood claim.",
+        "render_verified": false
+      },
+      "source_sha256": "0bdb6b660482d31531b3945849fba5916b3ef8695da7024a9e6b9ee3c4157988",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/caveat/Caveat%5Bwght%5D.ttf"
+    },
+    {
+      "sample": 5,
+      "instance": {
+        "id": "abrilfatface-normal-research",
+        "family_id": "abrilfatface",
+        "style": "normal",
+        "axis_settings": {},
+        "static_weight": 400,
+        "scope": "Research instance; not a family-wide mood claim.",
+        "render_verified": false
+      },
+      "source_sha256": "5971d4a3758a922a9fedc7f6fb825a96341a2e718c45a4b2c9a6b417c8c4dbe9",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/abrilfatface/AbrilFatface-Regular.ttf"
+    }
+  ],
+  "sheets": [
+    {
+      "id": "heading",
+      "file": "heading-specimens.png",
+      "text": "A place by the river",
+      "reference_font_size_px": 40,
+      "line_height_ratio": 1.2,
+      "image_size_px": [
+        960,
+        1772
+      ],
+      "samples": [
+        {
+          "sample": 1,
+          "instance_id": "notosans-normal-research",
+          "lines": [
+            "A place by the river"
+          ],
+          "glyph_bounds_image_px": [
+            [
+              120,
+              365,
+              837,
+              445
+            ]
+          ]
+        },
+        {
+          "sample": 2,
+          "instance_id": "merriweather-normal-research",
+          "lines": [
+            "A place by the",
+            "river"
+          ],
+          "glyph_bounds_image_px": [
+            [
+              120,
+              608,
+              650,
+              696
+            ],
+            [
+              120,
+              707,
+              303,
+              772
+            ]
+          ]
+        },
+        {
+          "sample": 3,
+          "instance_id": "robotomono-normal-research",
+          "lines": [
+            "A place by the",
+            "river"
+          ],
+          "glyph_bounds_image_px": [
+            [
+              120,
+              972,
+              792,
+              1049
+            ],
+            [
+              120,
+              1071,
+              360,
+              1129
+            ]
+          ]
+        },
+        {
+          "sample": 4,
+          "instance_id": "caveat-normal-research",
+          "lines": [
+            "A place by the river"
+          ],
+          "glyph_bounds_image_px": [
+            [
+              120,
+              1323,
+              656,
+              1397
+            ]
+          ]
+        },
+        {
+          "sample": 5,
+          "instance_id": "abrilfatface-normal-research",
+          "lines": [
+            "A place by the river"
+          ],
+          "glyph_bounds_image_px": [
+            [
+              120,
+              1580,
+              824,
+              1662
+            ]
+          ]
+        }
+      ],
+      "sha256": "765114cbc0ed383e2edb05916dad1d7804e65fcf8c2ed41740b8698e6cea3d79"
+    },
+    {
+      "id": "paragraph",
+      "file": "paragraph-specimens.png",
+      "text": "The path follows the river past a row of houses. A footbridge connects the two streets near the station.",
+      "reference_font_size_px": 20,
+      "line_height_ratio": 1.5,
+      "image_size_px": [
+        960,
+        2000
+      ],
+      "samples": [
+        {
+          "sample": 1,
+          "instance_id": "notosans-normal-research",
+          "lines": [
+            "The path follows the river past a row",
+            "of houses. A footbridge connects the",
+            "two streets near the station."
+          ],
+          "glyph_bounds_image_px": [
+            [
+              120,
+              352,
+              803,
+              393
+            ],
+            [
+              120,
+              412,
+              811,
+              453
+            ],
+            [
+              120,
+              473,
+              648,
+              503
+            ]
+          ]
+        },
+        {
+          "sample": 2,
+          "instance_id": "merriweather-normal-research",
+          "lines": [
+            "The path follows the river past a row",
+            "of houses. A footbridge connects the",
+            "two streets near the station."
+          ],
+          "glyph_bounds_image_px": [
+            [
+              120,
+              686,
+              820,
+              730
+            ],
+            [
+              120,
+              747,
+              816,
+              791
+            ],
+            [
+              120,
+              807,
+              656,
+              840
+            ]
+          ]
+        },
+        {
+          "sample": 3,
+          "instance_id": "robotomono-normal-research",
+          "lines": [
+            "The path follows the river",
+            "past a row of houses. A",
+            "footbridge connects the two",
+            "streets near the station."
+          ],
+          "glyph_bounds_image_px": [
+            [
+              120,
+              1030,
+              744,
+              1070
+            ],
+            [
+              120,
+              1090,
+              672,
+              1130
+            ],
+            [
+              120,
+              1150,
+              768,
+              1190
+            ],
+            [
+              120,
+              1211,
+              720,
+              1242
+            ]
+          ]
+        },
+        {
+          "sample": 4,
+          "instance_id": "caveat-normal-research",
+          "lines": [
+            "The path follows the river past a row of houses. A",
+            "footbridge connects the two streets near the station."
+          ],
+          "glyph_bounds_image_px": [
+            [
+              120,
+              1432,
+              791,
+              1468
+            ],
+            [
+              120,
+              1492,
+              839,
+              1528
+            ]
+          ]
+        },
+        {
+          "sample": 5,
+          "instance_id": "abrilfatface-normal-research",
+          "lines": [
+            "The path follows the river past a row of",
+            "houses. A footbridge connects the two",
+            "streets near the station."
+          ],
+          "glyph_bounds_image_px": [
+            [
+              120,
+              1711,
+              834,
+              1753
+            ],
+            [
+              120,
+              1771,
+              807,
+              1814
+            ],
+            [
+              120,
+              1833,
+              556,
+              1863
+            ]
+          ]
+        }
+      ],
+      "sha256": "38df148219e95bab57ceb2723945022f739490587f931b75636d20144dbfe5dc"
+    },
+    {
+      "id": "characters",
+      "file": "characters-specimens.png",
+      "text": "Il1 O0 rn m 8B {} [] () , . : ;",
+      "reference_font_size_px": 24,
+      "line_height_ratio": 1.5,
+      "image_size_px": [
+        960,
+        1532
+      ],
+      "samples": [
+        {
+          "sample": 1,
+          "instance_id": "notosans-normal-research",
+          "lines": [
+            "Il1 O0 rn m 8B {} [] () , . : ;"
+          ],
+          "glyph_bounds_image_px": [
+            [
+              120,
+              356,
+              680,
+              400
+            ]
+          ]
+        },
+        {
+          "sample": 2,
+          "instance_id": "merriweather-normal-research",
+          "lines": [
+            "Il1 O0 rn m 8B {} [] () , . : ;"
+          ],
+          "glyph_bounds_image_px": [
+            [
+              120,
+              580,
+              699,
+              632
+            ]
+          ]
+        },
+        {
+          "sample": 3,
+          "instance_id": "robotomono-normal-research",
+          "lines": [
+            "Il1 O0 rn m 8B {} [] ()",
+            ", . : ;"
+          ],
+          "glyph_bounds_image_px": [
+            [
+              120,
+              815,
+              783,
+              867
+            ],
+            [
+              120,
+              900,
+              322,
+              936
+            ]
+          ]
+        },
+        {
+          "sample": 4,
+          "instance_id": "caveat-normal-research",
+          "lines": [
+            "Il1 O0 rn m 8B {} [] () , . : ;"
+          ],
+          "glyph_bounds_image_px": [
+            [
+              120,
+              1118,
+              593,
+              1162
+            ]
+          ]
+        },
+        {
+          "sample": 5,
+          "instance_id": "abrilfatface-normal-research",
+          "lines": [
+            "Il1 O0 rn m 8B {} [] () , . : ;"
+          ],
+          "glyph_bounds_image_px": [
+            [
+              120,
+              1354,
+              644,
+              1399
+            ]
+          ]
+        }
+      ],
+      "sha256": "ffa413e45494470402a66e6a877df127d6779edd9db1bfe95141cb4bd04ffead"
+    }
+  ],
+  "limits": [
+    "Raster research artifacts, not verified browser/CSS rendering.",
+    "Equal nominal size does not match perceived size.",
+    "Labels are neutral; font identity remains available in the key.",
+    "Fixed sample order is for inspection, not a randomized participant trial.",
+    "No mood, comfort, legibility, readability, or pairing judgments collected."
+  ]
+}

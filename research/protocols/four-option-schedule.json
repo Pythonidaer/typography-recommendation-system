@@ -1,0 +1,80 @@
+{
+  "version": "0.1",
+  "status": "proposed_not_run",
+  "scope": "One attribute and one text role per block; attribute remains unassigned.",
+  "attribute_id": null,
+  "role": null,
+  "participant_id": null,
+  "trial_order": "canonical; permute and record before a real session",
+  "trials": [
+    {
+      "id": "trial-1",
+      "omitted_instance": "notosans-normal-research",
+      "positions": {
+        "top_left": "merriweather-normal-research",
+        "top_right": "robotomono-normal-research",
+        "bottom_left": "caveat-normal-research",
+        "bottom_right": "abrilfatface-normal-research"
+      }
+    },
+    {
+      "id": "trial-2",
+      "omitted_instance": "merriweather-normal-research",
+      "positions": {
+        "top_left": "robotomono-normal-research",
+        "top_right": "caveat-normal-research",
+        "bottom_left": "abrilfatface-normal-research",
+        "bottom_right": "notosans-normal-research"
+      }
+    },
+    {
+      "id": "trial-3",
+      "omitted_instance": "robotomono-normal-research",
+      "positions": {
+        "top_left": "caveat-normal-research",
+        "top_right": "abrilfatface-normal-research",
+        "bottom_left": "notosans-normal-research",
+        "bottom_right": "merriweather-normal-research"
+      }
+    },
+    {
+      "id": "trial-4",
+      "omitted_instance": "caveat-normal-research",
+      "positions": {
+        "top_left": "abrilfatface-normal-research",
+        "top_right": "notosans-normal-research",
+        "bottom_left": "merriweather-normal-research",
+        "bottom_right": "robotomono-normal-research"
+      }
+    },
+    {
+      "id": "trial-5",
+      "omitted_instance": "abrilfatface-normal-research",
+      "positions": {
+        "top_left": "notosans-normal-research",
+        "top_right": "merriweather-normal-research",
+        "bottom_left": "robotomono-normal-research",
+        "bottom_right": "caveat-normal-research"
+      }
+    }
+  ],
+  "balance_checks": {
+    "presentations_per_instance": 4,
+    "co_presentations_per_pair": 3,
+    "presentations_per_instance_in_each_position": 1
+  },
+  "outcomes": [
+    "selected_option",
+    "none_fit",
+    "too_similar",
+    "skip"
+  ],
+  "responses": [],
+  "limitations": [
+    "Balanced exposure does not remove every presentation or context bias.",
+    "Interrupted or partial blocks may lose the planned balance.",
+    "Four-option winners do not order unselected options.",
+    "An eventual UI must use verified live text or record image display scale.",
+    "Do not run all mood/role combinations by default; start with one short block."
+  ]
+}

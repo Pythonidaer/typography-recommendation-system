@@ -31,6 +31,8 @@ The main research challenge is describing fonts consistently enough to support u
 - [Pilot documentation review](docs/pilot-source-review.md): intended uses, license sources, character checks, and attribute gaps.
 - [Mood vocabulary](docs/mood-vocabulary.md): 6 proposed words to discuss before scoring.
 - [Mood review protocol](docs/mood-review-protocol.md): four-option comparisons, personal preferences, and evidence separation.
+- [Rendered specimen gallery](research/specimens/batch-1/README.md): headings, paragraphs, and character samples for the 5 pilot instances.
+- [Specimen preparation](docs/specimen-preparation.md): reproducible rendering and verification limits.
 - [Current checkpoint](research/checkpoint.md): progress and the next bounded task.
 - [Font record template](research/font-record.template.json): a draft record, not a researched font.
 

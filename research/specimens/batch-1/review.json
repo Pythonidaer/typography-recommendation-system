@@ -1,0 +1,28 @@
+{
+  "reviewed_at": "2026-10-21",
+  "reviewer": "Codex",
+  "method": "Source hash checks, automated bounds/image checks, and visual inspection of the 3 final rendered sheets.",
+  "images": [
+    {
+      "file": "heading-specimens.png",
+      "sha256": "765114cbc0ed383e2edb05916dad1d7804e65fcf8c2ed41740b8698e6cea3d79"
+    },
+    {
+      "file": "paragraph-specimens.png",
+      "sha256": "38df148219e95bab57ceb2723945022f739490587f931b75636d20144dbfe5dc"
+    },
+    {
+      "file": "characters-specimens.png",
+      "sha256": "ffa413e45494470402a66e6a877df127d6779edd9db1bfe95141cb4bd04ffead"
+    }
+  ],
+  "observations": [
+    "All 5 numbered samples are visible in each sheet.",
+    "No clipped sample text or missing-glyph boxes were observed.",
+    "Different line wraps and apparent sizes remain visible under shared nominal settings."
+  ],
+  "participant_testing": false,
+  "mood_judgments_collected": false,
+  "reading_performance_claims": false,
+  "browser_verification": false
+}
