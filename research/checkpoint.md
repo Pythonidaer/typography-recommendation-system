@@ -137,3 +137,18 @@ Bounded association batch: re-reviewed pinned descriptions for Abril Fatface, An
 One-family requests now ask whether the family is for titles/labels only or also supporting text. Old drafts retain the conservative all-text interpretation, shown explicitly. Pool and unmet-preference notices appear before results as well as on results. This avoids presenting a sole script-and-role-compatible candidate as a style match. No private screenshots or participant export text is committed.
 
 Verification for 0.4: source-derived font catalog rebuilt with verified local binary/license reuse; all 80 cmap checks and recommendation tests passed. Rendering smoke checks passed for plain-language visual choices, neutral specimen markup, poster options, one-family use selection, data-table rendering, and missing-glyph protection. Tests also cover the bilingual title-only versus all-text distinction, legacy defaults, and pre-result limitation notices. These are software checks, not new reader, mood, or pairing studies. Browser-tool connection was previously unreliable; do not claim fresh browser QA without a successful run. Next: verify deployment and test the visual questions on mobile.
+
+## Paused after pilot 0.4, October 21, 2026
+
+The user requested documentation only and a discussion before further interface changes. Keep the deployed 0.4 UI and the 80-family pool unchanged for now. The latest test did not establish acceptable recommendation fit; do not count participation as validation.
+
+Next discussion priorities:
+
+1. Reduce option-box height, repeated instructions, and explanatory copy so more choices fit on one screen, especially on mobile. Preserve useful font comparisons and accessible controls. Discuss the layout before implementing it; no agreement to fit the entire assessment on one screen is implied.
+2. Inspect the newly supplied visual reference privately and describe its visible letterforms before proposing alternatives. Compare Google Fonts beyond the current curated pool using primary sources, rather than treating the pilot’s shortlist as exhaustive. The reference image has not been analyzed in this checkpoint.
+3. Revisit actual language scope before filtering. Separate a Japanese heading or companion from Japanese throughout. Clarify whether one family must cover both scripts or whether a comparable companion is acceptable within the requested family count. Do not silently relax a language requirement.
+4. Diagnose the restricted candidate pool and ranking. The current pool has 3 Japanese-capable families and only 1 on the supporting-text shortlist. Sans-serif and geometric preferences do not establish a unique visual target; tied candidates can currently be selected alphabetically. A pixel result must not be presented as a verified geometric or contemporary match merely because it meets script and broad category requirements. A zero retro preference supplies no retro bonus; it is not currently an exclusion of retro forms. Discuss whether the person means no preference or an explicit avoidance.
+
+Outstanding: broader Japanese-family research, contextual comparisons against the reference, scoring calibration, pairing evaluation, and fresh visual browser QA. Existing automated checks and deployment verification passed for 0.4; reader and mood measurements remain unknown. Keep any additional research in batches of at most 5 families.
+
+Privacy: no personal test export, goal text, feedback wording, or uploaded image is included in this public checkpoint. Resume with the discussion and reference review, not another automatic UI revision.
