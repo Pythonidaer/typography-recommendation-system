@@ -35,3 +35,11 @@ Show actual existing samples when the task reaches visual comparison, preserve u
 ## Deferred and active sample
 
 Noto Sans, Merriweather, Roboto Mono, Caveat, Abril Fatface. Pairings, contextual harmony, character recognition, comprehension/comfort, and mood judgments remain untested. Approved vocabulary, calibrated scoring, category/script audit, broader sample expansion, system fonts, UI, and stack choice remain pending. The expanded inventory changes discovery scope, not observed record IDs or scoring.
+
+## Content and preview update, October 21, 2026
+
+Johnny requested a reliable, authoritative, friendly, lightly playful, concise voice and explanations to test. Reviewed the toolkit content, tone, mechanics, project questions, and content reset; recorded the local profile in docs/content-and-tone.md. Authority rests on verified features, attributed intent, explicit interpretation, and honest limits. No official Google affiliation or measured recommendation accuracy is claimed.
+
+The separate private Sites preview now supports a character-first review of five project-specific candidates: Chakra Petch, IBM Plex Sans, Special Elite, Rock Salt, and Black Ops One. This is a UI exploration authorised after the earlier research-only phase; no engine or new scores were introduced. Source About descriptions were read before drafting static reasons. They are not new completed family research records, do not expand the existing JSON pilot’s eligibility, and are not reading or pairing validation. Explanations follow the whole character review; optional text starts empty. No styling controls or visible uppercase/lowercase/number/punctuation labels are shown.
+
+Next: Johnny reviews the explanations and tone in the sample. Preserve actual preferences separately; do not infer feedback from approval to test. Continue the broader attribute discovery rather than treating this five-family editorial shortlist as the recommendation model. The earlier research next-task text above describes preparation; this conversation has now supplied a portfolio brief and authorised an isolated preview. No UI stack has been chosen for the eventual recommendation product.
