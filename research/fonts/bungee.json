@@ -1,0 +1,93 @@
+{
+  "schema_version": "0.1",
+  "record_kind": "font_family",
+  "id": "bungee",
+  "family_name": "Bungee",
+  "provider": "google_fonts",
+  "status": "needs_review",
+  "external_ids": {
+    "google_fonts_family": "Bungee",
+    "repository_path": "ofl/bungee"
+  },
+  "judgments": [],
+  "source_tags": [],
+  "review": {
+    "recommendation_eligible": false,
+    "eligibility_reason": "Metadata and description reviewed for the separate editorial pilot. Mood, reading performance and combinations remain untested."
+  },
+  "maintenance": {
+    "created_at": "2026-10-21",
+    "updated_at": "2026-10-21",
+    "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6"
+  },
+  "editorial_pilot": {
+    "description_file": "METADATA.pb",
+    "id": "bungee",
+    "name": "Bungee",
+    "source": "ofl/bungee",
+    "filename": "Bungee-Regular.ttf",
+    "category": [
+      "DISPLAY"
+    ],
+    "subsets": [
+      "latin",
+      "latin-ext",
+      "menu",
+      "vietnamese"
+    ],
+    "metadata_sha256": "ec1a73318ff76d666c2e3cad5948b6799f4a9ed6d6af59e787f4e5372c291edf",
+    "description_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+    "fact": "Google Fonts metadata classifies Bungee as display. A family description was unavailable at the pinned revision.",
+    "body": null,
+    "styles": [],
+    "heading_candidate": true,
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex",
+    "review_scope": "Provider metadata only; no family description available at the pinned revision. Proposed display comparison, not reading or mood validation.",
+    "mood_scores": null,
+    "reading_performance": null,
+    "pairing_scores": null,
+    "description_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/bungee/METADATA.pb",
+    "metadata_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/bungee/METADATA.pb",
+    "body_basis": null,
+    "association_basis": "Source-linked editorial mapping, not measured mood or a claim that the provider uses these exact labels.",
+    "description_available": false
+  },
+  "technical": {
+    "category": [
+      "DISPLAY"
+    ],
+    "subsets": [
+      "latin",
+      "latin-ext",
+      "menu",
+      "vietnamese"
+    ],
+    "weights": null,
+    "italic_available": null,
+    "variable_axes": null,
+    "scripts": null,
+    "license": null,
+    "platform_availability": null
+  },
+  "technical_evidence": {
+    "category": [
+      "pilot_metadata"
+    ],
+    "subsets": [
+      "pilot_metadata"
+    ]
+  },
+  "intended_uses": [],
+  "evidence": [
+    {
+      "id": "pilot_metadata",
+      "url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/bungee/METADATA.pb",
+      "retrieved_at": "2026-10-21",
+      "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+      "source_kind": "provider_metadata",
+      "paraphrase": "Reviewed family identity, categories, subset labels, and selected regular-file name."
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "schema_version": "0.1",
+  "record_kind": "font_family",
+  "id": "oldstandardtt",
+  "family_name": "Old Standard TT",
+  "provider": "google_fonts",
+  "status": "needs_review",
+  "external_ids": {
+    "google_fonts_family": "Old Standard TT",
+    "repository_path": "ofl/oldstandardtt"
+  },
+  "judgments": [],
+  "source_tags": [],
+  "review": {
+    "recommendation_eligible": false,
+    "eligibility_reason": "Metadata and description reviewed for the separate editorial pilot. Mood, reading performance and combinations remain untested."
+  },
+  "maintenance": {
+    "created_at": "2026-10-21",
+    "updated_at": "2026-10-21",
+    "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6"
+  },
+  "editorial_pilot": {
+    "description_file": "DESCRIPTION.en_us.html",
+    "id": "oldstandardtt",
+    "name": "Old Standard TT",
+    "source": "ofl/oldstandardtt",
+    "filename": "OldStandard-Regular.ttf",
+    "category": [
+      "SERIF"
+    ],
+    "subsets": [
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "menu",
+      "vietnamese"
+    ],
+    "metadata_sha256": "c2893bc801b26ce6017f8983b8c5c7fb3198d0b6b4f2bde2c185201921eba91d",
+    "description_sha256": "8f890b4a6c93591c47c6a8c39b55ff7a7509a520dee29176243634258a86cb57",
+    "revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+    "fact": "The provider describes a revival of classicist serif forms used in nineteenth- and early twentieth-century printing, including scientific papers.",
+    "body": true,
+    "styles": [
+      "print",
+      "editorial"
+    ],
+    "heading_candidate": true,
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex",
+    "review_scope": "Provider metadata and description; proposed roles, not reading or mood validation.",
+    "mood_scores": null,
+    "reading_performance": null,
+    "pairing_scores": null,
+    "description_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/oldstandardtt/DESCRIPTION.en_us.html",
+    "metadata_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/oldstandardtt/METADATA.pb",
+    "body_basis": "source_stated_text_or_interface_use",
+    "association_basis": "Source-linked editorial mapping, not measured mood or a claim that the provider uses these exact labels.",
+    "description_available": true
+  },
+  "technical": {
+    "category": [
+      "SERIF"
+    ],
+    "subsets": [
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "menu",
+      "vietnamese"
+    ],
+    "weights": null,
+    "italic_available": null,
+    "variable_axes": null,
+    "scripts": null,
+    "license": null,
+    "platform_availability": null
+  },
+  "technical_evidence": {
+    "category": [
+      "pilot_metadata"
+    ],
+    "subsets": [
+      "pilot_metadata"
+    ]
+  },
+  "intended_uses": [],
+  "evidence": [
+    {
+      "id": "pilot_metadata",
+      "url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/oldstandardtt/METADATA.pb",
+      "retrieved_at": "2026-10-21",
+      "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+      "source_kind": "provider_metadata",
+      "paraphrase": "Reviewed family identity, categories, subset labels, and selected regular-file name."
+    }
+  ]
+}

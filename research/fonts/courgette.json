@@ -1,0 +1,93 @@
+{
+  "schema_version": "0.1",
+  "record_kind": "font_family",
+  "id": "courgette",
+  "family_name": "Courgette",
+  "provider": "google_fonts",
+  "status": "needs_review",
+  "external_ids": {
+    "google_fonts_family": "Courgette",
+    "repository_path": "ofl/courgette"
+  },
+  "judgments": [],
+  "source_tags": [],
+  "review": {
+    "recommendation_eligible": false,
+    "eligibility_reason": "Metadata and description reviewed for the separate editorial pilot. Mood, reading performance and combinations remain untested."
+  },
+  "maintenance": {
+    "created_at": "2026-10-21",
+    "updated_at": "2026-10-21",
+    "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6"
+  },
+  "editorial_pilot": {
+    "description_file": "DESCRIPTION.en_us.html",
+    "id": "courgette",
+    "name": "Courgette",
+    "source": "ofl/courgette",
+    "filename": "Courgette-Regular.ttf",
+    "category": [
+      "HANDWRITING"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ],
+    "metadata_sha256": "4b5d836e3b6e2cfe83b2187809f8d440e2f74fa62251486178f25133309549f0",
+    "description_sha256": "6d38b19f7197a8bef937f38281f234d39e12b86734d168d5415828b0d299e0e1",
+    "revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+    "fact": "The provider describes a brush-like italic script for display and text, with relatively low stroke contrast.",
+    "body": true,
+    "styles": [
+      "handwritten"
+    ],
+    "heading_candidate": true,
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex",
+    "review_scope": "Provider metadata and description; proposed roles, not reading or mood validation.",
+    "mood_scores": null,
+    "reading_performance": null,
+    "pairing_scores": null,
+    "description_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/courgette/DESCRIPTION.en_us.html",
+    "metadata_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/courgette/METADATA.pb",
+    "body_basis": "source_stated_text_or_interface_use",
+    "association_basis": "Source-linked editorial mapping, not measured mood or a claim that the provider uses these exact labels.",
+    "description_available": true
+  },
+  "technical": {
+    "category": [
+      "HANDWRITING"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ],
+    "weights": null,
+    "italic_available": null,
+    "variable_axes": null,
+    "scripts": null,
+    "license": null,
+    "platform_availability": null
+  },
+  "technical_evidence": {
+    "category": [
+      "pilot_metadata"
+    ],
+    "subsets": [
+      "pilot_metadata"
+    ]
+  },
+  "intended_uses": [],
+  "evidence": [
+    {
+      "id": "pilot_metadata",
+      "url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/courgette/METADATA.pb",
+      "retrieved_at": "2026-10-21",
+      "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+      "source_kind": "provider_metadata",
+      "paraphrase": "Reviewed family identity, categories, subset labels, and selected regular-file name."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+// Rendering smoke checks, not browser or reader validation.
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const P=require('../site/engine.js'),coverage=require('../site/assets/coverage.json');
+function environment(){const nodes=new Map();const node=selector=>{if(!nodes.has(selector))nodes.set(selector,{innerHTML:'',textContent:'',value:'',hidden:false,disabled:false,addEventListener(){},focus(){},scrollIntoView(){},classList:{toggle(){}},showModal(){},close(){}});return nodes.get(selector)};const context=vm.createContext({window:{FontPilot:P,scrollTo(){}},document:{querySelector:node,querySelectorAll:()=>[],fonts:{load:async()=>[{}]}},localStorage:{getItem:()=>null,setItem(){}},fetch:async()=>({ok:true,json:async()=>coverage}),setTimeout,URL,Blob});return {context,node}}
+(async()=>{
+ const app=environment();vm.runInContext(fs.readFileSync(require.resolve('../site/app.js'),'utf8'),app.context);await new Promise(resolve=>setImmediate(resolve));
+ assert.ok(app.node('#screen').innerHTML.includes('How much text will people read?'));assert.ok(app.node('#screen').innerHTML.includes('Project descriptions, product summaries'));
+ vm.runInContext('step=1;render()',app.context);assert.ok(!app.node('#screen').innerHTML.includes('What might readers need help with'));assert.ok(app.node('#screen').innerHTML.includes('This pilot has 80 families'));
+ vm.runInContext('step=2;render()',app.context);assert.ok(app.node('#screen').innerHTML.includes('Sans serif'));assert.ok(app.node('#screen').innerHTML.includes('Monospace'));
+ vm.runInContext("b={...b,purpose:'portfolio',reading:'balanced',count:2,fontType:'SERIF',style:'none'};picked=P.recommend(b,coverage).families;renderResult()",app.context);assert.equal((app.node('#screen').innerHTML.match(/<article class="family">/g)||[]).length,2);
+ const missing=vm.runInContext("glyphLine(P.catalog.find(f=>f.id==='plex'),'A日本語')",app.context);assert.ok(missing.includes('Not in this font file:'));assert.ok(!missing.match(/class="glyphs"[^>]*>[^<]*日/));
+ const data=environment();vm.runInContext(fs.readFileSync(require.resolve('../site/data.js'),'utf8'),data.context);await new Promise(resolve=>setImmediate(resolve));assert.equal((data.node('#data-rows').innerHTML.match(/<tr>/g)||[]).length,80);assert.ok(data.node('#data-summary').textContent.includes('2,040'));assert.ok(data.node('#data-rows').innerHTML.includes('Mood: not measured'));
+ data.node('#data-search').value='Noto Sans JP';vm.runInContext('render()',data.context);assert.equal((data.node('#data-rows').innerHTML.match(/<tr>/g)||[]).length,1);
+ console.log('Assessment and 80-row data rendering, search, concrete question examples, and missing-glyph protection passed (non-browser smoke checks).');
+})().catch(error=>{console.error(error);process.exitCode=1});

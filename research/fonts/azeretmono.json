@@ -1,0 +1,94 @@
+{
+  "schema_version": "0.1",
+  "record_kind": "font_family",
+  "id": "azeretmono",
+  "family_name": "Azeret Mono",
+  "provider": "google_fonts",
+  "status": "needs_review",
+  "external_ids": {
+    "google_fonts_family": "Azeret Mono",
+    "repository_path": "ofl/azeretmono"
+  },
+  "judgments": [],
+  "source_tags": [],
+  "review": {
+    "recommendation_eligible": false,
+    "eligibility_reason": "Metadata and description reviewed for the separate editorial pilot. Mood, reading performance and combinations remain untested."
+  },
+  "maintenance": {
+    "created_at": "2026-10-21",
+    "updated_at": "2026-10-21",
+    "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6"
+  },
+  "editorial_pilot": {
+    "description_file": "DESCRIPTION.en_us.html",
+    "id": "azeretmono",
+    "name": "Azeret Mono",
+    "source": "ofl/azeretmono",
+    "filename": "AzeretMono[wght].ttf",
+    "category": [
+      "MONOSPACE"
+    ],
+    "subsets": [
+      "latin",
+      "latin-ext",
+      "menu"
+    ],
+    "metadata_sha256": "41a4ac0ca0d426f96a44f3dfefd156d470efe162463a11982d987e908e9c399c",
+    "description_sha256": "1b726e47a201afc1a4c6b82cbd2faf70fb2eb0e9dfc2e3e713858cc2038960ee",
+    "revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+    "fact": "The provider describes OCR, interface, operating-system, and 1990s influences in a monospaced design.",
+    "body": null,
+    "styles": [
+      "digital",
+      "retro"
+    ],
+    "heading_candidate": true,
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex",
+    "review_scope": "Provider metadata and description; proposed roles, not reading or mood validation.",
+    "mood_scores": null,
+    "reading_performance": null,
+    "pairing_scores": null,
+    "description_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/azeretmono/DESCRIPTION.en_us.html",
+    "metadata_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/azeretmono/METADATA.pb",
+    "body_basis": null,
+    "association_basis": "Source-linked editorial mapping, not measured mood or a claim that the provider uses these exact labels.",
+    "description_available": true
+  },
+  "technical": {
+    "category": [
+      "MONOSPACE"
+    ],
+    "subsets": [
+      "latin",
+      "latin-ext",
+      "menu"
+    ],
+    "weights": null,
+    "italic_available": null,
+    "variable_axes": null,
+    "scripts": null,
+    "license": null,
+    "platform_availability": null
+  },
+  "technical_evidence": {
+    "category": [
+      "pilot_metadata"
+    ],
+    "subsets": [
+      "pilot_metadata"
+    ]
+  },
+  "intended_uses": [],
+  "evidence": [
+    {
+      "id": "pilot_metadata",
+      "url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/azeretmono/METADATA.pb",
+      "retrieved_at": "2026-10-21",
+      "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+      "source_kind": "provider_metadata",
+      "paraphrase": "Reviewed family identity, categories, subset labels, and selected regular-file name."
+    }
+  ]
+}

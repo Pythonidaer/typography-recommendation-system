@@ -1,0 +1,95 @@
+{
+  "schema_version": "0.1",
+  "record_kind": "font_family",
+  "id": "alfaslabone",
+  "family_name": "Alfa Slab One",
+  "provider": "google_fonts",
+  "status": "needs_review",
+  "external_ids": {
+    "google_fonts_family": "Alfa Slab One",
+    "repository_path": "ofl/alfaslabone"
+  },
+  "judgments": [],
+  "source_tags": [],
+  "review": {
+    "recommendation_eligible": false,
+    "eligibility_reason": "Metadata and description reviewed for the separate editorial pilot. Mood, reading performance and combinations remain untested."
+  },
+  "maintenance": {
+    "created_at": "2026-10-21",
+    "updated_at": "2026-10-21",
+    "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6"
+  },
+  "editorial_pilot": {
+    "description_file": "DESCRIPTION.en_us.html",
+    "id": "alfaslabone",
+    "name": "Alfa Slab One",
+    "source": "ofl/alfaslabone",
+    "filename": "AlfaSlabOne-Regular.ttf",
+    "category": [
+      "DISPLAY"
+    ],
+    "subsets": [
+      "latin",
+      "latin-ext",
+      "menu",
+      "vietnamese"
+    ],
+    "metadata_sha256": "030e8934909865802313487b8b6ae342e79a06c102ff740efa6cfdb5b26cb97c",
+    "description_sha256": "04627a618a4e3e397b3fd53475a8e46d58316c0705368fe2da694f42d3e25081",
+    "revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+    "fact": "The provider describes a contemporary Egyptian-style design with large serifs and very dense strokes.",
+    "body": null,
+    "styles": [
+      "print"
+    ],
+    "heading_candidate": true,
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex",
+    "review_scope": "Provider metadata and description; proposed roles, not reading or mood validation.",
+    "mood_scores": null,
+    "reading_performance": null,
+    "pairing_scores": null,
+    "description_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/alfaslabone/DESCRIPTION.en_us.html",
+    "metadata_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/alfaslabone/METADATA.pb",
+    "body_basis": null,
+    "association_basis": "Source-linked editorial mapping, not measured mood or a claim that the provider uses these exact labels.",
+    "description_available": true
+  },
+  "technical": {
+    "category": [
+      "DISPLAY"
+    ],
+    "subsets": [
+      "latin",
+      "latin-ext",
+      "menu",
+      "vietnamese"
+    ],
+    "weights": null,
+    "italic_available": null,
+    "variable_axes": null,
+    "scripts": null,
+    "license": null,
+    "platform_availability": null
+  },
+  "technical_evidence": {
+    "category": [
+      "pilot_metadata"
+    ],
+    "subsets": [
+      "pilot_metadata"
+    ]
+  },
+  "intended_uses": [],
+  "evidence": [
+    {
+      "id": "pilot_metadata",
+      "url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/alfaslabone/METADATA.pb",
+      "retrieved_at": "2026-10-21",
+      "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+      "source_kind": "provider_metadata",
+      "paraphrase": "Reviewed family identity, categories, subset labels, and selected regular-file name."
+    }
+  ]
+}

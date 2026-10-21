@@ -1,0 +1,95 @@
+{
+  "schema_version": "0.1",
+  "record_kind": "font_family",
+  "id": "zenkakugothicnew",
+  "family_name": "Zen Kaku Gothic New",
+  "provider": "google_fonts",
+  "status": "needs_review",
+  "external_ids": {
+    "google_fonts_family": "Zen Kaku Gothic New",
+    "repository_path": "ofl/zenkakugothicnew"
+  },
+  "judgments": [],
+  "source_tags": [],
+  "review": {
+    "recommendation_eligible": false,
+    "eligibility_reason": "Metadata and description reviewed for the separate editorial pilot. Mood, reading performance and combinations remain untested."
+  },
+  "maintenance": {
+    "created_at": "2026-10-21",
+    "updated_at": "2026-10-21",
+    "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6"
+  },
+  "editorial_pilot": {
+    "description_file": "DESCRIPTION.en_us.html",
+    "id": "zenkakugothicnew",
+    "name": "Zen Kaku Gothic New",
+    "source": "ofl/zenkakugothicnew",
+    "filename": "ZenKakuGothicNew-Regular.ttf",
+    "category": [
+      "SANS_SERIF"
+    ],
+    "subsets": [
+      "cyrillic",
+      "japanese",
+      "latin",
+      "latin-ext",
+      "menu"
+    ],
+    "metadata_sha256": "d1bd43c475dd673a67c210a6277fea8e61c4fcd29c546ac274791617da5c6473",
+    "description_sha256": "a2675dcaaa9b7531ba2798a2a3c740b9f7a6b038052d7e05cf866ea886f48a07",
+    "revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+    "fact": "The provider describes a contemporary Japanese gothic family with simple letterforms.",
+    "body": null,
+    "styles": [],
+    "heading_candidate": true,
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex",
+    "review_scope": "Provider metadata and description; proposed roles, not reading or mood validation.",
+    "mood_scores": null,
+    "reading_performance": null,
+    "pairing_scores": null,
+    "description_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/zenkakugothicnew/DESCRIPTION.en_us.html",
+    "metadata_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/zenkakugothicnew/METADATA.pb",
+    "body_basis": null,
+    "association_basis": "Source-linked editorial mapping, not measured mood or a claim that the provider uses these exact labels.",
+    "description_available": true
+  },
+  "technical": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "subsets": [
+      "cyrillic",
+      "japanese",
+      "latin",
+      "latin-ext",
+      "menu"
+    ],
+    "weights": null,
+    "italic_available": null,
+    "variable_axes": null,
+    "scripts": null,
+    "license": null,
+    "platform_availability": null
+  },
+  "technical_evidence": {
+    "category": [
+      "pilot_metadata"
+    ],
+    "subsets": [
+      "pilot_metadata"
+    ]
+  },
+  "intended_uses": [],
+  "evidence": [
+    {
+      "id": "pilot_metadata",
+      "url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/zenkakugothicnew/METADATA.pb",
+      "retrieved_at": "2026-10-21",
+      "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+      "source_kind": "provider_metadata",
+      "paraphrase": "Reviewed family identity, categories, subset labels, and selected regular-file name."
+    }
+  ]
+}

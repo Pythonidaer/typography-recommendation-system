@@ -1,0 +1,94 @@
+{
+  "schema_version": "0.1",
+  "record_kind": "font_family",
+  "id": "cabin",
+  "family_name": "Cabin",
+  "provider": "google_fonts",
+  "status": "needs_review",
+  "external_ids": {
+    "google_fonts_family": "Cabin",
+    "repository_path": "ofl/cabin"
+  },
+  "judgments": [],
+  "source_tags": [],
+  "review": {
+    "recommendation_eligible": false,
+    "eligibility_reason": "Metadata and description reviewed for the separate editorial pilot. Mood, reading performance and combinations remain untested."
+  },
+  "maintenance": {
+    "created_at": "2026-10-21",
+    "updated_at": "2026-10-21",
+    "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6"
+  },
+  "editorial_pilot": {
+    "id": "cabin",
+    "name": "Cabin",
+    "source": "ofl/cabin",
+    "filename": "Cabin[wdth,wght].ttf",
+    "category": [
+      "SANS_SERIF"
+    ],
+    "subsets": [
+      "latin",
+      "latin-ext",
+      "menu",
+      "vietnamese"
+    ],
+    "metadata_sha256": "4bf973bd444e07cc301a0ebc4df0f86bd459e8c469988723253bb5aa2ec6ab70",
+    "description_sha256": "aef0bac80c78d64f10138869bd9e04f0dfd4a24f505b2799dff1ea30c5a5a2eb",
+    "revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+    "fact": "The provider describes humanist lettering influenced by Johnston and Gill, with some geometric elements.",
+    "body": null,
+    "styles": [
+      "geometric"
+    ],
+    "heading_candidate": true,
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex",
+    "review_scope": "Provider metadata and description; proposed roles, not reading or mood validation.",
+    "mood_scores": null,
+    "reading_performance": null,
+    "pairing_scores": null,
+    "description_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/cabin/DESCRIPTION.en_us.html",
+    "metadata_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/cabin/METADATA.pb",
+    "body_basis": null,
+    "association_basis": "Source-linked editorial mapping, not measured mood or a claim that the provider uses these exact labels.",
+    "description_available": true
+  },
+  "technical": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "subsets": [
+      "latin",
+      "latin-ext",
+      "menu",
+      "vietnamese"
+    ],
+    "weights": null,
+    "italic_available": null,
+    "variable_axes": null,
+    "scripts": null,
+    "license": null,
+    "platform_availability": null
+  },
+  "technical_evidence": {
+    "category": [
+      "pilot_metadata"
+    ],
+    "subsets": [
+      "pilot_metadata"
+    ]
+  },
+  "intended_uses": [],
+  "evidence": [
+    {
+      "id": "pilot_metadata",
+      "url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/cabin/METADATA.pb",
+      "retrieved_at": "2026-10-21",
+      "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+      "source_kind": "provider_metadata",
+      "paraphrase": "Reviewed family identity, categories, subset labels, and selected regular-file name."
+    }
+  ]
+}

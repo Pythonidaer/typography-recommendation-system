@@ -1,49 +1,52 @@
 # Font walkthrough pilot
 
-Version: editorial-pilot-0.2. Created October 21, 2026 at the user’s request for an immediately testable sequential walkthrough. The public test destination is this repository’s GitHub Pages site. The earlier ChatGPT-hosted preview was a temporary prototype.
+Version: editorial-pilot-0.3. Updated October 21, 2026. The public test destination is this repository’s GitHub Pages site.
 
-## Scope
+## Current scope
 
-Four steps collect purpose, reading task, a main language and optional additional language with role scope, 1-3-family count, optional known needs, a visual direction, two preference sliders, and a purpose for a third family. The review step allows correction before results. Results show exactly the requested number when the pool can meet requirements, characters before reasons, in-slot replacements, optional user text, feedback, and a JSON download. No color, weight, size, texture, or motion controls.
+The experimental pool contains 80 distinct families, expanded from 8. The pinned Google Fonts repository snapshot contains 2,040 family metadata directories under ofl, apache, and ufl. This is a reproducible repository count, not the current web catalogue total or evidence that the pilot represents every style or language fairly. See research/source-audit/pilot-catalogue-snapshot.json.
 
-Eight editorial candidates are available. These are not the five researched JSON pilot records from the project repository, and their inclusion does not change those records’ recommendation eligibility. No calibrated mood ratings, measured reading scores, learned model, or catalogue-wide accuracy is claimed.
+Four steps collect project purpose, reading length, languages and role scope, exact 1-3-family count, optional text, heading type, lettering association, and independent retro/rough preferences. The third family requires an explicit purpose. Results show characters before explanations, in-slot replacements, optional custom text, feedback, and downloadable JSON notes. No color, weight, size, texture, or motion controls are added.
 
-## Rules and their meaning
+The reading question uses concrete examples: titles/navigation/buttons/captions; short project or product descriptions; and sustained articles/guides/stories/case studies. The ambiguous optional reading-help checklist is removed. Old draft fields remain readable for continuity, but the checklist is no longer shown or used in ranking. Purpose, written goal, and reading length provide context for evaluation; this version does not interpret them semantically or assign reading-performance scores.
 
-engine.js is the executable source of truth. Its weights are unvalidated editorial tie-breaking priorities, not personality measurements or match probabilities. Version changes require count, script, and replacement regression checks in scripts/test-pilot.cjs.
+## Source records and review boundaries
 
-1. Restrict slots by required scripts and exact supplied-text character coverage. Restrict supporting-text slots to the editorial body-text shortlist. Unknown coverage does not pass.
-2. A source-linked style association matching the chosen main direction adds 20 priority units to a display slot. Retro emphasis adds 2 units per step to earlier-print or digital associations. Rough emphasis adds 2 per step to headings or 5 to accent slots for typewriter, marker, or stencil associations.
-3. A contrasting third-family slot does not repeat the main-direction bonus; rough candidates receive 20 additional units only when rough emphasis is above zero. This is an editorial heuristic, not evidence of pairing quality.
-4. Supporting-text defaults favour IBM Plex Sans; Japanese requirements favour Noto Sans JP only in supporting-text roles that require Japanese. Editorial direction can favour Merriweather. DotGothic16 has a small Japanese display preference. All tie breaks are deterministic.
-5. Keep all selected families unique. Replacements must meet the same slot requirements and preserve the family count. There are only 2 Japanese-capable families; a request for 3 bilingual-throughout roles returns an explicit pool limitation, not a padded result.
+research/pilot-catalog.json is the manifest. Each included family has a separate editorial_pilot section in research/fonts/<stable-id>.json. The original five-family records and their recommendation_eligible=false research status remain intact. Separate editorial comparison eligibility does not approve their mood scores or reading performance.
 
-Reading-needs answers are retained for follow-up evaluation, not automatically converted into font ratings. Purpose and open text provide the brief and proposed roles, not semantic AI matching. This prototype does not fully model multiple scene moods. The rough-lettering priority plus contrasting-heading role provides one limited exploration of that request.
+Review proceeded in batches of at most 5, checkpointed before expansion. Family identity, provider categories, metadata subsets, and selected normal-file names were read at the pinned revision. Available descriptions were read and briefly paraphrased. Missing descriptions for Bungee and Space Mono remain explicit; their verified metadata is retained without inventing stylistic or intended-use claims. Descriptions are not copied into the repository. Hashes, URLs, reviewer, date, and review scope accompany each record.
 
-## Sources and assets
+Body/all-text eligibility is a bounded shortlist, not a verdict about other fonts. Most candidates have a source describing text or interface use; Noto Sans JP is explicitly marked as an editorial proposal based on script coverage rather than a designer-stated body-text recommendation. Unknown roles remain unknown. Headings and accents are proposed visual comparisons, not validated suitability. Source-linked lettering associations are editorial mappings, not necessarily the provider’s exact labels.
 
-Source About descriptions were read from Google Fonts for Chakra Petch, IBM Plex Sans, Special Elite, Rock Salt, Black Ops One, DotGothic16, and Noto Sans JP. Merriweather’s intended screen-text purpose and pinned binary were already researched in the earlier pilot. Each family links its primary design notes in the result.
+Every family has null mood_scores, reading_performance, and pairing_scores in its generated pilot record. No trained model, match percentages, user-study results, or catalogue-wide recommendation accuracy is claimed.
 
-New Japanese files were fetched from google/fonts on October 21, 2026. Noto Sans JP was instantiated at weight 400. Merriweather was instantiated at weight 400 and its remaining default axes. Font sizes and weights are reference conditions, not user styling decisions. Source licenses are included and linked. assets/coverage.json records exact shipped-file hashes and compressed cmap ranges for all candidates. Character-map coverage does not establish correct shaping, regional form suitability, reading comfort, or pairing quality.
+## Transparent editorial rules
 
-English and Japanese heading example was checked in the browser. All 3 selected typefaces loaded, including actual kana. Count, unique-family, unsupported-text, Japanese-throughout failure, and replacement constraints passed automated checks. This is not participant feedback. User-entered draft data stays in browser storage; feedback can be downloaded. No analytics or feedback transmission is implemented.
+site/engine.js is the executable source of truth. site/data.html, linked from the top-right “Font data” link, displays all 80 records, the current brief’s eligibility and points, source links, character counts, equal Latin-letter width checks, and missing metrics. The neutral-table control does not change the assessment draft. Search and broad category filters aid inspection.
 
-## GitHub Pages build
+1. Filter by required scripts and exact supplied-text character mapping. Supporting-text slots also require shortlist membership. Missing file coverage fails the requirement.
+2. Supporting-text shortlist membership adds 12 points to body/all-text roles.
+3. The requested heading type adds 30 points to heading/all-text roles. Provider categories may overlap; monospace also uses the measured equal-width Latin-letter property.
+4. A matching lettering association adds 20 points to heading/accent roles and 6 to body/all-text roles. A contrasting accent skips the main association bonus.
+5. Retro preference adds 2 points per slider step for documented print, digital, retro, or typewriter associations. Rough preference adds 2 per step to headings and 5 to accents for rough associations. A contrasting rough accent gains 20 more points only when rough preference is above zero.
+6. Ties sort by family name. All selections remain unique, with exactly the requested count when requirements can be met. Replacements preserve the same slot’s requirements and total count.
 
-The source is site/. Run python -m pip install fonttools==4.61.1, then python scripts/build_pilot_site.py and node scripts/test-pilot.cjs. Serve site/ with a static file server for local testing. All paths are relative so the repository subpath works. GitHub Actions repeats the build and checks before uploading site/ to Pages.
+Version 0.3 removes the prior hardcoded per-family defaults and Japanese body preference. Points describe our provisional sorting rules, not measured font attributes or confidence. Type is a preference, not a hard requirement: if language and role constraints prevent a match, the explanation makes that gap explicit. No automatic pairing optimizer or scene-specific mood model is present.
 
-The build downloads regular source files from Google Fonts revision 45e3d5269e4a17d823f6d84470bc084dc5ae46f6, locks variable axes to their defaults except weight 400, includes licenses, and generates fonts.css, coverage.json, and a source-hash manifest. The reference font settings remain fixed. Generated assets are not checked into the source repository.
+## Language and defaults
 
-## Pilot correction 0.1.1
+Main and optional additional language dropdowns offer English, Japanese, and Thai. Other languages receive an explicit current-pool limitation. Selecting an additional language requires a choice of main-heading-only or throughout usage. Actual text is checked without translation. Text applies to the roles using that additional language, or to all roles if there is none. Subset labels do not guarantee every character, shaping, or regional form.
 
-Japanese-capable selected families show kana in their character review regardless of assigned role. Script requirements still apply by role. A heading-only Japanese requirement no longer adds a preference to the body slot. The optional Japanese-text field explicitly checks supplied characters without translating English; Latin-only entries receive a correction message. Question labels use plainer wording and explain family count. Slider and count values remain numbers after change events and draft restoration.
+Fresh assessments have no project or family count selected, no additional language, no heading-type or lettering-association preference, and zero retro/rough priorities. English is the initial main language. The portfolio demo button alone fills its example brief. Existing 0.1/0.2 drafts migrate to the general fields. Japanese-capable selected families show kana, and Thai-capable selected families show Thai letters, regardless of assigned role.
 
-Regression checks cover heading-only ranking, Japanese replacement eligibility and specimen display, mixed-script input, blank input, and restored numeric values. These fixes do not establish recommendation quality or reading performance.
+There are now 3 Japanese-capable families, enabling 3 unique bilingual slots in this limited pool. Only Chakra Petch supplies Thai in this pool, and it is not on the supporting-text shortlist. Unsupported combinations stop with a clear limitation.
 
-## General assessment 0.2
+## Build and verification
 
-The default assessment has no project, family count, retro priority, rough priority, or additional language selected. English is the initial main language; language dropdowns offer English, Japanese, Thai, and an explicitly unsupported other-language option. Additional-language scope is asked only after one is selected and requires an explicit choice. Unsupported languages and unavailable combinations receive a clear limitation rather than Latin-only recommendations presented as suitable. This is a small script-based pool, not a validated multilingual language catalogue.
+Run python -m pip install fonttools==4.61.1, python scripts/build_pilot_site.py, and node scripts/test-pilot.cjs. Serve site/ with a static server for local testing. GitHub Actions repeats the build and checks before deployment.
 
-The portfolio example button alone fills the English-plus-Japanese brief. Optional text checking uses a general label, accepts the actual supplied text without translation, and checks the roles where the additional language is used (or all roles when there is no additional language). This supersedes the Japanese-specific input restriction in correction 0.1.1. English text in a mixed-language design is allowed; supplied text is not treated as proof of language suitability. Existing 0.1 drafts migrate to the new language fields. Japanese-capable families show kana and Thai-capable families show Thai letters regardless of role.
+The build downloads source files from Google Fonts revision 45e3d5269e4a17d823f6d84470bc084dc5ae46f6, instantiates fixed reference styles with weight 400 where available and default remaining axes, includes licenses, computes exact cmap ranges, counts mapped characters, and checks whether A-Z and a-z share one advance width. It generates ignored assets including catalog.js, fonts.css, coverage.json, and font-sources.json. Font files load on demand through CSS; the full pool is not preloaded. All paths work under the repository Pages subpath.
 
-Run scripts/test-pilot.cjs for primary/additional language scope, legacy-draft migration, heading-only ranking, unsupported language and role combinations, exact family counts, and supplied character checks. Reading needs and free-text purpose remain context for testing rather than learned recommendation inputs.
+Automated checks cover 80 unique records, pinned evidence, unknown metric preservation, broad type preferences, script/text constraints, exact counts, replacements, legacy migration, and agreement between displayed rule breakdowns and ranking totals. These are software/source checks, not reader, mood, or pairing validation. Browser verification must be reported separately.
+
+Drafts and feedback stay in browser storage; exports are downloaded locally. No analytics or feedback transmission is implemented. Personal test exports and participant wording are not copied into the public repository.

@@ -1,0 +1,95 @@
+{
+  "schema_version": "0.1",
+  "record_kind": "font_family",
+  "id": "patrickhand",
+  "family_name": "Patrick Hand",
+  "provider": "google_fonts",
+  "status": "needs_review",
+  "external_ids": {
+    "google_fonts_family": "Patrick Hand",
+    "repository_path": "ofl/patrickhand"
+  },
+  "judgments": [],
+  "source_tags": [],
+  "review": {
+    "recommendation_eligible": false,
+    "eligibility_reason": "Metadata and description reviewed for the separate editorial pilot. Mood, reading performance and combinations remain untested."
+  },
+  "maintenance": {
+    "created_at": "2026-10-21",
+    "updated_at": "2026-10-21",
+    "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6"
+  },
+  "editorial_pilot": {
+    "description_file": "DESCRIPTION.en_us.html",
+    "id": "patrickhand",
+    "name": "Patrick Hand",
+    "source": "ofl/patrickhand",
+    "filename": "PatrickHand-Regular.ttf",
+    "category": [
+      "HANDWRITING"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ],
+    "metadata_sha256": "13d8571de4dcba8a43f5485385a7d157f85585f2ffdbdc5a88aa3e7e5db4b08d",
+    "description_sha256": "adec8be0955aba787d43d1a1a1d455b0eba88110b5f176a3e4ed9965dc7e6075",
+    "revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+    "fact": "The provider describes a design based on the designer’s own handwriting, with extended Latin characters and OpenType features.",
+    "body": null,
+    "styles": [
+      "handwritten"
+    ],
+    "heading_candidate": true,
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex",
+    "review_scope": "Provider metadata and description; proposed roles, not reading or mood validation.",
+    "mood_scores": null,
+    "reading_performance": null,
+    "pairing_scores": null,
+    "description_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/patrickhand/DESCRIPTION.en_us.html",
+    "metadata_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/patrickhand/METADATA.pb",
+    "body_basis": null,
+    "association_basis": "Source-linked editorial mapping, not measured mood or a claim that the provider uses these exact labels.",
+    "description_available": true
+  },
+  "technical": {
+    "category": [
+      "HANDWRITING"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ],
+    "weights": null,
+    "italic_available": null,
+    "variable_axes": null,
+    "scripts": null,
+    "license": null,
+    "platform_availability": null
+  },
+  "technical_evidence": {
+    "category": [
+      "pilot_metadata"
+    ],
+    "subsets": [
+      "pilot_metadata"
+    ]
+  },
+  "intended_uses": [],
+  "evidence": [
+    {
+      "id": "pilot_metadata",
+      "url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/patrickhand/METADATA.pb",
+      "retrieved_at": "2026-10-21",
+      "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+      "source_kind": "provider_metadata",
+      "paraphrase": "Reviewed family identity, categories, subset labels, and selected regular-file name."
+    }
+  ]
+}

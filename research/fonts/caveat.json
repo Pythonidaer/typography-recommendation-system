@@ -445,5 +445,42 @@
     ],
     "all_documented_samples_mapped": true,
     "scope": "One normal binary only; character mapping, not legibility or language completeness."
+  },
+  "editorial_pilot": {
+    "description_file": "DESCRIPTION.en_us.html",
+    "id": "caveat",
+    "name": "Caveat",
+    "source": "ofl/caveat",
+    "filename": "Caveat[wght].ttf",
+    "category": [
+      "HANDWRITING"
+    ],
+    "subsets": [
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "menu"
+    ],
+    "metadata_sha256": "038342ea08d3f09e11b7f08cfd1e1d556b4f56a48269b0909395aa6fecd4c4f7",
+    "description_sha256": "126e3d28a4271a3b15c600e45ebcfe425999718b47f9819c61950366d690a7ac",
+    "revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+    "fact": "The provider describes handwriting for short annotations and body text, with contextual letter variations.",
+    "body": true,
+    "styles": [
+      "handwritten"
+    ],
+    "heading_candidate": true,
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex",
+    "review_scope": "Provider metadata and description; proposed roles, not reading or mood validation.",
+    "mood_scores": null,
+    "reading_performance": null,
+    "pairing_scores": null,
+    "description_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/caveat/DESCRIPTION.en_us.html",
+    "metadata_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/caveat/METADATA.pb",
+    "body_basis": "source_stated_text_or_interface_use",
+    "association_basis": "Source-linked editorial mapping, not measured mood or a claim that the provider uses these exact labels.",
+    "description_available": true
   }
 }

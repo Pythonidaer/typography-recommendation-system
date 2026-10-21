@@ -83,3 +83,47 @@ Next: test the revised walkthrough and identify remaining confusing questions an
 The user clarified that questions should represent the general product rather than assume the portfolio demo’s Japanese requirement. Main and optional additional language dropdowns replace Japanese-specific questions. A follow-up asks where the additional language is used only when selected. Text checking is language-neutral and does not translate. The demo button retains the portfolio configuration. Default count is unselected and both style priorities start at zero.
 
 The existing files provide English, Japanese, and Thai script candidates; unsupported languages and unavailable role combinations stop with a clear explanation. No new fonts or language suitability research were added. Version 0.2 migrates legacy drafts, preserves the corrected Japanese body ranking and specimens, and adds Thai specimens and regression coverage. Next: verify the revised deployment and gather feedback on remaining question clarity and recommendation fit.
+
+Expansion batch checkpoint: reviewed metadata and description for archivo, asap, barlow, cabin, chivo. Stored separate editorial-pilot facts and role proposals; mood/reading/pairing measurements remain unknown.
+
+Expansion batch checkpoint: reviewed metadata and description for dmsans, zenkakugothicnew, heebo, hind, karla. Stored separate editorial-pilot facts and role proposals; mood/reading/pairing measurements remain unknown.
+
+Expansion batch checkpoint: reviewed metadata and description for lato, manrope, montserrat, mulish, nunito. Stored separate editorial-pilot facts and role proposals; mood/reading/pairing measurements remain unknown.
+
+Expansion batch checkpoint: reviewed metadata and description for opensans, outfit, publicsans, sourcesans3, worksans. Stored separate editorial-pilot facts and role proposals; mood/reading/pairing measurements remain unknown.
+
+Expansion batch checkpoint: reviewed metadata and description for alegreya, alice, bitter, cardo, cormorantgaramond. Stored separate editorial-pilot facts and role proposals; mood/reading/pairing measurements remain unknown.
+
+Expansion batch checkpoint: reviewed metadata and description for crimsonpro, dmserifdisplay, ebgaramond, faustina, fraunces. Stored separate editorial-pilot facts and role proposals; mood/reading/pairing measurements remain unknown.
+
+Expansion batch checkpoint: reviewed metadata and description for instrumentserif, librebaskerville, literata, lora, newsreader. Stored separate editorial-pilot facts and role proposals; mood/reading/pairing measurements remain unknown.
+
+Expansion batch checkpoint: reviewed metadata and description for notoserif, oldstandardtt, playfairdisplay, sourceserif4, vollkorn. Stored separate editorial-pilot facts and role proposals; mood/reading/pairing measurements remain unknown.
+
+Expansion batch checkpoint: reviewed metadata and description for anonymouspro, azeretmono, cutivemono, dmmono, ibmplexmono. Stored separate editorial-pilot facts and role proposals; mood/reading/pairing measurements remain unknown.
+
+Expansion batch checkpoint: reviewed metadata and description for inconsolata, jetbrainsmono, robotomono, spacemono, synemono. Stored separate editorial-pilot facts and role proposals; mood/reading/pairing measurements remain unknown.
+
+Expansion batch checkpoint: reviewed metadata and description for caveat, courgette, dancingscript, gloriahallelujah, gochihand. Stored separate editorial-pilot facts and role proposals; mood/reading/pairing measurements remain unknown.
+
+Expansion batch checkpoint: reviewed metadata and description for greatvibes, kalam, patrickhand, permanentmarker, sacramento. Stored separate editorial-pilot facts and role proposals; mood/reading/pairing measurements remain unknown.
+
+Expansion batch checkpoint: reviewed metadata and description for abrilfatface, alfaslabone, anton, bebasneue, bungee. Stored separate editorial-pilot facts and role proposals; mood/reading/pairing measurements remain unknown.
+
+Expansion batch checkpoint: reviewed metadata and description for cinzel, monoton, orbitron, pressstart2p, righteous. Stored separate editorial-pilot facts and role proposals; mood/reading/pairing measurements remain unknown.
+
+Expansion batch checkpoint: reviewed metadata and description for rubikmonoone, silkscreen, chakrapetch, ibmplexsans, specialelite. Stored separate editorial-pilot facts and role proposals; mood/reading/pairing measurements remain unknown.
+
+Expansion batch checkpoint: reviewed metadata and description for rocksalt, blackopsone, merriweather, dotgothic16, notosansjp. Stored separate editorial-pilot facts and role proposals; mood/reading/pairing measurements remain unknown.
+
+## Experimental pool and question clarity 0.3, October 21, 2026
+
+Completed 80 separate editorial-pilot source sections, including the original 8 candidates and 72 additions. Batches of at most 5 were checkpointed above. The manifest is research/pilot-catalog.json. Source snapshot count is 2,040 family metadata directories under ofl/apache/ufl, verified by an untruncated recursive Git tree; this is not a live catalogue count. The original five-family research eligibility and unknown judgments remain unchanged. Missing About descriptions for Bungee and Space Mono are explicit. Noto Sans JP’s supporting-text role is explicitly an editorial script-coverage proposal, unlike source-stated text/interface roles.
+
+Replaced abstract reading labels with concrete content examples and removed the ambiguous reading-help checklist. Added a broad heading-type preference separate from lettering associations. Fresh defaults remain general. The top-right Font data page exposes all candidates, exact character-map metrics, categories, association mappings, source records, current-brief eligibility, rule-point breakdowns, and missing mood/reading/pairing measurements. It never treats missing scores as zero.
+
+Version 0.3 removes prior per-family preference bonuses; the manifest and separate family records generate the runtime catalog. The build creates fixed reference font files, licenses, cmap ranges, character counts, and equal-width Latin-letter checks. All 80 are editorial comparison candidates, not validated recommendations. No private test export, goal text, timestamp, or participant feedback wording is stored here.
+
+Next: verify the 80-file build and deployed data view, then test question clarity and recommendation fit. Inspect the actual brief’s smaller script-specific pool before treating 80 as the number of eligible alternatives. Expand language coverage and role evidence in further bounded batches; do not invent mood scores or reading results.
+
+Verification: all 80 pinned font assets built; recommendation constraints and category/rule-point checks passed. All 15 existing research tests passed after installing the repository-pinned jsonschema dependency. Rendering smoke checks cover the assessment, 80 data rows, search, and missing-glyph handling. Browser testing was blocked by an interrupted browser-tool connection; these checks are not browser QA.

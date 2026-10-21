@@ -2,13 +2,15 @@
 
 A guided assessment to help people choose font families for a design.
 
-Status: a small editorial walkthrough is available for testing. It uses 8 curated families and transparent rules; it is not a validated catalogue-wide recommendation engine.
+Status: a small editorial walkthrough is available for testing. It uses 80 source-reviewed editorial candidates and transparent rules; it is not a validated catalogue-wide recommendation engine.
 
 ## Test the walkthrough
 
 https://pythonidaer.github.io/typography-recommendation-system/
 
-GitHub Actions builds and deploys the static site from site/. Start with the portfolio example or enter your own brief. The four-step flow returns the requested 1-3 families, keeps replacements separate, and checks Japanese character requirements. Family selection comes before styling choices.
+GitHub Actions builds and deploys the static site from site/. Start with the portfolio example or enter your own brief. The four-step flow returns the requested 1-3 families, keeps replacements separate, and checks role-specific character requirements. Family selection comes before styling choices.
+
+Use the top-right **Font data** link to inspect categories, file checks, role evidence, sorting points, sources, and missing measurements. The pinned repository snapshot contains 2,040 family metadata directories; the pilot uses 80, not the full catalogue.
 
 For local setup, see [the pilot guide](docs/walkthrough-pilot.md).
 

@@ -279,5 +279,40 @@
     ],
     "all_documented_samples_mapped": true,
     "scope": "One normal binary only; character mapping, not legibility or language completeness."
+  },
+  "editorial_pilot": {
+    "description_file": "DESCRIPTION.en_us.html",
+    "id": "abrilfatface",
+    "name": "Abril Fatface",
+    "source": "ofl/abrilfatface",
+    "filename": "AbrilFatface-Regular.ttf",
+    "category": [
+      "DISPLAY"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ],
+    "metadata_sha256": "fb7807509c5cdceaa33c8748b4e387b14d37a70a24cdc7511101a6208fc86c19",
+    "description_sha256": "44a1e6a6c67daa8a1995303973b242cb57f7526732da250b1fd209e0d5f38145",
+    "revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+    "fact": "The provider traces its display forms to heavy nineteenth-century advertising titles, with fine serifs and strong stroke contrast.",
+    "body": null,
+    "styles": [
+      "print"
+    ],
+    "heading_candidate": true,
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex",
+    "review_scope": "Provider metadata and description; proposed roles, not reading or mood validation.",
+    "mood_scores": null,
+    "reading_performance": null,
+    "pairing_scores": null,
+    "description_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/abrilfatface/DESCRIPTION.en_us.html",
+    "metadata_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/abrilfatface/METADATA.pb",
+    "body_basis": null,
+    "association_basis": "Source-linked editorial mapping, not measured mood or a claim that the provider uses these exact labels.",
+    "description_available": true
   }
 }

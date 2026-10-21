@@ -671,5 +671,46 @@
     ],
     "all_documented_samples_mapped": true,
     "scope": "One normal binary only; character mapping, not legibility or language completeness."
+  },
+  "editorial_pilot": {
+    "description_file": "DESCRIPTION.en_us.html",
+    "id": "merriweather",
+    "name": "Merriweather",
+    "source": "ofl/merriweather",
+    "filename": "Merriweather[opsz,wdth,wght].ttf",
+    "category": [
+      "SERIF"
+    ],
+    "subsets": [
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "menu",
+      "vietnamese"
+    ],
+    "metadata_sha256": "50aa12ab94b75275eb90b6353dd3f9b187c101ce0a89071f5456c052490a4345",
+    "description_sha256": "afb996fac927a59e2930ddaeecddd34cb9157af1a2f3e49886df1837078445b0",
+    "revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+    "fact": "The provider describes a screen-text serif with a large x-height, slightly condensed forms, and sturdy serifs.",
+    "body": true,
+    "styles": [
+      "editorial",
+      "print"
+    ],
+    "heading_candidate": true,
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex",
+    "review_scope": "Provider metadata and description; proposed roles, not reading or mood validation.",
+    "mood_scores": null,
+    "reading_performance": null,
+    "pairing_scores": null,
+    "description_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/merriweather/DESCRIPTION.en_us.html",
+    "metadata_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/merriweather/METADATA.pb",
+    "body_basis": "source_stated_text_or_interface_use",
+    "association_basis": "Source-linked editorial mapping, not measured mood or a claim that the provider uses these exact labels.",
+    "runtime_id": "merri",
+    "tradeoff": "Its book-like character is a different direction from pixel or stencil lettering.",
+    "description_available": true
   }
 }

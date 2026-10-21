@@ -1,7 +1,8 @@
-"""Build the pinned, self-hosted font assets for the editorial walkthrough."""
+"""Build source-reviewed editorial candidates from their pinned family records."""
 import concurrent.futures
 import hashlib
 import json
+import shutil
 import urllib.parse
 import urllib.request
 from io import BytesIO
@@ -12,63 +13,76 @@ from fontTools.varLib.instancer import instantiateVariableFont
 REVISION='45e3d5269e4a17d823f6d84470bc084dc5ae46f6'
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'site/assets'
-FONTS=[
- ('chakra','Chakra Petch','ofl/chakrapetch','ChakraPetch-Regular.ttf','OFL.txt','chakra-petch-license.txt'),
- ('plex','IBM Plex Sans','ofl/ibmplexsans','IBMPlexSans[wdth,wght].ttf','OFL.txt','ibm-plex-license.txt'),
- ('elite','Special Elite','apache/specialelite','SpecialElite-Regular.ttf','LICENSE.txt','special-elite-license.txt'),
- ('rock','Rock Salt','apache/rocksalt','RockSalt-Regular.ttf','LICENSE.txt','rock-salt-license.txt'),
- ('ops','Black Ops One','ofl/blackopsone','BlackOpsOne-Regular.ttf','OFL.txt','black-ops-license.txt'),
- ('merri','Merriweather','ofl/merriweather','Merriweather[opsz,wdth,wght].ttf','OFL.txt','merriweather-license.txt'),
- ('dot','DotGothic16','ofl/dotgothic16','DotGothic16-Regular.ttf','OFL.txt','dotgothic16-license.txt'),
- ('notojp','Noto Sans JP','ofl/notosansjp','NotoSansJP[wght].ttf','OFL.txt','notosansjp-license.txt'),
-]
+LEGACY_LICENSES={'chakra':'chakra-petch-license.txt','plex':'ibm-plex-license.txt','elite':'special-elite-license.txt','rock':'rock-salt-license.txt','ops':'black-ops-license.txt','merri':'merriweather-license.txt','dot':'dotgothic16-license.txt','notojp':'notosansjp-license.txt'}
 
 def download(path):
     url='https://raw.githubusercontent.com/google/fonts/'+REVISION+'/'+urllib.parse.quote(path,safe='/')
     last=None
     for _ in range(3):
         try:
-            with urllib.request.urlopen(url,timeout=60) as response:
+            with urllib.request.urlopen(url,timeout=30) as response:
                 return response.read(),url
         except Exception as error:
             last=error
     raise RuntimeError(f'Could not download {path}') from last
 
-def build(item):
-    id,name,directory,filename,license_name,license_output=item
+def load_candidates():
+    manifest=json.loads((ROOT/'research/pilot-catalog.json').read_text())
+    candidates=[]
+    for id in manifest['family_ids']:
+        record=json.loads((ROOT/'research/fonts'/f'{id}.json').read_text())
+        f=record['editorial_pilot']
+        assert f['reviewed_at'] and f['heading_candidate'] and f['revision']==REVISION
+        candidates.append({**f,'record_id':id,'id':f.get('runtime_id',id)})
+    assert len(candidates)==len({f['id'] for f in candidates})==80
+    return candidates
+
+def build(f):
+    id,name,directory,filename=f['id'],f['name'],f['source'],f['filename']
     raw,url=download(directory+'/'+filename)
     font=TTFont(BytesIO(raw))
     axes={}
     if 'fvar' in font:
-        axes={a.axisTag:(400 if a.axisTag=='wght' else a.defaultValue) for a in font['fvar'].axes}
+        axes={a.axisTag:(min(max(400,a.minValue),a.maxValue) if a.axisTag=='wght' else a.defaultValue) for a in font['fvar'].axes}
         font=instantiateVariableFont(font,axes,inplace=True)
     output=id+'.ttf'
     font.flavor=None
     font.save(OUT/output)
-    points=sorted(font.getBestCmap())
-    ranges=[]
+    cmap=font.getBestCmap();points=sorted(cmap);ranges=[]
     for point in points:
-        if ranges and point==ranges[-1][1]+1:
-            ranges[-1][1]=point
-        else:
-            ranges.append([point,point])
+        if ranges and point==ranges[-1][1]+1:ranges[-1][1]=point
+        else:ranges.append([point,point])
+    letters=list(range(65,91))+list(range(97,123))
+    widths={font['hmtx'][cmap[cp]][0] for cp in letters if cp in cmap}
+    mono=all(cp in cmap for cp in letters) and len(widths)==1
     font.close()
+    license_name='LICENSE.txt' if directory.startswith('apache/') else 'OFL.txt'
     license_bytes,license_url=download(directory+'/'+license_name)
-    (OUT/license_output).write_bytes(license_bytes)
+    (OUT/(id+'-license.txt')).write_bytes(license_bytes)
+    if id in LEGACY_LICENSES:shutil.copyfile(OUT/(id+'-license.txt'),OUT/LEGACY_LICENSES[id])
     file_hash=hashlib.sha256((OUT/output).read_bytes()).hexdigest()
     css="@font-face{font-family:'"+name+"';font-style:normal;font-weight:400;font-display:swap;src:url('./"+output+"') format('truetype')}"
-    record={'ranges':ranges,'file':output,'sha256':file_hash}
+    record={'ranges':ranges,'file':output,'sha256':file_hash,'character_count':len(points),'ascii_uniform_width':mono,'printable_ascii':all(cp in cmap for cp in range(32,127))}
     source={'id':id,'family':name,'source_url':url,'source_sha256':hashlib.sha256(raw).hexdigest(),'axis_settings':axes,'file':output,'sha256':file_hash,'license_url':license_url,'license_sha256':hashlib.sha256(license_bytes).hexdigest()}
-    return id,css,record,source
+    candidate={k:f[k] for k in ['id','record_id','name','source','fact','body','styles','subsets','reviewed_at','description_url','metadata_url','body_basis','description_available']}
+    candidate.update({'css':name,'categories':f['category'],'category':f['category'][0],'scripts':[s for s in ['latin','japanese','thai'] if s in f['subsets']],'monospace':mono,'tradeoff':f.get('tradeoff','This is an editorial candidate. Its fit with your content and other selected families has not been tested.'),'mood_scores':None,'reading_performance':None,'pairing_scores':None})
+    return id,css,record,source,candidate
 
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
+    candidates=load_candidates();results=[]
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
-        results=list(pool.map(build,FONTS))
+        futures=[pool.submit(build,f) for f in candidates]
+        for future in concurrent.futures.as_completed(futures):
+            results.append(future.result())
+            if len(results)%5==0:print(f'Built {len(results)}/{len(candidates)} font assets',flush=True)
+    order={f['id']:i for i,f in enumerate(candidates)}
+    results.sort(key=lambda r:order[r[0]])
     (OUT/'fonts.css').write_text('\n'.join(r[1] for r in results)+'\n')
     (OUT/'coverage.json').write_text(json.dumps({r[0]:r[2] for r in results},separators=(',',':'))+'\n')
     (OUT/'font-sources.json').write_text(json.dumps({'revision':REVISION,'files':[r[3] for r in results]},indent=2)+'\n')
-    print('Built 8 pinned regular font files, licenses, character maps, and source hashes.')
+    catalog=json.dumps([r[4] for r in results],ensure_ascii=False,separators=(',',':'))
+    (OUT/'catalog.js').write_text("(function(r){const data="+catalog+";if(typeof module!=='undefined'&&module.exports)module.exports=data;else r.PilotCatalog=data;})(typeof window!=='undefined'?window:globalThis);\n")
+    print(f'Built {len(results)} pinned regular font files, licenses, character maps, and source hashes.')
 
-if __name__=='__main__':
-    main()
+if __name__=='__main__':main()

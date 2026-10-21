@@ -1,0 +1,94 @@
+{
+  "schema_version": "0.1",
+  "record_kind": "font_family",
+  "id": "cutivemono",
+  "family_name": "Cutive Mono",
+  "provider": "google_fonts",
+  "status": "needs_review",
+  "external_ids": {
+    "google_fonts_family": "Cutive Mono",
+    "repository_path": "ofl/cutivemono"
+  },
+  "judgments": [],
+  "source_tags": [],
+  "review": {
+    "recommendation_eligible": false,
+    "eligibility_reason": "Metadata and description reviewed for the separate editorial pilot. Mood, reading performance and combinations remain untested."
+  },
+  "maintenance": {
+    "created_at": "2026-10-21",
+    "updated_at": "2026-10-21",
+    "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6"
+  },
+  "editorial_pilot": {
+    "description_file": "DESCRIPTION.en_us.html",
+    "id": "cutivemono",
+    "name": "Cutive Mono",
+    "source": "ofl/cutivemono",
+    "filename": "CutiveMono-Regular.ttf",
+    "category": [
+      "MONOSPACE"
+    ],
+    "subsets": [
+      "latin",
+      "latin-ext",
+      "menu"
+    ],
+    "metadata_sha256": "51f11ed0c060818e3624dafd71656df736bdc7b7ea6c76da4252c14d3437bd0a",
+    "description_sha256": "40a3bedc0be9b06184307f4de7af3b8eb79ece5b4d2e66e4d2986b888f4283e0",
+    "revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+    "fact": "The provider connects this monospaced sister family to classic IBM Executive and Smith-Premier typewriter faces.",
+    "body": null,
+    "styles": [
+      "typewriter",
+      "print"
+    ],
+    "heading_candidate": true,
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex",
+    "review_scope": "Provider metadata and description; proposed roles, not reading or mood validation.",
+    "mood_scores": null,
+    "reading_performance": null,
+    "pairing_scores": null,
+    "description_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/cutivemono/DESCRIPTION.en_us.html",
+    "metadata_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/cutivemono/METADATA.pb",
+    "body_basis": null,
+    "association_basis": "Source-linked editorial mapping, not measured mood or a claim that the provider uses these exact labels.",
+    "description_available": true
+  },
+  "technical": {
+    "category": [
+      "MONOSPACE"
+    ],
+    "subsets": [
+      "latin",
+      "latin-ext",
+      "menu"
+    ],
+    "weights": null,
+    "italic_available": null,
+    "variable_axes": null,
+    "scripts": null,
+    "license": null,
+    "platform_availability": null
+  },
+  "technical_evidence": {
+    "category": [
+      "pilot_metadata"
+    ],
+    "subsets": [
+      "pilot_metadata"
+    ]
+  },
+  "intended_uses": [],
+  "evidence": [
+    {
+      "id": "pilot_metadata",
+      "url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/cutivemono/METADATA.pb",
+      "retrieved_at": "2026-10-21",
+      "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+      "source_kind": "provider_metadata",
+      "paraphrase": "Reviewed family identity, categories, subset labels, and selected regular-file name."
+    }
+  ]
+}

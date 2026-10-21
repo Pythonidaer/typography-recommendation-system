@@ -414,5 +414,42 @@
     ],
     "all_documented_samples_mapped": true,
     "scope": "One normal binary only; character mapping, not legibility or language completeness."
+  },
+  "editorial_pilot": {
+    "description_file": "DESCRIPTION.en_us.html",
+    "id": "robotomono",
+    "name": "Roboto Mono",
+    "source": "ofl/robotomono",
+    "filename": "RobotoMono[wght].ttf",
+    "category": [
+      "MONOSPACE"
+    ],
+    "subsets": [
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "latin",
+      "latin-ext",
+      "menu",
+      "vietnamese"
+    ],
+    "metadata_sha256": "8aa7709a44aa1f10bc5f4710af9440e364d2fb4e6056cc05a0e9d0d40826a9b5",
+    "description_sha256": "7222e4bb82ff3f782aeca022ffb618a98c91955124a1a56ae439f4e881a53b0a",
+    "revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+    "fact": "The provider describes screen-oriented monospaced lettering, with specific distinctions among characters and punctuation used in code.",
+    "body": null,
+    "styles": [],
+    "heading_candidate": true,
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex",
+    "review_scope": "Provider metadata and description; proposed roles, not reading or mood validation.",
+    "mood_scores": null,
+    "reading_performance": null,
+    "pairing_scores": null,
+    "description_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/robotomono/DESCRIPTION.en_us.html",
+    "metadata_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/robotomono/METADATA.pb",
+    "body_basis": null,
+    "association_basis": "Source-linked editorial mapping, not measured mood or a claim that the provider uses these exact labels.",
+    "description_available": true
   }
 }

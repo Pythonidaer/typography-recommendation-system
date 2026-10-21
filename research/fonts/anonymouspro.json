@@ -1,0 +1,98 @@
+{
+  "schema_version": "0.1",
+  "record_kind": "font_family",
+  "id": "anonymouspro",
+  "family_name": "Anonymous Pro",
+  "provider": "google_fonts",
+  "status": "needs_review",
+  "external_ids": {
+    "google_fonts_family": "Anonymous Pro",
+    "repository_path": "ofl/anonymouspro"
+  },
+  "judgments": [],
+  "source_tags": [],
+  "review": {
+    "recommendation_eligible": false,
+    "eligibility_reason": "Metadata and description reviewed for the separate editorial pilot. Mood, reading performance and combinations remain untested."
+  },
+  "maintenance": {
+    "created_at": "2026-10-21",
+    "updated_at": "2026-10-21",
+    "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6"
+  },
+  "editorial_pilot": {
+    "description_file": "DESCRIPTION.en_us.html",
+    "id": "anonymouspro",
+    "name": "Anonymous Pro",
+    "source": "ofl/anonymouspro",
+    "filename": "AnonymousPro-Regular.ttf",
+    "category": [
+      "MONOSPACE"
+    ],
+    "subsets": [
+      "cyrillic",
+      "greek",
+      "latin",
+      "latin-ext",
+      "menu"
+    ],
+    "metadata_sha256": "ad389bcd75cf20fbec8e312d58f07bce19fade5c31386df6296ecf02c0993796",
+    "description_sha256": "1caf5c089051b466da5677ae70d5cdbc98ba2cefaad1f6135420611ce5bdeda6",
+    "revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+    "fact": "The provider describes fixed-width letters for code, influenced by a 1990s Macintosh bitmap design, with distinctions among similar characters.",
+    "body": null,
+    "styles": [
+      "digital",
+      "retro"
+    ],
+    "heading_candidate": true,
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex",
+    "review_scope": "Provider metadata and description; proposed roles, not reading or mood validation.",
+    "mood_scores": null,
+    "reading_performance": null,
+    "pairing_scores": null,
+    "description_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/anonymouspro/DESCRIPTION.en_us.html",
+    "metadata_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/anonymouspro/METADATA.pb",
+    "body_basis": null,
+    "association_basis": "Source-linked editorial mapping, not measured mood or a claim that the provider uses these exact labels.",
+    "description_available": true
+  },
+  "technical": {
+    "category": [
+      "MONOSPACE"
+    ],
+    "subsets": [
+      "cyrillic",
+      "greek",
+      "latin",
+      "latin-ext",
+      "menu"
+    ],
+    "weights": null,
+    "italic_available": null,
+    "variable_axes": null,
+    "scripts": null,
+    "license": null,
+    "platform_availability": null
+  },
+  "technical_evidence": {
+    "category": [
+      "pilot_metadata"
+    ],
+    "subsets": [
+      "pilot_metadata"
+    ]
+  },
+  "intended_uses": [],
+  "evidence": [
+    {
+      "id": "pilot_metadata",
+      "url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/anonymouspro/METADATA.pb",
+      "retrieved_at": "2026-10-21",
+      "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+      "source_kind": "provider_metadata",
+      "paraphrase": "Reviewed family identity, categories, subset labels, and selected regular-file name."
+    }
+  ]
+}

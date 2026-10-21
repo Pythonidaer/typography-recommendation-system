@@ -1,0 +1,94 @@
+{
+  "schema_version": "0.1",
+  "record_kind": "font_family",
+  "id": "specialelite",
+  "family_name": "Special Elite",
+  "provider": "google_fonts",
+  "status": "needs_review",
+  "external_ids": {
+    "google_fonts_family": "Special Elite",
+    "repository_path": "apache/specialelite"
+  },
+  "judgments": [],
+  "source_tags": [],
+  "review": {
+    "recommendation_eligible": false,
+    "eligibility_reason": "Metadata and description reviewed for the separate editorial pilot. Mood, reading performance and combinations remain untested."
+  },
+  "maintenance": {
+    "created_at": "2026-10-21",
+    "updated_at": "2026-10-21",
+    "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6"
+  },
+  "editorial_pilot": {
+    "description_file": "DESCRIPTION.en_us.html",
+    "id": "specialelite",
+    "name": "Special Elite",
+    "source": "apache/specialelite",
+    "filename": "SpecialElite-Regular.ttf",
+    "category": [
+      "DISPLAY"
+    ],
+    "subsets": [
+      "latin",
+      "menu"
+    ],
+    "metadata_sha256": "f6802c52053ce7b51dcbc117924292871aa119f20e538337191fd6b48cfa26ba",
+    "description_sha256": "2f3c60590adfad4637ef58abf46c2b466830f1920e4832647909ae55b261e1c6",
+    "revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+    "fact": "The provider describes imitation of Smith Corona and Remington typewriters, with uneven ink and grunge details.",
+    "body": null,
+    "styles": [
+      "typewriter",
+      "rough"
+    ],
+    "heading_candidate": true,
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex",
+    "review_scope": "Provider metadata and description; proposed roles, not reading or mood validation.",
+    "mood_scores": null,
+    "reading_performance": null,
+    "pairing_scores": null,
+    "description_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/apache/specialelite/DESCRIPTION.en_us.html",
+    "metadata_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/apache/specialelite/METADATA.pb",
+    "body_basis": null,
+    "association_basis": "Source-linked editorial mapping, not measured mood or a claim that the provider uses these exact labels.",
+    "runtime_id": "elite",
+    "tradeoff": "It can suggest an old document more than an unsettling atmosphere.",
+    "description_available": true
+  },
+  "technical": {
+    "category": [
+      "DISPLAY"
+    ],
+    "subsets": [
+      "latin",
+      "menu"
+    ],
+    "weights": null,
+    "italic_available": null,
+    "variable_axes": null,
+    "scripts": null,
+    "license": null,
+    "platform_availability": null
+  },
+  "technical_evidence": {
+    "category": [
+      "pilot_metadata"
+    ],
+    "subsets": [
+      "pilot_metadata"
+    ]
+  },
+  "intended_uses": [],
+  "evidence": [
+    {
+      "id": "pilot_metadata",
+      "url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/apache/specialelite/METADATA.pb",
+      "retrieved_at": "2026-10-21",
+      "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+      "source_kind": "provider_metadata",
+      "paraphrase": "Reviewed family identity, categories, subset labels, and selected regular-file name."
+    }
+  ]
+}

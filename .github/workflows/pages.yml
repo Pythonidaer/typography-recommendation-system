@@ -31,7 +31,9 @@ jobs:
         run: |
           node --check site/app.js
           node --check site/engine.js
+          node --check site/data.js
           node scripts/test-pilot.cjs
+          node scripts/test-pilot-ui.cjs
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload site
