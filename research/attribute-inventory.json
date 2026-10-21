@@ -1,0 +1,492 @@
+{
+  "version": "0.2",
+  "status": "candidate_inventory_not_approved_vocabulary",
+  "created_at": "2026-10-21",
+  "scope": "Broader research inventory; not all candidates are moods or questionnaire items.",
+  "supersedes": "The six-word proposal as assumed catalogue scope, not its historical records.",
+  "candidates": [
+    {
+      "id": "calm",
+      "label": "Calm",
+      "layer": "mood",
+      "working_definition": "Quiet and restful.",
+      "status": "candidate_for_review",
+      "origin": "project_proposal",
+      "source_tag_candidates": [
+        "/Expressive/Calm"
+      ],
+      "mapping_relation": "direct_label",
+      "mapping_approved": false,
+      "boundary": "Reading ease is a separate question.",
+      "score": null
+    },
+    {
+      "id": "playful",
+      "label": "Playful",
+      "layer": "mood",
+      "working_definition": "Lighthearted and mischievous.",
+      "status": "candidate_for_review",
+      "origin": "project_proposal",
+      "source_tag_candidates": [
+        "/Expressive/Playful"
+      ],
+      "mapping_relation": "direct_label",
+      "mapping_approved": false,
+      "boundary": "Separate mischief from happiness and childishness.",
+      "score": null
+    },
+    {
+      "id": "cheerful",
+      "label": "Cheerful",
+      "layer": "mood",
+      "working_definition": "Upbeat and optimistic.",
+      "status": "candidate_for_review",
+      "origin": "project_proposal",
+      "source_tag_candidates": [
+        "/Expressive/Happy"
+      ],
+      "mapping_relation": "related_label",
+      "mapping_approved": false,
+      "boundary": "Happy and cheerful are not approved equivalents.",
+      "score": null
+    },
+    {
+      "id": "energetic",
+      "label": "Energetic",
+      "layer": "mood",
+      "working_definition": "Lively and active.",
+      "status": "candidate_for_review",
+      "origin": "project_proposal",
+      "source_tag_candidates": [
+        "/Expressive/Active",
+        "/Expressive/Excited"
+      ],
+      "mapping_relation": "related_labels",
+      "mapping_approved": false,
+      "boundary": "Do not merge Active and Excited values.",
+      "score": null
+    },
+    {
+      "id": "serious",
+      "label": "Serious",
+      "layer": "mood",
+      "working_definition": "Sober and earnest.",
+      "status": "candidate_for_review",
+      "origin": "project_proposal",
+      "source_tag_candidates": [],
+      "mapping_relation": "no_proposed_source_mapping",
+      "mapping_approved": false,
+      "boundary": "Serious can coexist with warmth; do not invert Playful.",
+      "score": null
+    },
+    {
+      "id": "mysterious",
+      "label": "Mysterious",
+      "layer": "mood",
+      "working_definition": "Suggesting something hidden or uncertain.",
+      "status": "candidate_for_review",
+      "origin": "project_proposal",
+      "source_tag_candidates": [],
+      "mapping_relation": "no_proposed_source_mapping",
+      "mapping_approved": false,
+      "boundary": "Separate mystery from difficulty reading.",
+      "score": null
+    },
+    {
+      "id": "romantic",
+      "label": "Romantic",
+      "layer": "mood",
+      "working_definition": "Suggesting affection or intimacy.",
+      "status": "candidate_for_review",
+      "origin": "project_proposal",
+      "source_tag_candidates": [],
+      "mapping_relation": "no_proposed_source_mapping",
+      "mapping_approved": false,
+      "boundary": "Do not substitute a seasonal tag or script category.",
+      "score": null
+    },
+    {
+      "id": "ominous",
+      "label": "Ominous",
+      "layer": "mood",
+      "working_definition": "Suggesting unease or something threatening.",
+      "status": "candidate_for_review",
+      "origin": "project_proposal",
+      "source_tag_candidates": [],
+      "mapping_relation": "no_proposed_source_mapping",
+      "mapping_approved": false,
+      "boundary": "Separate the letterforms from frightening words or pictures.",
+      "score": null
+    },
+    {
+      "id": "friendly",
+      "label": "Friendly",
+      "layer": "social_impression",
+      "working_definition": "Approachable and welcoming.",
+      "status": "candidate_for_review",
+      "origin": "project_proposal",
+      "source_tag_candidates": [],
+      "mapping_relation": "no_proposed_source_mapping",
+      "mapping_approved": false,
+      "boundary": "Friendly and cheerful may overlap but are not identical.",
+      "score": null
+    },
+    {
+      "id": "sincere",
+      "label": "Sincere",
+      "layer": "social_impression",
+      "working_definition": "Appearing earnest and straightforward.",
+      "status": "candidate_for_review",
+      "origin": "project_proposal",
+      "source_tag_candidates": [
+        "/Expressive/Sincere"
+      ],
+      "mapping_relation": "direct_label",
+      "mapping_approved": false,
+      "boundary": "Appearance does not establish actual honesty.",
+      "score": null
+    },
+    {
+      "id": "authoritative",
+      "label": "Authoritative",
+      "layer": "social_impression",
+      "working_definition": "Appearing assured and commanding.",
+      "status": "candidate_for_review",
+      "origin": "project_proposal",
+      "source_tag_candidates": [],
+      "mapping_relation": "no_proposed_source_mapping",
+      "mapping_approved": false,
+      "boundary": "Appearance does not establish expertise or accuracy.",
+      "score": null
+    },
+    {
+      "id": "rebellious",
+      "label": "Rebellious",
+      "layer": "social_impression",
+      "working_definition": "Suggesting a challenge to convention.",
+      "status": "candidate_for_review",
+      "origin": "project_proposal",
+      "source_tag_candidates": [],
+      "mapping_relation": "no_proposed_source_mapping",
+      "mapping_approved": false,
+      "boundary": "Unusual shapes alone do not prove this association.",
+      "score": null
+    },
+    {
+      "id": "competent",
+      "label": "Competent",
+      "layer": "social_impression",
+      "working_definition": "Appearing capable and composed.",
+      "status": "candidate_for_review",
+      "origin": "project_proposal",
+      "source_tag_candidates": [
+        "/Expressive/Competent"
+      ],
+      "mapping_relation": "direct_label",
+      "mapping_approved": false,
+      "boundary": "Never use this impression as a technical quality score.",
+      "score": null
+    },
+    {
+      "id": "formal",
+      "label": "Formal",
+      "layer": "formality",
+      "working_definition": "Suggesting ceremony or an official occasion.",
+      "status": "candidate_for_review",
+      "origin": "project_proposal",
+      "source_tag_candidates": [
+        "/Expressive/Stiff"
+      ],
+      "mapping_relation": "related_label",
+      "mapping_approved": false,
+      "boundary": "Stiff is not an approved synonym; formal script is structural evidence.",
+      "score": null
+    },
+    {
+      "id": "casual",
+      "label": "Casual",
+      "layer": "formality",
+      "working_definition": "Relaxed and informal.",
+      "status": "candidate_for_review",
+      "origin": "project_proposal",
+      "source_tag_candidates": [],
+      "mapping_relation": "no_proposed_source_mapping",
+      "mapping_approved": false,
+      "boundary": "Do not derive this by subtracting formality.",
+      "score": null
+    },
+    {
+      "id": "elegant",
+      "label": "Elegant",
+      "layer": "formality",
+      "working_definition": "Graceful and refined.",
+      "status": "candidate_for_review",
+      "origin": "project_proposal",
+      "source_tag_candidates": [
+        "/Expressive/Sophisticated",
+        "/Expressive/Fancy"
+      ],
+      "mapping_relation": "related_labels",
+      "mapping_approved": false,
+      "boundary": "Fancy and Sophisticated remain separate source labels.",
+      "score": null
+    },
+    {
+      "id": "restrained",
+      "label": "Restrained",
+      "layer": "presence",
+      "working_definition": "Visually understated.",
+      "status": "candidate_for_review",
+      "origin": "project_proposal",
+      "source_tag_candidates": [],
+      "mapping_relation": "no_proposed_source_mapping",
+      "mapping_approved": false,
+      "boundary": "Separate prominence from calmness and stroke weight.",
+      "score": null
+    },
+    {
+      "id": "assertive",
+      "label": "Assertive",
+      "layer": "presence",
+      "working_definition": "Visually confident and forceful.",
+      "status": "candidate_for_review",
+      "origin": "project_proposal",
+      "source_tag_candidates": [],
+      "mapping_relation": "no_proposed_source_mapping",
+      "mapping_approved": false,
+      "boundary": "Separate forcefulness from authority or volume.",
+      "score": null
+    },
+    {
+      "id": "loud",
+      "label": "Loud",
+      "layer": "presence",
+      "working_definition": "Strongly attention-seeking.",
+      "status": "candidate_for_review",
+      "origin": "project_proposal",
+      "source_tag_candidates": [
+        "/Expressive/Loud"
+      ],
+      "mapping_relation": "direct_label",
+      "mapping_approved": false,
+      "boundary": "Not necessarily heavy, large, or suitable for a heading.",
+      "score": null
+    },
+    {
+      "id": "neutral",
+      "label": "Neutral",
+      "layer": "presence",
+      "working_definition": "Drawing little attention to a particular expressive character.",
+      "status": "candidate_for_review",
+      "origin": "project_proposal",
+      "source_tag_candidates": [],
+      "mapping_relation": "no_proposed_source_mapping",
+      "mapping_approved": false,
+      "boundary": "Not a missing score or the midpoint of every attribute.",
+      "score": null
+    },
+    {
+      "id": "vintage",
+      "label": "Vintage",
+      "layer": "period_association",
+      "working_definition": "Recalling an earlier period.",
+      "status": "candidate_for_review",
+      "origin": "project_proposal",
+      "source_tag_candidates": [
+        "/Expressive/Vintage"
+      ],
+      "mapping_relation": "direct_label",
+      "mapping_approved": false,
+      "boundary": "Ask which period; historical accuracy is a separate claim.",
+      "score": null
+    },
+    {
+      "id": "futuristic",
+      "label": "Futuristic",
+      "layer": "period_association",
+      "working_definition": "Suggesting an imagined future.",
+      "status": "candidate_for_review",
+      "origin": "project_proposal",
+      "source_tag_candidates": [
+        "/Expressive/Futuristic"
+      ],
+      "mapping_relation": "direct_label",
+      "mapping_approved": false,
+      "boundary": "Not equivalent to recently designed or technologically advanced.",
+      "score": null
+    },
+    {
+      "id": "rugged",
+      "label": "Rugged",
+      "layer": "appearance",
+      "working_definition": "Rough and sturdy.",
+      "status": "candidate_for_review",
+      "origin": "project_proposal",
+      "source_tag_candidates": [
+        "/Expressive/Rugged"
+      ],
+      "mapping_relation": "direct_label",
+      "mapping_approved": false,
+      "boundary": "Do not interpret as durable software or poor drawing quality.",
+      "score": null
+    },
+    {
+      "id": "delicate",
+      "label": "Delicate",
+      "layer": "appearance",
+      "working_definition": "Fine and fragile in appearance.",
+      "status": "candidate_for_review",
+      "origin": "project_proposal",
+      "source_tag_candidates": [],
+      "mapping_relation": "no_proposed_source_mapping",
+      "mapping_approved": false,
+      "boundary": "Thin weight alone is not an approved proxy.",
+      "score": null
+    },
+    {
+      "id": "geometric",
+      "label": "Geometric",
+      "layer": "appearance",
+      "working_definition": "Strongly suggesting simple geometric forms.",
+      "status": "candidate_for_review",
+      "origin": "project_proposal",
+      "source_tag_candidates": [],
+      "mapping_relation": "no_proposed_source_mapping",
+      "mapping_approved": false,
+      "boundary": "Structural Geometric tags are candidates for separate review.",
+      "score": null
+    },
+    {
+      "id": "organic",
+      "label": "Organic",
+      "layer": "appearance",
+      "working_definition": "Suggesting flowing or irregular natural forms.",
+      "status": "candidate_for_review",
+      "origin": "project_proposal",
+      "source_tag_candidates": [],
+      "mapping_relation": "no_proposed_source_mapping",
+      "mapping_approved": false,
+      "boundary": "Not automatically the opposite of geometric.",
+      "score": null
+    },
+    {
+      "id": "ornamental",
+      "label": "Ornamental",
+      "layer": "appearance",
+      "working_definition": "Using visible decorative detail.",
+      "status": "candidate_for_review",
+      "origin": "project_proposal",
+      "source_tag_candidates": [
+        "/Expressive/Fancy"
+      ],
+      "mapping_relation": "related_label",
+      "mapping_approved": false,
+      "boundary": "Decoration does not establish elegance or poor readability.",
+      "score": null
+    }
+  ],
+  "retained_source_labels": [
+    {
+      "tag": "/Expressive/Active",
+      "origin": "upstream_dictionary",
+      "status": "retained_source_label_not_approved_assessment_dimension"
+    },
+    {
+      "tag": "/Expressive/Artistic",
+      "origin": "upstream_dictionary",
+      "status": "retained_source_label_not_approved_assessment_dimension"
+    },
+    {
+      "tag": "/Expressive/Awkward",
+      "origin": "upstream_dictionary",
+      "status": "retained_source_label_not_approved_assessment_dimension"
+    },
+    {
+      "tag": "/Expressive/Business",
+      "origin": "upstream_dictionary",
+      "status": "retained_source_label_not_approved_assessment_dimension"
+    },
+    {
+      "tag": "/Expressive/Calm",
+      "origin": "upstream_dictionary",
+      "status": "retained_source_label_not_approved_assessment_dimension"
+    },
+    {
+      "tag": "/Expressive/Childlike",
+      "origin": "upstream_dictionary",
+      "status": "retained_source_label_not_approved_assessment_dimension"
+    },
+    {
+      "tag": "/Expressive/Competent",
+      "origin": "upstream_dictionary",
+      "status": "retained_source_label_not_approved_assessment_dimension"
+    },
+    {
+      "tag": "/Expressive/Cute",
+      "origin": "upstream_dictionary",
+      "status": "retained_source_label_not_approved_assessment_dimension"
+    },
+    {
+      "tag": "/Expressive/Excited",
+      "origin": "upstream_dictionary",
+      "status": "retained_source_label_not_approved_assessment_dimension"
+    },
+    {
+      "tag": "/Expressive/Fancy",
+      "origin": "upstream_dictionary",
+      "status": "retained_source_label_not_approved_assessment_dimension"
+    },
+    {
+      "tag": "/Expressive/Futuristic",
+      "origin": "upstream_dictionary",
+      "status": "retained_source_label_not_approved_assessment_dimension"
+    },
+    {
+      "tag": "/Expressive/Happy",
+      "origin": "upstream_dictionary",
+      "status": "retained_source_label_not_approved_assessment_dimension"
+    },
+    {
+      "tag": "/Expressive/Innovative",
+      "origin": "upstream_dictionary",
+      "status": "retained_source_label_not_approved_assessment_dimension"
+    },
+    {
+      "tag": "/Expressive/Loud",
+      "origin": "upstream_dictionary",
+      "status": "retained_source_label_not_approved_assessment_dimension"
+    },
+    {
+      "tag": "/Expressive/Playful",
+      "origin": "upstream_dictionary",
+      "status": "retained_source_label_not_approved_assessment_dimension"
+    },
+    {
+      "tag": "/Expressive/Rugged",
+      "origin": "upstream_dictionary",
+      "status": "retained_source_label_not_approved_assessment_dimension"
+    },
+    {
+      "tag": "/Expressive/Sincere",
+      "origin": "upstream_dictionary",
+      "status": "retained_source_label_not_approved_assessment_dimension"
+    },
+    {
+      "tag": "/Expressive/Sophisticated",
+      "origin": "upstream_dictionary",
+      "status": "retained_source_label_not_approved_assessment_dimension"
+    },
+    {
+      "tag": "/Expressive/Stiff",
+      "origin": "upstream_dictionary",
+      "status": "retained_source_label_not_approved_assessment_dimension"
+    },
+    {
+      "tag": "/Expressive/Vintage",
+      "origin": "upstream_dictionary",
+      "status": "retained_source_label_not_approved_assessment_dimension"
+    }
+  ],
+  "unmapped_request_policy": "Preserve the original wording; ask for a brief example or show visual alternatives. Do not force a nearest label.",
+  "scores_collected": false
+}

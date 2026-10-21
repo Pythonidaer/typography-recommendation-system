@@ -1,5 +1,7 @@
 # Mood vocabulary for discussion
 
+Current scope: this six-word proposal is historical preparation, not the catalogue vocabulary. The [broader attribute inventory](attribute-inventory.md) is the active discovery plan. Johnny asked us to investigate omitted design intentions before approving a fixed set.
+
 
 Scope: this is one part of the framework in assessment-principles.md. Purpose, legibility, and readability remain the core principles; mood evidence does not replace reading, character, hierarchy, or contextual-fit checks.
 Status: proposal, version 0.1. No mood definitions, source mappings, rating scale, or scores are approved yet. Establish understandable words before implementing a test.

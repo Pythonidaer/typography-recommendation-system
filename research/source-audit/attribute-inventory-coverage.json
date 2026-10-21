@@ -1,0 +1,1925 @@
+{
+  "denominator_families": 1941,
+  "excluded_invalid_weight_lines": [
+    7416,
+    7417,
+    7418,
+    7419,
+    15136,
+    15137,
+    15138,
+    15139
+  ],
+  "groups": {
+    "original_six_candidate_source_tags": {
+      "source_tags": [
+        "/Expressive/Active",
+        "/Expressive/Calm",
+        "/Expressive/Excited",
+        "/Expressive/Fancy",
+        "/Expressive/Happy",
+        "/Expressive/Playful",
+        "/Expressive/Rugged",
+        "/Expressive/Sophisticated"
+      ],
+      "families_with_any_assignment": 1922,
+      "families_with_every_listed_tag": 0,
+      "families_without_any_assignment": [
+        "Datatype",
+        "Flow Block",
+        "Flow Circular",
+        "Flow Rounded",
+        "Libre Barcode 128",
+        "Libre Barcode 128 Text",
+        "Libre Barcode 39",
+        "Libre Barcode 39 Extended",
+        "Libre Barcode 39 Extended Text",
+        "Libre Barcode 39 Text",
+        "Libre Barcode EAN13 Text",
+        "Noto Color Emoji",
+        "Redacted",
+        "Redacted Script",
+        "Wavefont",
+        "Yarndings 12",
+        "Yarndings 12 Charted",
+        "Yarndings 20",
+        "Yarndings 20 Charted"
+      ],
+      "tag_assignment_count_histogram": {
+        "0": 19,
+        "1": 280,
+        "2": 550,
+        "3": 430,
+        "4": 350,
+        "5": 239,
+        "6": 59,
+        "7": 14
+      }
+    },
+    "all_retained_expressive_source_tags": {
+      "source_tags": [
+        "/Expressive/Active",
+        "/Expressive/Artistic",
+        "/Expressive/Awkward",
+        "/Expressive/Business",
+        "/Expressive/Calm",
+        "/Expressive/Childlike",
+        "/Expressive/Competent",
+        "/Expressive/Cute",
+        "/Expressive/Excited",
+        "/Expressive/Fancy",
+        "/Expressive/Futuristic",
+        "/Expressive/Happy",
+        "/Expressive/Innovative",
+        "/Expressive/Loud",
+        "/Expressive/Playful",
+        "/Expressive/Rugged",
+        "/Expressive/Sincere",
+        "/Expressive/Sophisticated",
+        "/Expressive/Stiff",
+        "/Expressive/Vintage"
+      ],
+      "families_with_any_assignment": 1936,
+      "families_with_every_listed_tag": 0,
+      "families_without_any_assignment": [
+        "Flow Block",
+        "Flow Circular",
+        "Flow Rounded",
+        "Redacted",
+        "Redacted Script"
+      ],
+      "tag_assignment_count_histogram": {
+        "0": 5,
+        "1": 6,
+        "2": 11,
+        "3": 15,
+        "4": 109,
+        "5": 122,
+        "6": 210,
+        "7": 317,
+        "8": 230,
+        "9": 297,
+        "10": 300,
+        "11": 187,
+        "12": 98,
+        "13": 20,
+        "14": 10,
+        "15": 4
+      }
+    }
+  },
+  "per_source_tag": {
+    "/Expressive/Active": 514,
+    "/Expressive/Artistic": 345,
+    "/Expressive/Awkward": 1120,
+    "/Expressive/Business": 1025,
+    "/Expressive/Calm": 920,
+    "/Expressive/Childlike": 490,
+    "/Expressive/Competent": 885,
+    "/Expressive/Cute": 487,
+    "/Expressive/Excited": 520,
+    "/Expressive/Fancy": 132,
+    "/Expressive/Futuristic": 374,
+    "/Expressive/Happy": 703,
+    "/Expressive/Innovative": 244,
+    "/Expressive/Loud": 1429,
+    "/Expressive/Playful": 1044,
+    "/Expressive/Rugged": 1791,
+    "/Expressive/Sincere": 1162,
+    "/Expressive/Sophisticated": 93,
+    "/Expressive/Stiff": 854,
+    "/Expressive/Vintage": 1672
+  },
+  "upstream_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+  "source": {
+    "sha256": "db1871908664f23ed136f3b050d00c7172e4f3990b02c2be0cdc455595a2f56c",
+    "url": "https://raw.githubusercontent.com/google/fonts/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/tags/all/families.csv"
+  },
+  "inventory_version": "0.2",
+  "status": "source_availability_not_validated_attribute_coverage",
+  "checked_on": "2026-10-21",
+  "denominator": "Distinct exact family names in pinned tag CSV, not live catalogue or all styles.",
+  "limitations": [
+    "Any assignment includes unresolved scope and raw values of any valid strength. It does not establish a strong trait.",
+    "Related source labels stay separate; unions measure data availability, not combined mood scores.",
+    "Every listed tag does not mean every proposed attribute is assessed. Missing is unknown.",
+    "The five-family sample cannot establish category, script, or catalogue fairness."
+  ],
+  "pilot_instance_checks": [
+    {
+      "instance_id": "notosans-normal-research",
+      "candidates": [
+        {
+          "candidate_id": "calm",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Calm",
+              "status": "only_other_coordinates_found",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [
+                21383,
+                21384,
+                21385,
+                21386
+              ],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "playful",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Playful",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "cheerful",
+          "mapping_relation": "related_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Happy",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "energetic",
+          "mapping_relation": "related_labels",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Active",
+              "status": "only_other_coordinates_found",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [
+                21367,
+                21368,
+                21369,
+                21370
+              ],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            },
+            {
+              "tag": "/Expressive/Excited",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "serious",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "mysterious",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "romantic",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "ominous",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "friendly",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "sincere",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Sincere",
+              "status": "only_other_coordinates_found",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [
+                21399,
+                21400,
+                21401,
+                21402
+              ],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "authoritative",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "rebellious",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "competent",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Competent",
+              "status": "only_other_coordinates_found",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [
+                21387,
+                21388,
+                21389,
+                21390
+              ],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "formal",
+          "mapping_relation": "related_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Stiff",
+              "status": "unlocated_assignment_needs_scope_review",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [
+                21403
+              ],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "casual",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "elegant",
+          "mapping_relation": "related_labels",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Sophisticated",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            },
+            {
+              "tag": "/Expressive/Fancy",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "restrained",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "assertive",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "loud",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Loud",
+              "status": "only_other_coordinates_found",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [
+                21395,
+                21396,
+                21397,
+                21398
+              ],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "neutral",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "vintage",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Vintage",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "futuristic",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Futuristic",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "rugged",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Rugged",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "delicate",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "geometric",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "organic",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "ornamental",
+          "mapping_relation": "related_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Fancy",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        }
+      ]
+    },
+    {
+      "instance_id": "merriweather-normal-research",
+      "candidates": [
+        {
+          "candidate_id": "calm",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Calm",
+              "status": "only_other_coordinates_found",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [
+                16566,
+                16567,
+                16568,
+                16569
+              ],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "playful",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Playful",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "cheerful",
+          "mapping_relation": "related_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Happy",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "energetic",
+          "mapping_relation": "related_labels",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Active",
+              "status": "only_other_coordinates_found",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [
+                16550,
+                16551,
+                16552,
+                16553
+              ],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            },
+            {
+              "tag": "/Expressive/Excited",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "serious",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "mysterious",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "romantic",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "ominous",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "friendly",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "sincere",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Sincere",
+              "status": "only_other_coordinates_found",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [
+                16582,
+                16583,
+                16584,
+                16585
+              ],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "authoritative",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "rebellious",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "competent",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Competent",
+              "status": "only_other_coordinates_found",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [
+                16570,
+                16571,
+                16572,
+                16573
+              ],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "formal",
+          "mapping_relation": "related_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Stiff",
+              "status": "only_other_coordinates_found",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [
+                16586,
+                16587
+              ],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "casual",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "elegant",
+          "mapping_relation": "related_labels",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Sophisticated",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            },
+            {
+              "tag": "/Expressive/Fancy",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "restrained",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "assertive",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "loud",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Loud",
+              "status": "only_other_coordinates_found",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [
+                16578,
+                16579,
+                16580,
+                16581
+              ],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "neutral",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "vintage",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Vintage",
+              "status": "only_other_coordinates_found",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [
+                16588,
+                16589,
+                16590,
+                16591
+              ],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "futuristic",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Futuristic",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "rugged",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Rugged",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "delicate",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "geometric",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "organic",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "ornamental",
+          "mapping_relation": "related_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Fancy",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        }
+      ]
+    },
+    {
+      "instance_id": "robotomono-normal-research",
+      "candidates": [
+        {
+          "candidate_id": "calm",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Calm",
+              "status": "only_other_coordinates_found",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [
+                27685,
+                27686
+              ],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "playful",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Playful",
+              "status": "only_other_coordinates_found",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [
+                27692,
+                27693
+              ],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "cheerful",
+          "mapping_relation": "related_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Happy",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "energetic",
+          "mapping_relation": "related_labels",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Active",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            },
+            {
+              "tag": "/Expressive/Excited",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "serious",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "mysterious",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "romantic",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "ominous",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "friendly",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "sincere",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Sincere",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "authoritative",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "rebellious",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "competent",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Competent",
+              "status": "only_other_coordinates_found",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [
+                27689,
+                27690
+              ],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "formal",
+          "mapping_relation": "related_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Stiff",
+              "status": "only_other_coordinates_found",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [
+                27696,
+                27697
+              ],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "casual",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "elegant",
+          "mapping_relation": "related_labels",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Sophisticated",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            },
+            {
+              "tag": "/Expressive/Fancy",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "restrained",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "assertive",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "loud",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Loud",
+              "status": "unlocated_assignment_needs_scope_review",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [
+                27691
+              ],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "neutral",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "vintage",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Vintage",
+              "status": "unlocated_assignment_needs_scope_review",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [
+                27698
+              ],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "futuristic",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Futuristic",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "rugged",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Rugged",
+              "status": "only_other_coordinates_found",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [
+                27694,
+                27695
+              ],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "delicate",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "geometric",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "organic",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "ornamental",
+          "mapping_relation": "related_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Fancy",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        }
+      ]
+    },
+    {
+      "instance_id": "caveat-normal-research",
+      "candidates": [
+        {
+          "candidate_id": "calm",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Calm",
+              "status": "exact_coordinates_found",
+              "exact_coordinate_rows": [
+                5901
+              ],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [
+                5902
+              ],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "playful",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Playful",
+              "status": "unlocated_assignment_needs_scope_review",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [
+                5913
+              ],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "cheerful",
+          "mapping_relation": "related_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Happy",
+              "status": "exact_coordinates_found",
+              "exact_coordinate_rows": [
+                5911
+              ],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [
+                5912
+              ],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "energetic",
+          "mapping_relation": "related_labels",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Active",
+              "status": "exact_coordinates_found",
+              "exact_coordinate_rows": [
+                5896
+              ],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [
+                5897
+              ],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            },
+            {
+              "tag": "/Expressive/Excited",
+              "status": "exact_coordinates_found",
+              "exact_coordinate_rows": [
+                5909
+              ],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [
+                5910
+              ],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "serious",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "mysterious",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "romantic",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "ominous",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "friendly",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "sincere",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Sincere",
+              "status": "exact_coordinates_found",
+              "exact_coordinate_rows": [
+                5915
+              ],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [
+                5916
+              ],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "authoritative",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "rebellious",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "competent",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Competent",
+              "status": "exact_coordinates_found",
+              "exact_coordinate_rows": [
+                5905
+              ],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [
+                5906
+              ],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "formal",
+          "mapping_relation": "related_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Stiff",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "casual",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "elegant",
+          "mapping_relation": "related_labels",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Sophisticated",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            },
+            {
+              "tag": "/Expressive/Fancy",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "restrained",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "assertive",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "loud",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Loud",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "neutral",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "vintage",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Vintage",
+              "status": "exact_coordinates_found",
+              "exact_coordinate_rows": [
+                5917
+              ],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [
+                5918
+              ],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "futuristic",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Futuristic",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "rugged",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Rugged",
+              "status": "unlocated_assignment_needs_scope_review",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [
+                5914
+              ],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "delicate",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "geometric",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "organic",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "ornamental",
+          "mapping_relation": "related_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Fancy",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        }
+      ]
+    },
+    {
+      "instance_id": "abrilfatface-normal-research",
+      "candidates": [
+        {
+          "candidate_id": "calm",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Calm",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "playful",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Playful",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "cheerful",
+          "mapping_relation": "related_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Happy",
+              "status": "unlocated_assignment_needs_scope_review",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [
+                107
+              ],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "energetic",
+          "mapping_relation": "related_labels",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Active",
+              "status": "unlocated_assignment_needs_scope_review",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [
+                102
+              ],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            },
+            {
+              "tag": "/Expressive/Excited",
+              "status": "unlocated_assignment_needs_scope_review",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [
+                106
+              ],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "serious",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "mysterious",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "romantic",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "ominous",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "friendly",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "sincere",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Sincere",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "authoritative",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "rebellious",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "competent",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Competent",
+              "status": "unlocated_assignment_needs_scope_review",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [
+                104
+              ],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "formal",
+          "mapping_relation": "related_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Stiff",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "casual",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "elegant",
+          "mapping_relation": "related_labels",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Sophisticated",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            },
+            {
+              "tag": "/Expressive/Fancy",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "restrained",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "assertive",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "loud",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Loud",
+              "status": "unlocated_assignment_needs_scope_review",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [
+                108
+              ],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "neutral",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "vintage",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Vintage",
+              "status": "unlocated_assignment_needs_scope_review",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [
+                110
+              ],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "futuristic",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Futuristic",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "rugged",
+          "mapping_relation": "direct_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Rugged",
+              "status": "unlocated_assignment_needs_scope_review",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [
+                109
+              ],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "delicate",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "geometric",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "organic",
+          "mapping_relation": "no_proposed_source_mapping",
+          "source_checks": [],
+          "assessment_score": null
+        },
+        {
+          "candidate_id": "ornamental",
+          "mapping_relation": "related_label",
+          "source_checks": [
+            {
+              "tag": "/Expressive/Fancy",
+              "status": "missing",
+              "exact_coordinate_rows": [],
+              "partial_coordinate_rows": [],
+              "unlocated_rows": [],
+              "other_coordinate_rows": [],
+              "calibrated_score": null,
+              "note": "Coordinate coverage is not confirmation of style scope, mood validity, or preference fit."
+            }
+          ],
+          "assessment_score": null
+        }
+      ]
+    }
+  ]
+}

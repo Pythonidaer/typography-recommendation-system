@@ -91,3 +91,9 @@ Reviewed Fontjoy’s main page and author explanation, and Adobe’s historical 
 The response schema uses JSON Schema draft 2020-12 conditional validation, documented at:
 https://json-schema.org/understanding-json-schema/reference/conditionals
 Structural checks do not validate psychological constructs or participant judgments.
+
+## Broader attribute inventory and availability audit
+
+On October 21, 2026, reread the official tagging-process guide and Developer API documentation. Reused the pinned families.csv and tag dictionary from revision 45e3d5269e4a17d823f6d84470bc084dc5ae46f6 after checking their SHA-256 hashes against the previous audit. All 20 expressive source labels are retained.
+
+The 27 working candidate definitions are project proposals, not a validated taxonomy or provider definitions. The source-availability report compares unions and missing assignments without merging raw weights or filling unknowns. See attribute-inventory.md and attribute-coverage.md. No new font family, observed response, score, or recommendation eligibility was added.

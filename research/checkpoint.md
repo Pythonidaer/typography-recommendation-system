@@ -1,38 +1,37 @@
 # Research checkpoint
 
 Updated: October 21, 2026
-Current stage: five rendered pilot instances; raw response validation and missing-evidence policy prepared. No participant responses or numerical mood ratings.
+Current stage: broader vocabulary discovery and source-availability audit; first guided test prepared. No participant responses or calibrated scores.
 
-## Direction
+## Latest agreed direction
 
-Johnny delegated continued creation. Continue bounded research without repeatedly asking them to reconfirm the framework. Purpose, legibility, and readability remain core; mood/harmony and hierarchy support purpose. Ask for 1, 2, or 3 families. Mood words and scoring remain provisional.
+Johnny challenged whether six moods were sufficient and could disadvantage omitted design intentions. We explained that their selection was a small convenience proposal influenced by provider tags, not a validated catalogue taxonomy. Johnny accepted a short assessment supported by a broader attribute system and wants to try something soon. Continued independent work is authorised.
+
+Purpose, legibility, and readability remain core; mood/harmony and hierarchy support purpose. Ask for 1, 2, or 3 families. Do not expand the five-family sample before checkpointing or infer suitability from category. No UI or framework is selected.
 
 ## Completed this pass
 
-- Added a strict draft raw comparison schema and validator for displayed choices, non-selections, provenance, consistent sessions, duplicates, and specimen hashes.
-- Kept observation input empty. Synthetic unit-test fixtures are rejected by the normal validator.
-- Added response-record documentation explaining review declarations, presentation limits, and separate human/AI evidence.
-- Audited source tag coordinates against the rendered instances: 25 older diagnostic trait checks yielded 3 exact, 6 unlocated, 9 only-other-coordinate, and 7 missing results. This is not a six-mood coverage result or calibration.
-- Added a proposed missing-attribute policy that preserves unknowns and avoids rewarding documentation density as quality.
-- Reviewed Fontjoy documentation and Adobe’s historical recommendation announcement; Fontpair body unavailable. Recorded source depth and useful interaction ideas without claiming product testing.
-- Added pinned research dependencies; no product stack was selected.
+- Created research/attribute-inventory.json version 0.2: 27 candidate terms across mood, social impression, formality, presence, period association, and appearance. They are working proposals, not approved dimensions or 27 assessment questions.
+- Preserved all 20 expressive provider labels separately, including those without candidate mappings. Left mappings unapproved and scores null.
+- Re-downloaded pinned source CSV and dictionary and verified hashes against the earlier audit.
+- Added a reproducible availability audit: the eight tags associated with the historical six words reach 1,922 of 1,941 exact family names at any valid strength/scope; all 20 expressive labels reach 1,936. These are data-presence counts, not strong associations, style coverage, vocabulary sufficiency, or fairness.
+- Excluded the eight previously identified invalid zero rows. Audited candidate source relationships for the five exact rendered instances without combining related tag values.
+- Added docs/first-guided-test.md: three open prompts, existing visual samples, and provisional role-based exploration. No whole-catalogue ratings are needed to try this limited conversation exercise.
+- Marked the six-word document historical for catalogue scope and documented that the version 0.1 response schema cannot collect new candidate IDs.
+- Reconciled recommendation guidance: unknown mood data does not silently eliminate practically suitable alternatives.
 
-## Existing artifacts
+## Verification and boundaries
 
-The specimen gallery, manifest, visual QA, and balanced five-trial four-option schedule remain unchanged. Three raster sheets show headings, paragraphs, and character samples for the five instances. Equal nominal size produced different apparent sizes and wrapping; this is a condition issue, not a reading conclusion.
+All 15 unit tests passed. JSON, candidate IDs, unchanged null scores, local Markdown links, and whitespace checks passed. Reproduce scripts/audit_attribute_inventory.py using the pinned families.csv; research dependencies are in requirements-research.txt. Tests are synthetic; no user preferences or observations have been invented. Raw Google strengths are not match percentages. The report’s family counts are not current live-catalogue totals.
 
-## Verification
+The prior raster gallery, balanced schedule, and response validator remain available. The gallery’s fixed order is not the scheduled four-option test. No category/script parity analysis, browser test, reading study, or live competitor test was performed.
 
-Run the unit suite with dependencies from requirements-research.txt, reproduce the coordinate report, and validate the empty observation array. Tests use synthetic fixtures only. No comparison interface, participant run, reading study, or live competitor test has occurred. Schema validation checks recorded declarations; it cannot prove a vocabulary review or accurate presentation took place.
+## Exact next task
 
-## Exact next work
+Offer the first guided test in conversation using docs/first-guided-test.md. Ask Johnny for a brief real or fictional project, 1/2/3-family preference and roles, and desired/avoided impressions in their own words. Do not require approval of all 27 terms first. If they say continue without supplying a brief, prepare a clearly fictional walkthrough or the separate reading-observation format; do not fill in Johnny’s answers.
 
-Prepare concrete mood-definition review materials for the existing specimen set: simple definitions, likely ambiguities, and role-specific instructions for Calm, Playful, Cheerful, Energetic, Elegant, and Rugged. These six words remain draft. Check whether people can distinguish each meaning before collecting attribute votes. Do not silently approve the vocabulary or generate ratings on Johnny’s behalf.
+Show actual existing samples when the task reaches visual comparison, preserve unmet goals, and explain any provisional shortlist using attributed intended-use evidence. All five family records remain needs_review and recommendation_eligible=false. No automatic recommendations should be claimed. Request permission before publicly quoting personal feedback; preparation itself needs no further approval.
 
-Independent work can also prepare a consistent existing-tool review brief, deepen pairing guidance from primary sources, and design separate reading-observation records. No need to expand the font sample or start product UI. The raw response format is not a scoring model; estimation and uncertainty remain open.
+## Deferred and active sample
 
-## Active sample and unresolved work
-
-Noto Sans, Merriweather, Roboto Mono, Caveat, Abril Fatface. All remain needs_review and recommendation_eligible=false. Unknown attribute values stay unknown. Designer-stated intent, source assignments, raw judgments, project preferences, and reading observations must stay separate.
-
-Browser rendering, mobile enlargement, character recognition, reading comfort/comprehension, hierarchy, contextual harmony, and mood judgments remain untested. Source-score calibration, pairing validation, system-font expansion, approved vocabulary, and framework selection remain pending. No input from Johnny is needed to continue the independent preparation listed above.
+Noto Sans, Merriweather, Roboto Mono, Caveat, Abril Fatface. Pairings, contextual harmony, character recognition, comprehension/comfort, and mood judgments remain untested. Approved vocabulary, calibrated scoring, category/script audit, broader sample expansion, system fonts, UI, and stack choice remain pending. The expanded inventory changes discovery scope, not observed record IDs or scoring.
