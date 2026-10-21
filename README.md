@@ -8,7 +8,7 @@ Status: a small editorial walkthrough is available for testing. It uses 80 sourc
 
 https://pythonidaer.github.io/typography-recommendation-system/
 
-GitHub Actions builds and deploys the static site from site/. Start with the portfolio example or enter your own brief. The four-step flow returns the requested 1-3 families, keeps replacements separate, and checks role-specific character requirements. Family selection comes before styling choices.
+GitHub Actions builds and deploys the static site from site/. Start with the portfolio example or enter your own brief. Visual choices show neutral character samples; typography terminology is secondary. One-family requests ask whether the font is for titles only or also supporting text. The four-step flow returns the requested 1-3 families, keeps replacements separate, and checks role-specific character requirements. Family selection comes before styling choices.
 
 Use the top-right **Font data** link to inspect categories, file checks, role evidence, sorting points, sources, and missing measurements. The pinned repository snapshot contains 2,040 family metadata directories; the pilot uses 80, not the full catalogue.
 

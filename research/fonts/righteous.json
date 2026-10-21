@@ -41,7 +41,8 @@
     "body": null,
     "styles": [
       "print",
-      "geometric"
+      "geometric",
+      "poster"
     ],
     "heading_candidate": true,
     "reviewed_at": "2026-10-21",
@@ -54,7 +55,8 @@
     "metadata_url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/righteous/METADATA.pb",
     "body_basis": null,
     "association_basis": "Source-linked editorial mapping, not measured mood or a claim that the provider uses these exact labels.",
-    "description_available": true
+    "description_available": true,
+    "association_review_note": "Poster/advertising association added after reviewing the pinned provider description; an editorial mapping, not a mood measurement."
   },
   "technical": {
     "category": [

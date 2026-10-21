@@ -127,3 +127,13 @@ Version 0.3 removes prior per-family preference bonuses; the manifest and separa
 Next: verify the 80-file build and deployed data view, then test question clarity and recommendation fit. Inspect the actual brief’s smaller script-specific pool before treating 80 as the number of eligible alternatives. Expand language coverage and role evidence in further bounded batches; do not invent mood scores or reading results.
 
 Verification: all 80 pinned font assets built; recommendation constraints and category/rule-point checks passed. All 15 existing research tests passed after installing the repository-pinned jsonschema dependency. Rendering smoke checks cover the assessment, 80 data rows, search, and missing-glyph handling. Browser testing was blocked by an interrupted browser-tool connection; these checks are not browser QA.
+
+## Visual questions and single-family use 0.4, October 21, 2026
+
+Reviewed the supplied mobile screenshots. Changed category and association questions to neutral character specimens with plain-language labels first and optional technical terms second. Two examples per group where available show variation; these examples are not recommendations or mood measurements. Font previews stay hidden until the actual files load. Added book/article versus poster/advertising exploration and a brief note that print spans many traditions.
+
+Bounded association batch: re-reviewed pinned descriptions for Abril Fatface, Anton, and Righteous; added a poster/advertising mapping to their separate editorial-pilot sections. Existing source links and unknown mood/reading/pairing metrics remain intact. No new families were added.
+
+One-family requests now ask whether the family is for titles/labels only or also supporting text. Old drafts retain the conservative all-text interpretation, shown explicitly. Pool and unmet-preference notices appear before results as well as on results. This avoids presenting a sole script-and-role-compatible candidate as a style match. No private screenshots or participant export text is committed.
+
+Verification for 0.4: source-derived font catalog rebuilt with verified local binary/license reuse; all 80 cmap checks and recommendation tests passed. Rendering smoke checks passed for plain-language visual choices, neutral specimen markup, poster options, one-family use selection, data-table rendering, and missing-glyph protection. Tests also cover the bilingual title-only versus all-text distinction, legacy defaults, and pre-result limitation notices. These are software checks, not new reader, mood, or pairing studies. Browser-tool connection was previously unreliable; do not claim fresh browser QA without a successful run. Next: verify deployment and test the visual questions on mobile.

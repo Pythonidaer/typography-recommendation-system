@@ -1,4 +1,5 @@
 """Build source-reviewed editorial candidates from their pinned family records."""
+import argparse
 import concurrent.futures
 import hashlib
 import json
@@ -37,12 +38,19 @@ def load_candidates():
     assert len(candidates)==len({f['id'] for f in candidates})==80
     return candidates
 
+REUSE={}
+
 def build(f):
     id,name,directory,filename=f['id'],f['name'],f['source'],f['filename']
-    raw,url=download(directory+'/'+filename)
-    font=TTFont(BytesIO(raw))
-    axes={}
-    if 'fvar' in font:
+    url='https://raw.githubusercontent.com/google/fonts/'+REVISION+'/'+urllib.parse.quote(directory+'/'+filename,safe='/')
+    previous=REUSE.get(id)
+    cached_path=OUT/(id+'.ttf');license_path=OUT/(id+'-license.txt')
+    reused=bool(previous and previous.get('source_url')==url and cached_path.exists() and license_path.exists() and hashlib.sha256(cached_path.read_bytes()).hexdigest()==previous.get('sha256') and hashlib.sha256(license_path.read_bytes()).hexdigest()==previous.get('license_sha256'))
+    if reused:
+        raw=None;source_hash=previous['source_sha256'];font=TTFont(cached_path);axes=previous['axis_settings']
+    else:
+        raw,url=download(directory+'/'+filename);source_hash=hashlib.sha256(raw).hexdigest();font=TTFont(BytesIO(raw));axes={}
+    if not reused and 'fvar' in font:
         axes={a.axisTag:(min(max(400,a.minValue),a.maxValue) if a.axisTag=='wght' else a.defaultValue) for a in font['fvar'].axes}
         font=instantiateVariableFont(font,axes,inplace=True)
     output=id+'.ttf'
@@ -57,18 +65,24 @@ def build(f):
     mono=all(cp in cmap for cp in letters) and len(widths)==1
     font.close()
     license_name='LICENSE.txt' if directory.startswith('apache/') else 'OFL.txt'
-    license_bytes,license_url=download(directory+'/'+license_name)
+    if reused:
+        license_bytes=license_path.read_bytes();license_url=previous['license_url']
+    else:license_bytes,license_url=download(directory+'/'+license_name)
     (OUT/(id+'-license.txt')).write_bytes(license_bytes)
     if id in LEGACY_LICENSES:shutil.copyfile(OUT/(id+'-license.txt'),OUT/LEGACY_LICENSES[id])
     file_hash=hashlib.sha256((OUT/output).read_bytes()).hexdigest()
     css="@font-face{font-family:'"+name+"';font-style:normal;font-weight:400;font-display:swap;src:url('./"+output+"') format('truetype')}"
     record={'ranges':ranges,'file':output,'sha256':file_hash,'character_count':len(points),'ascii_uniform_width':mono,'printable_ascii':all(cp in cmap for cp in range(32,127))}
-    source={'id':id,'family':name,'source_url':url,'source_sha256':hashlib.sha256(raw).hexdigest(),'axis_settings':axes,'file':output,'sha256':file_hash,'license_url':license_url,'license_sha256':hashlib.sha256(license_bytes).hexdigest()}
+    source={'id':id,'family':name,'source_url':url,'source_sha256':source_hash,'axis_settings':axes,'file':output,'sha256':file_hash,'license_url':license_url,'license_sha256':hashlib.sha256(license_bytes).hexdigest()}
     candidate={k:f[k] for k in ['id','record_id','name','source','fact','body','styles','subsets','reviewed_at','description_url','metadata_url','body_basis','description_available']}
     candidate.update({'css':name,'categories':f['category'],'category':f['category'][0],'scripts':[s for s in ['latin','japanese','thai'] if s in f['subsets']],'monospace':mono,'tradeoff':f.get('tradeoff','This is an editorial candidate. Its fit with your content and other selected families has not been tested.'),'mood_scores':None,'reading_performance':None,'pairing_scores':None})
     return id,css,record,source,candidate
 
 def main():
+    parser=argparse.ArgumentParser();parser.add_argument('--reuse-font-files',action='store_true');args=parser.parse_args()
+    if args.reuse_font_files and (OUT/'font-sources.json').exists():
+        old=json.loads((OUT/'font-sources.json').read_text())
+        if old['revision']==REVISION:REUSE.update({f['id']:f for f in old['files']})
     OUT.mkdir(parents=True,exist_ok=True)
     candidates=load_candidates();results=[]
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:

@@ -24,3 +24,14 @@ for(const fontType of ['SERIF','SANS_SERIF','MONOSPACE','HANDWRITING','DISPLAY']
  for(const f of P.catalog)for(const role of ['heading','body','accent'])assert.equal(P.priority(f,role,brief),P.priorityDetails(f,role,brief).reduce((n,x)=>n+x.points,0));
 }
 console.log('80 unique source-reviewed candidates; category preferences; script/text constraints; exact family counts; transparent rule points; replacements; draft migration; and unknown metric checks passed.');
+
+const one={...base,count:1,additionalLanguage:'japanese',additionalScope:'both',fontType:'DISPLAY',style:'digital'};
+assert.equal(P.recommend({...one,singleRole:'all'},coverage).families[0].id,'notojp');
+assert.equal(P.recommend({...one,singleRole:'heading'},coverage).families[0].id,'dot');
+assert.ok(P.recommend({...one,singleRole:''},coverage).error);
+assert.ok(P.briefNotices({...one,singleRole:'all'},coverage).some(s=>s.includes('Only 1 family')));
+assert.ok(P.briefNotices({...one,singleRole:'all'},coverage).some(s=>s.includes('look you selected')));
+assert.deepEqual(P.briefNotices(one,null),[]);
+assert.equal(P.normalizeBrief({count:1}).singleRole,'all');
+assert.ok(P.catalog.find(f=>f.id==='anton').styles.includes('poster'));
+console.log('Single-family scope, legacy interpretation, pool warnings, and poster associations passed.');

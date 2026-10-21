@@ -1,6 +1,6 @@
 # Font walkthrough pilot
 
-Version: editorial-pilot-0.3. Updated October 21, 2026. The public test destination is this repository’s GitHub Pages site.
+Version: editorial-pilot-0.4. Updated October 21, 2026. The public test destination is this repository’s GitHub Pages site.
 
 ## Current scope
 
@@ -50,3 +50,15 @@ The build downloads source files from Google Fonts revision 45e3d5269e4a17d823f6
 Automated checks cover 80 unique records, pinned evidence, unknown metric preservation, broad type preferences, script/text constraints, exact counts, replacements, legacy migration, and agreement between displayed rule breakdowns and ranking totals. These are software/source checks, not reader, mood, or pairing validation. Browser verification must be reported separately.
 
 Drafts and feedback stay in browser storage; exports are downloaded locally. No analytics or feedback transmission is implemented. Personal test exports and participant wording are not copied into the public repository.
+
+## Visual assessment correction 0.4
+
+Shape choices now lead with ordinary descriptions and actual neutral-character specimens. Technical terms remain secondary. Each group has two named examples where available; these illustrate variation and are not recommendations or a complete taxonomy. All examples use the same character sequence and fixed reference settings. Samples remain hidden until their actual font files load, with a visible error instead of a fallback-font preview on failure.
+
+Lettering looks distinguish older screens/games, books/articles, posters/advertising, simple geometric construction, typewriting, handwriting, and stencils. Poster associations for Abril Fatface, Anton, and Righteous were reviewed as one bounded batch against their existing pinned source descriptions. A short disclosure explains that print also covers newspapers, magazines, signs, and other traditions; unrepresented distinctions remain an explicit limitation. No mood scores or new families were introduced.
+
+One-family assessments require a use choice: titles/short labels only, or titles plus supporting text. The first uses the heading pool; the second retains the supporting-text restriction. Older drafts that lack this field retain the all-text interpretation and show it in the assessment and review. The software does not change language requirements to manufacture a visual match. It shows sole-candidate and unmet-shape/look warnings before results and on results.
+
+The 80-family pool still has only 3 Japanese-capable families and one Japanese candidate on its supporting-text shortlist. A one-family bilingual request for all text therefore has only that candidate, even when the visual preferences are different. A title-only request can compare the 3 heading candidates. This is a pool/role limitation, not evidence that the remaining family is the best stylistic choice.
+
+Optional local rebuild: python scripts/build_pilot_site.py --reuse-font-files. Reuse requires the exact pinned source URL and verified generated-file and license hashes from the previous local manifest. It recomputes character checks and regenerates the catalog from current records. CI continues to build from source without this option.

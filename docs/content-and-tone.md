@@ -98,3 +98,7 @@ These are the user’s adapted toolkit rules, not a claim that we reread or repr
 ## What to test
 
 Can a reader explain why a family was suggested, identify the tradeoff, distinguish a documented feature from our interpretation, and choose what to compare next? Ask whether the wording feels useful and approachable. Do not assume that liking the tone establishes comprehension or recommendation accuracy. No feedback on the new explanation copy has been collected yet.
+
+## Visual questions
+
+Let people compare neutral character specimens before asking them to name a typographic category. Put plain-language descriptions first and technical terms second. Show more than one example when available, identify them as examples, and keep recommendations separate. Explain a limited pool or an unmet visual preference before asking the person to accept a result. Ask where a family will be used instead of assuming every one-family request includes body text.

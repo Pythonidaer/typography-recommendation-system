@@ -5,7 +5,7 @@ const languages={english:{name:'English',script:'latin'},japanese:{name:'Japanes
 function normalizeBrief(b){
  const {language,japaneseText,...rest}=b;
  const legacyJapanese=language==='heading'||language==='both';
- return {...rest,fontType:b.fontType||'none',primaryLanguage:b.primaryLanguage||'english',additionalLanguage:b.additionalLanguage??(legacyJapanese?'japanese':''),additionalScope:b.additionalScope??(language==='both'?'both':language==='heading'?'heading':''),textToCheck:b.textToCheck??japaneseText??'',count:Number(b.count),retro:Number(b.retro),rough:Number(b.rough)};
+ return {...rest,singleRole:b.singleRole??'all',fontType:b.fontType||'none',primaryLanguage:b.primaryLanguage||'english',additionalLanguage:b.additionalLanguage??(legacyJapanese?'japanese':''),additionalScope:b.additionalScope??(language==='both'?'both':language==='heading'?'heading':''),textToCheck:b.textToCheck??japaneseText??'',count:Number(b.count),retro:Number(b.retro),rough:Number(b.rough)};
 }
 function languageError(raw){const b=normalizeBrief(raw);
  if(!languages[b.primaryLanguage]||(b.additionalLanguage&&!languages[b.additionalLanguage]))return 'This pilot cannot yet recommend fonts for that language. Choose a supported language to explore the current samples.';
@@ -47,7 +47,8 @@ function recommend(b,coverage){
 b=normalizeBrief(b);
 const issue=languageError(b);if(issue)return {error:issue};
 if(![1,2,3].includes(b.count))return {error:'Choose 1, 2, or 3 families.'};
-const roles=b.count===1?['all']:b.count===2?['heading','body']:['heading','body','accent'];
+if(b.count===1&&!['heading','all'].includes(b.singleRole))return {error:'Choose where you will use the family.'};
+const roles=b.count===1?[b.singleRole]:b.count===2?['heading','body']:['heading','body','accent'];
 const picked=[];
 for(const role of roles){
  const eligible=rolePool(role,b,coverage).filter(f=>!picked.some(x=>x.id===f.id));
@@ -55,9 +56,16 @@ for(const role of roles){
  if(!eligible.length)return {error:'This small pool does not have enough distinct families for these languages and text roles. Try fewer families or change where the additional language appears.'};
  picked.push({...eligible[0],role});
 }
-return {families:picked,ruleVersion:'editorial-pilot-0.3'};
+return {families:picked,notices:briefNotices(b,coverage),ruleVersion:'editorial-pilot-0.4'};
+}
+function briefNotices(raw,coverage){const b=normalizeBrief(raw);if(!coverage||languageError(b))return [];
+ const role=b.count===1?(b.singleRole||'all'):'heading',pool=rolePool(role,b,coverage),notices=[];
+ if(b.count===1&&pool.length===1)notices.push('Only 1 family in this pilot meets your language, text, and chosen use requirements. This is a limited choice, not a comparison across 80 suitable families.');
+ if(b.fontType!=='none'&&!pool.some(f=>typeMatches(f,b.fontType)))notices.push('No eligible family matches this letter-shape group. You can keep the preference, change where the family will be used, or explore a different group.');
+ if(b.style!=='none'&&!pool.some(f=>f.styles.includes(b.style)))notices.push('No eligible family has the look you selected in this pool. Any result will meet the practical requirements while leaving that preference unmet.');
+ return notices;
 }
 function replacements(index,b,picked,coverage){b=normalizeBrief(b);const role=picked[index].role;return rolePool(role,b,coverage).filter(f=>!picked.some(x=>x.id===f.id)).sort((a,c)=>priority(c,role,b)-priority(a,role,b)||a.name.localeCompare(c.name))}
-const api={categoryNames,typeMatches,priority,priorityDetails,normalizeBrief,languages,languageError,requiredScripts,showsJapaneseSample,catalog,hasText,rolePool,recommend,replacements};
+const api={briefNotices,categoryNames,typeMatches,priority,priorityDetails,normalizeBrief,languages,languageError,requiredScripts,showsJapaneseSample,catalog,hasText,rolePool,recommend,replacements};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.FontPilot=api;
 })(typeof window!=='undefined'?window:globalThis);
