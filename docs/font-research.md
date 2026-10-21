@@ -82,3 +82,9 @@ Draft research statuses: not_started, in_progress, needs_review, reviewed, and b
 ## Source tags
 
 Google Fonts provides existing human-assessed tags. Preserve provider tags, raw weights, and variant scope separately from reviewer judgments. See attribute-evidence.md before importing or mapping them to questionnaire scores.
+
+## First audit and pilot records
+
+See source-audit.md, assessment-dimensions.md, and pilot-sample.md. Batch 1 contains 5 metadata-and-tag records; none is recommendation eligible. Review this batch before adding another.
+
+The draft source_tags list preserves provider assignments with tag, raw_weight, location, scope, evidence_ids, status, and source_row. These are source values, not our numeric judgments. Unlocated assignments remain explicitly unlocated. The technical field may contain a continuous weight range or static weight list; keep subsets separately from verified scripts or characters. A metadata license identifier is distinct from reviewed license terms.

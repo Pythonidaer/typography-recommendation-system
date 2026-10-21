@@ -1,0 +1,353 @@
+{
+  "schema_version": "0.1",
+  "record_kind": "font_family",
+  "id": "robotomono",
+  "family_name": "Roboto Mono",
+  "provider": "google_fonts",
+  "external_ids": {
+    "google_fonts_family": "Roboto Mono",
+    "repository_path": "ofl/robotomono"
+  },
+  "status": "in_progress",
+  "technical": {
+    "category": "MONOSPACE",
+    "weights": {
+      "kind": "continuous",
+      "min": 100,
+      "max": 700
+    },
+    "italic_available": true,
+    "styles": [
+      "normal",
+      "italic"
+    ],
+    "variable_axes": [
+      {
+        "tag": "wght",
+        "min": 100,
+        "max": 700
+      }
+    ],
+    "subsets": [
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ],
+    "scripts": null,
+    "license": {
+      "metadata_identifier": "OFL",
+      "terms_reviewed": false
+    },
+    "platform_availability": null
+  },
+  "technical_evidence": {
+    "category": [
+      "metadata"
+    ],
+    "weights": [
+      "metadata"
+    ],
+    "italic_available": [
+      "metadata"
+    ],
+    "styles": [
+      "metadata"
+    ],
+    "variable_axes": [
+      "metadata"
+    ],
+    "subsets": [
+      "metadata"
+    ],
+    "license": [
+      "metadata"
+    ]
+  },
+  "intended_uses": [],
+  "judgments": [],
+  "source_tags": [
+    {
+      "tag": "/Expressive/Awkward",
+      "raw_weight": 5.0,
+      "location": "wght@100",
+      "scope": "axis_location",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 27679
+    },
+    {
+      "tag": "/Expressive/Awkward",
+      "raw_weight": 5.0,
+      "location": "wght@400",
+      "scope": "axis_location",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 27680
+    },
+    {
+      "tag": "/Expressive/Awkward",
+      "raw_weight": 5.0,
+      "location": "wght@700",
+      "scope": "axis_location",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 27681
+    },
+    {
+      "tag": "/Expressive/Business",
+      "raw_weight": 12.0,
+      "location": "wght@100",
+      "scope": "axis_location",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 27682
+    },
+    {
+      "tag": "/Expressive/Business",
+      "raw_weight": 20.0,
+      "location": "wght@400",
+      "scope": "axis_location",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 27683
+    },
+    {
+      "tag": "/Expressive/Business",
+      "raw_weight": 18.0,
+      "location": "wght@700",
+      "scope": "axis_location",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 27684
+    },
+    {
+      "tag": "/Expressive/Calm",
+      "raw_weight": 53.0,
+      "location": "wght@100",
+      "scope": "axis_location",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 27685
+    },
+    {
+      "tag": "/Expressive/Calm",
+      "raw_weight": 53.0,
+      "location": "wght@700",
+      "scope": "axis_location",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 27686
+    },
+    {
+      "tag": "/Expressive/Childlike",
+      "raw_weight": 3.0,
+      "location": "wght@100",
+      "scope": "axis_location",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 27687
+    },
+    {
+      "tag": "/Expressive/Childlike",
+      "raw_weight": 5.0,
+      "location": "wght@700",
+      "scope": "axis_location",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 27688
+    },
+    {
+      "tag": "/Expressive/Competent",
+      "raw_weight": 80.0,
+      "location": "wght@100",
+      "scope": "axis_location",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 27689
+    },
+    {
+      "tag": "/Expressive/Competent",
+      "raw_weight": 80.0,
+      "location": "wght@700",
+      "scope": "axis_location",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 27690
+    },
+    {
+      "tag": "/Expressive/Loud",
+      "raw_weight": 1.0,
+      "location": null,
+      "scope": "unlocated_source_assignment",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 27691
+    },
+    {
+      "tag": "/Expressive/Playful",
+      "raw_weight": 1.0,
+      "location": "wght@100",
+      "scope": "axis_location",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 27692
+    },
+    {
+      "tag": "/Expressive/Playful",
+      "raw_weight": 1.0,
+      "location": "wght@700",
+      "scope": "axis_location",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 27693
+    },
+    {
+      "tag": "/Expressive/Rugged",
+      "raw_weight": 1.0,
+      "location": "wght@100",
+      "scope": "axis_location",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 27694
+    },
+    {
+      "tag": "/Expressive/Rugged",
+      "raw_weight": 12.0,
+      "location": "wght@700",
+      "scope": "axis_location",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 27695
+    },
+    {
+      "tag": "/Expressive/Stiff",
+      "raw_weight": 60.0,
+      "location": "wght@100",
+      "scope": "axis_location",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 27696
+    },
+    {
+      "tag": "/Expressive/Stiff",
+      "raw_weight": 65.0,
+      "location": "wght@700",
+      "scope": "axis_location",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 27697
+    },
+    {
+      "tag": "/Expressive/Vintage",
+      "raw_weight": 10.0,
+      "location": null,
+      "scope": "unlocated_source_assignment",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 27698
+    },
+    {
+      "tag": "/Monospace/Monospace",
+      "raw_weight": 100.0,
+      "location": null,
+      "scope": "unlocated_source_assignment",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 27699
+    },
+    {
+      "tag": "/Sans/Neo Grotesque",
+      "raw_weight": 100.0,
+      "location": null,
+      "scope": "unlocated_source_assignment",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 27704
+    }
+  ],
+  "evidence": [
+    {
+      "id": "metadata",
+      "url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/robotomono/METADATA.pb",
+      "retrieved_at": "2026-10-21",
+      "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+      "source_blob": "fb058554c38e34d7694c0b0f40d238e225175031",
+      "source_kind": "provider_metadata",
+      "paraphrase": "Family identity, category, styles, variable ranges where present, subset labels, and license identifier. License terms and font binaries have not been checked."
+    },
+    {
+      "id": "tags",
+      "url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/tags/all/families.csv",
+      "retrieved_at": "2026-10-21",
+      "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+      "source_kind": "provider_human_assessed_tags",
+      "paraphrase": "Exact family-name match. Raw assignments retain variant locations; quality tags excluded from the exploratory record."
+    }
+  ],
+  "review": {
+    "reviewed_at": null,
+    "reviewer": null,
+    "recommendation_eligible": false,
+    "eligibility_reason": "Metadata and raw tags collected only. Intended role, license terms, required characters, and context-specific appearance need review.",
+    "rubric_version": null,
+    "open_questions": [
+      "Read family About and designer documentation for intended uses.",
+      "Check license text and character coverage for a specific brief.",
+      "Review source tag scope and the 5 proposed preference dimensions.",
+      "No rendered text or pairing tests performed."
+    ]
+  },
+  "maintenance": {
+    "created_at": "2026-10-21",
+    "updated_at": "2026-10-21",
+    "last_source_check_at": "2026-10-21",
+    "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6"
+  }
+}

@@ -1,0 +1,661 @@
+{
+  "upstream_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+  "checked_on": "2026-10-21",
+  "denominator": "Distinct exact family names present in families.csv, not live Google Fonts catalogue coverage",
+  "sources": {
+    "families.csv": {
+      "sha256": "db1871908664f23ed136f3b050d00c7172e4f3990b02c2be0cdc455595a2f56c",
+      "url": "https://raw.githubusercontent.com/google/fonts/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/tags/all/families.csv"
+    },
+    "tags_metadata.csv": {
+      "sha256": "11e1abce4f1d9bdc56709491d668eb1e1cc03ac4deae9d340b84dbadda21d394",
+      "url": "https://raw.githubusercontent.com/google/fonts/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/tags/tags_metadata.csv"
+    },
+    "tags_ui_details.textproto": {
+      "sha256": "1e312d0d6bcdad346f1d4d1ed9c1a22a7b7655f73646dcfa9bcea3ed9cb89860",
+      "url": "https://raw.githubusercontent.com/google/fonts/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/tags/tags_ui_details.textproto"
+    }
+  },
+  "total_rows": 34163,
+  "distinct_family_names": 1941,
+  "distinct_tags_in_data": 74,
+  "tag_definitions": 81,
+  "unlocated_rows": 22533,
+  "located_rows": 11630,
+  "families_with_located_rows": 538,
+  "tag_group_family_counts": {
+    "Expressive": 1936,
+    "Monospace": 58,
+    "Purpose": 139,
+    "Quality": 1939,
+    "Sans": 822,
+    "Script": 412,
+    "Seasonal": 320,
+    "Serif": 320,
+    "Slab": 72,
+    "Special use": 25,
+    "Theme": 434
+  },
+  "malformed_row_lines": [],
+  "invalid_score_lines": [
+    7416,
+    7417,
+    7418,
+    7419,
+    15136,
+    15137,
+    15138,
+    15139
+  ],
+  "malformed_location_lines": [],
+  "duplicate_keys": [],
+  "data_tags_missing_definitions": [],
+  "defined_tags_without_rows": [
+    "/Display/Display",
+    "/Not text/Symbols",
+    "/Skip/Stroke Width",
+    "/quant/opsz_max",
+    "/quant/opsz_min",
+    "/quant/stroke_width_max",
+    "/quant/stroke_width_min"
+  ],
+  "literal_ui_tags_without_exact_definition_or_rows": [
+    "/Script/Upright",
+    "/Technology/Color",
+    "/Technology/Variable"
+  ],
+  "tags": {
+    "/Expressive/Active": {
+      "rows": 869,
+      "families_any_scope": 514,
+      "families_unlocated": 368,
+      "families_location_only": 146,
+      "observed_min": 1.0,
+      "observed_max": 94.0
+    },
+    "/Expressive/Artistic": {
+      "rows": 672,
+      "families_any_scope": 345,
+      "families_unlocated": 227,
+      "families_location_only": 118,
+      "observed_min": 3.0,
+      "observed_max": 100.0
+    },
+    "/Expressive/Awkward": {
+      "rows": 2032,
+      "families_any_scope": 1120,
+      "families_unlocated": 628,
+      "families_location_only": 492,
+      "observed_min": 1.0,
+      "observed_max": 96.0
+    },
+    "/Expressive/Business": {
+      "rows": 1788,
+      "families_any_scope": 1025,
+      "families_unlocated": 641,
+      "families_location_only": 384,
+      "observed_min": 1.0,
+      "observed_max": 100.0
+    },
+    "/Expressive/Calm": {
+      "rows": 1597,
+      "families_any_scope": 920,
+      "families_unlocated": 429,
+      "families_location_only": 491,
+      "observed_min": 1.0,
+      "observed_max": 97.0
+    },
+    "/Expressive/Childlike": {
+      "rows": 826,
+      "families_any_scope": 490,
+      "families_unlocated": 174,
+      "families_location_only": 316,
+      "observed_min": 1.0,
+      "observed_max": 95.0
+    },
+    "/Expressive/Competent": {
+      "rows": 1560,
+      "families_any_scope": 885,
+      "families_unlocated": 395,
+      "families_location_only": 490,
+      "observed_min": 1.0,
+      "observed_max": 100.0
+    },
+    "/Expressive/Cute": {
+      "rows": 829,
+      "families_any_scope": 489,
+      "families_unlocated": 363,
+      "families_location_only": 126,
+      "observed_min": 0.0,
+      "observed_max": 90.0
+    },
+    "/Expressive/Excited": {
+      "rows": 593,
+      "families_any_scope": 520,
+      "families_unlocated": 477,
+      "families_location_only": 43,
+      "observed_min": 1.0,
+      "observed_max": 97.0
+    },
+    "/Expressive/Fancy": {
+      "rows": 175,
+      "families_any_scope": 132,
+      "families_unlocated": 95,
+      "families_location_only": 37,
+      "observed_min": 1.0,
+      "observed_max": 100.0
+    },
+    "/Expressive/Futuristic": {
+      "rows": 596,
+      "families_any_scope": 374,
+      "families_unlocated": 254,
+      "families_location_only": 120,
+      "observed_min": 1.0,
+      "observed_max": 100.0
+    },
+    "/Expressive/Happy": {
+      "rows": 946,
+      "families_any_scope": 703,
+      "families_unlocated": 498,
+      "families_location_only": 205,
+      "observed_min": 1.0,
+      "observed_max": 94.0
+    },
+    "/Expressive/Innovative": {
+      "rows": 299,
+      "families_any_scope": 244,
+      "families_unlocated": 214,
+      "families_location_only": 30,
+      "observed_min": 5.0,
+      "observed_max": 95.0
+    },
+    "/Expressive/Loud": {
+      "rows": 1893,
+      "families_any_scope": 1429,
+      "families_unlocated": 1151,
+      "families_location_only": 278,
+      "observed_min": 1.0,
+      "observed_max": 95.0
+    },
+    "/Expressive/Playful": {
+      "rows": 1408,
+      "families_any_scope": 1044,
+      "families_unlocated": 706,
+      "families_location_only": 338,
+      "observed_min": 1.0,
+      "observed_max": 99.0
+    },
+    "/Expressive/Rugged": {
+      "rows": 2153,
+      "families_any_scope": 1791,
+      "families_unlocated": 1501,
+      "families_location_only": 290,
+      "observed_min": 1.0,
+      "observed_max": 95.0
+    },
+    "/Expressive/Sincere": {
+      "rows": 1568,
+      "families_any_scope": 1162,
+      "families_unlocated": 878,
+      "families_location_only": 284,
+      "observed_min": 1.0,
+      "observed_max": 93.0
+    },
+    "/Expressive/Sophisticated": {
+      "rows": 97,
+      "families_any_scope": 93,
+      "families_unlocated": 90,
+      "families_location_only": 3,
+      "observed_min": 5.0,
+      "observed_max": 91.0
+    },
+    "/Expressive/Stiff": {
+      "rows": 1085,
+      "families_any_scope": 854,
+      "families_unlocated": 659,
+      "families_location_only": 195,
+      "observed_min": 1.0,
+      "observed_max": 98.0
+    },
+    "/Expressive/Vintage": {
+      "rows": 1879,
+      "families_any_scope": 1672,
+      "families_unlocated": 1491,
+      "families_location_only": 181,
+      "observed_min": 1.0,
+      "observed_max": 93.0
+    },
+    "/Monospace/Monospace": {
+      "rows": 58,
+      "families_any_scope": 58,
+      "families_unlocated": 58,
+      "families_location_only": 0,
+      "observed_min": 100.0,
+      "observed_max": 100.0
+    },
+    "/Purpose/Easy Reading": {
+      "rows": 15,
+      "families_any_scope": 14,
+      "families_unlocated": 13,
+      "families_location_only": 1,
+      "observed_min": 10.0,
+      "observed_max": 100.0
+    },
+    "/Purpose/Learn To Write": {
+      "rows": 125,
+      "families_any_scope": 125,
+      "families_unlocated": 125,
+      "families_location_only": 0,
+      "observed_min": 100.0,
+      "observed_max": 100.0
+    },
+    "/Quality/Concept": {
+      "rows": 1939,
+      "families_any_scope": 1939,
+      "families_unlocated": 1939,
+      "families_location_only": 0,
+      "observed_min": 15.0,
+      "observed_max": 100.0
+    },
+    "/Quality/Drawing": {
+      "rows": 1939,
+      "families_any_scope": 1939,
+      "families_unlocated": 1939,
+      "families_location_only": 0,
+      "observed_min": 30.0,
+      "observed_max": 100.0
+    },
+    "/Quality/Spacing": {
+      "rows": 1939,
+      "families_any_scope": 1939,
+      "families_unlocated": 1939,
+      "families_location_only": 0,
+      "observed_min": 20.0,
+      "observed_max": 100.0
+    },
+    "/Quality/Wordspace": {
+      "rows": 1939,
+      "families_any_scope": 1939,
+      "families_unlocated": 1939,
+      "families_location_only": 0,
+      "observed_min": 10.0,
+      "observed_max": 100.0
+    },
+    "/Sans/Geometric": {
+      "rows": 192,
+      "families_any_scope": 192,
+      "families_unlocated": 192,
+      "families_location_only": 0,
+      "observed_min": 10.0,
+      "observed_max": 100.0
+    },
+    "/Sans/Glyphic": {
+      "rows": 32,
+      "families_any_scope": 32,
+      "families_unlocated": 32,
+      "families_location_only": 0,
+      "observed_min": 10.0,
+      "observed_max": 100.0
+    },
+    "/Sans/Grotesque": {
+      "rows": 118,
+      "families_any_scope": 118,
+      "families_unlocated": 118,
+      "families_location_only": 0,
+      "observed_min": 10.0,
+      "observed_max": 100.0
+    },
+    "/Sans/Humanist": {
+      "rows": 471,
+      "families_any_scope": 471,
+      "families_unlocated": 471,
+      "families_location_only": 0,
+      "observed_min": 5.0,
+      "observed_max": 100.0
+    },
+    "/Sans/Neo Grotesque": {
+      "rows": 126,
+      "families_any_scope": 126,
+      "families_unlocated": 126,
+      "families_location_only": 0,
+      "observed_min": 10.0,
+      "observed_max": 100.0
+    },
+    "/Sans/Rounded": {
+      "rows": 103,
+      "families_any_scope": 103,
+      "families_unlocated": 103,
+      "families_location_only": 0,
+      "observed_min": 10.0,
+      "observed_max": 100.0
+    },
+    "/Sans/Superellipse": {
+      "rows": 93,
+      "families_any_scope": 93,
+      "families_unlocated": 93,
+      "families_location_only": 0,
+      "observed_min": 10.0,
+      "observed_max": 100.0
+    },
+    "/Script/Formal": {
+      "rows": 83,
+      "families_any_scope": 82,
+      "families_unlocated": 81,
+      "families_location_only": 1,
+      "observed_min": 10.0,
+      "observed_max": 100.0
+    },
+    "/Script/Handwritten": {
+      "rows": 286,
+      "families_any_scope": 286,
+      "families_unlocated": 286,
+      "families_location_only": 0,
+      "observed_min": 10.0,
+      "observed_max": 100.0
+    },
+    "/Script/Informal": {
+      "rows": 211,
+      "families_any_scope": 211,
+      "families_unlocated": 211,
+      "families_location_only": 0,
+      "observed_min": 10.0,
+      "observed_max": 100.0
+    },
+    "/Script/Upright Script": {
+      "rows": 103,
+      "families_any_scope": 103,
+      "families_unlocated": 103,
+      "families_location_only": 0,
+      "observed_min": 10.0,
+      "observed_max": 100.0
+    },
+    "/Seasonal/Christmas": {
+      "rows": 46,
+      "families_any_scope": 46,
+      "families_unlocated": 46,
+      "families_location_only": 0,
+      "observed_min": 50.0,
+      "observed_max": 100.0
+    },
+    "/Seasonal/Diwali": {
+      "rows": 54,
+      "families_any_scope": 54,
+      "families_unlocated": 54,
+      "families_location_only": 0,
+      "observed_min": 60.0,
+      "observed_max": 100.0
+    },
+    "/Seasonal/Halloween": {
+      "rows": 44,
+      "families_any_scope": 44,
+      "families_unlocated": 44,
+      "families_location_only": 0,
+      "observed_min": 50.0,
+      "observed_max": 100.0
+    },
+    "/Seasonal/Hanukkah": {
+      "rows": 33,
+      "families_any_scope": 33,
+      "families_unlocated": 33,
+      "families_location_only": 0,
+      "observed_min": 50.0,
+      "observed_max": 100.0
+    },
+    "/Seasonal/Holi": {
+      "rows": 73,
+      "families_any_scope": 73,
+      "families_unlocated": 73,
+      "families_location_only": 0,
+      "observed_min": 50.0,
+      "observed_max": 100.0
+    },
+    "/Seasonal/Kwanzaa": {
+      "rows": 53,
+      "families_any_scope": 53,
+      "families_unlocated": 53,
+      "families_location_only": 0,
+      "observed_min": 50.0,
+      "observed_max": 100.0
+    },
+    "/Seasonal/Lunar New Year": {
+      "rows": 46,
+      "families_any_scope": 46,
+      "families_unlocated": 46,
+      "families_location_only": 0,
+      "observed_min": 60.0,
+      "observed_max": 100.0
+    },
+    "/Seasonal/Valentine's Day": {
+      "rows": 81,
+      "families_any_scope": 81,
+      "families_unlocated": 81,
+      "families_location_only": 0,
+      "observed_min": 8.0,
+      "observed_max": 97.0
+    },
+    "/Serif/Didone": {
+      "rows": 20,
+      "families_any_scope": 20,
+      "families_unlocated": 20,
+      "families_location_only": 0,
+      "observed_min": 30.0,
+      "observed_max": 100.0
+    },
+    "/Serif/Fat Face": {
+      "rows": 15,
+      "families_any_scope": 15,
+      "families_unlocated": 15,
+      "families_location_only": 0,
+      "observed_min": 10.0,
+      "observed_max": 100.0
+    },
+    "/Serif/Humanist Venetian": {
+      "rows": 49,
+      "families_any_scope": 49,
+      "families_unlocated": 49,
+      "families_location_only": 0,
+      "observed_min": 10.0,
+      "observed_max": 100.0
+    },
+    "/Serif/Modern": {
+      "rows": 46,
+      "families_any_scope": 46,
+      "families_unlocated": 46,
+      "families_location_only": 0,
+      "observed_min": 20.0,
+      "observed_max": 100.0
+    },
+    "/Serif/Old Style Garalde": {
+      "rows": 67,
+      "families_any_scope": 67,
+      "families_unlocated": 67,
+      "families_location_only": 0,
+      "observed_min": 10.0,
+      "observed_max": 100.0
+    },
+    "/Serif/Scotch": {
+      "rows": 16,
+      "families_any_scope": 16,
+      "families_unlocated": 16,
+      "families_location_only": 0,
+      "observed_min": 40.0,
+      "observed_max": 100.0
+    },
+    "/Serif/Transitional": {
+      "rows": 163,
+      "families_any_scope": 163,
+      "families_unlocated": 163,
+      "families_location_only": 0,
+      "observed_min": 10.0,
+      "observed_max": 100.0
+    },
+    "/Slab/Clarendon": {
+      "rows": 21,
+      "families_any_scope": 21,
+      "families_unlocated": 21,
+      "families_location_only": 0,
+      "observed_min": 10.0,
+      "observed_max": 100.0
+    },
+    "/Slab/Geometric": {
+      "rows": 23,
+      "families_any_scope": 23,
+      "families_unlocated": 23,
+      "families_location_only": 0,
+      "observed_min": 10.0,
+      "observed_max": 100.0
+    },
+    "/Slab/Humanist": {
+      "rows": 44,
+      "families_any_scope": 44,
+      "families_unlocated": 44,
+      "families_location_only": 0,
+      "observed_min": 10.0,
+      "observed_max": 100.0
+    },
+    "/Special use/Barcode": {
+      "rows": 7,
+      "families_any_scope": 7,
+      "families_unlocated": 7,
+      "families_location_only": 0,
+      "observed_min": 100.0,
+      "observed_max": 100.0
+    },
+    "/Special use/Redaction": {
+      "rows": 5,
+      "families_any_scope": 5,
+      "families_unlocated": 5,
+      "families_location_only": 0,
+      "observed_min": 100.0,
+      "observed_max": 100.0
+    },
+    "/Special use/Symbols": {
+      "rows": 13,
+      "families_any_scope": 13,
+      "families_unlocated": 13,
+      "families_location_only": 0,
+      "observed_min": 100.0,
+      "observed_max": 100.0
+    },
+    "/Theme/Art Deco": {
+      "rows": 16,
+      "families_any_scope": 16,
+      "families_unlocated": 16,
+      "families_location_only": 0,
+      "observed_min": 10.0,
+      "observed_max": 100.0
+    },
+    "/Theme/Art Nouveau": {
+      "rows": 7,
+      "families_any_scope": 7,
+      "families_unlocated": 7,
+      "families_location_only": 0,
+      "observed_min": 10.0,
+      "observed_max": 100.0
+    },
+    "/Theme/Blackletter": {
+      "rows": 31,
+      "families_any_scope": 31,
+      "families_unlocated": 31,
+      "families_location_only": 0,
+      "observed_min": 5.0,
+      "observed_max": 100.0
+    },
+    "/Theme/Blobby": {
+      "rows": 33,
+      "families_any_scope": 33,
+      "families_unlocated": 33,
+      "families_location_only": 0,
+      "observed_min": 1.0,
+      "observed_max": 100.0
+    },
+    "/Theme/Brush": {
+      "rows": 78,
+      "families_any_scope": 78,
+      "families_unlocated": 78,
+      "families_location_only": 0,
+      "observed_min": 10.0,
+      "observed_max": 100.0
+    },
+    "/Theme/Distressed": {
+      "rows": 61,
+      "families_any_scope": 61,
+      "families_unlocated": 61,
+      "families_location_only": 0,
+      "observed_min": 5.0,
+      "observed_max": 100.0
+    },
+    "/Theme/Inline": {
+      "rows": 19,
+      "families_any_scope": 19,
+      "families_unlocated": 19,
+      "families_location_only": 0,
+      "observed_min": 20.0,
+      "observed_max": 100.0
+    },
+    "/Theme/Medieval": {
+      "rows": 18,
+      "families_any_scope": 18,
+      "families_unlocated": 18,
+      "families_location_only": 0,
+      "observed_min": 20.0,
+      "observed_max": 100.0
+    },
+    "/Theme/Pixel": {
+      "rows": 45,
+      "families_any_scope": 45,
+      "families_unlocated": 45,
+      "families_location_only": 0,
+      "observed_min": 20.0,
+      "observed_max": 100.0
+    },
+    "/Theme/Shaded": {
+      "rows": 13,
+      "families_any_scope": 13,
+      "families_unlocated": 13,
+      "families_location_only": 0,
+      "observed_min": 10.0,
+      "observed_max": 100.0
+    },
+    "/Theme/Stencil": {
+      "rows": 16,
+      "families_any_scope": 16,
+      "families_unlocated": 16,
+      "families_location_only": 0,
+      "observed_min": 10.0,
+      "observed_max": 100.0
+    },
+    "/Theme/Techno": {
+      "rows": 105,
+      "families_any_scope": 105,
+      "families_unlocated": 105,
+      "families_location_only": 0,
+      "observed_min": 10.0,
+      "observed_max": 100.0
+    },
+    "/Theme/Tuscan": {
+      "rows": 7,
+      "families_any_scope": 7,
+      "families_unlocated": 7,
+      "families_location_only": 0,
+      "observed_min": 30.0,
+      "observed_max": 100.0
+    },
+    "/Theme/Wacky": {
+      "rows": 118,
+      "families_any_scope": 118,
+      "families_unlocated": 118,
+      "families_location_only": 0,
+      "observed_min": 10.0,
+      "observed_max": 100.0
+    },
+    "/Theme/Woodtype": {
+      "rows": 40,
+      "families_any_scope": 40,
+      "families_unlocated": 40,
+      "families_location_only": 0,
+      "observed_min": 10.0,
+      "observed_max": 100.0
+    }
+  }
+}

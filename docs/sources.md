@@ -57,3 +57,9 @@ Reviewed API tag documentation, metadata guidance, About-content guidance, tag-d
 - https://github.com/google/fonts/blob/main/tags/tags_ui_details.textproto
 
 The tag-data README distinguishes human-assessed tags from machine-assessed measurements. Raw weights are not our preference-match scores. Detailed limitations and inspected blob identities are in attribute-evidence.md.
+
+## Pinned source audit and first sample
+
+On October 21, 2026, audited all families.csv rows at Google Fonts revision 45e3d5269e4a17d823f6d84470bc084dc5ae46f6 against its tag dictionary and UI mappings. Also inspected upstream tag tests, GF Tagger implementation, and https://googlefonts.github.io/gf-guide/tags.html for process context. Documentation describes relative human comparison within a tag; calibration against reader preference has not been established.
+
+Metadata from that same revision seeded 5 partial family records. No font binaries, license terms, family About descriptions, or actual previews were reviewed in this batch. See source-audit.md for coverage denominators and limitations, and each family record for pinned evidence.

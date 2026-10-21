@@ -1,0 +1,222 @@
+{
+  "schema_version": "0.1",
+  "record_kind": "font_family",
+  "id": "abrilfatface",
+  "family_name": "Abril Fatface",
+  "provider": "google_fonts",
+  "external_ids": {
+    "google_fonts_family": "Abril Fatface",
+    "repository_path": "ofl/abrilfatface"
+  },
+  "status": "in_progress",
+  "technical": {
+    "category": "DISPLAY",
+    "weights": {
+      "kind": "static",
+      "values": [
+        400
+      ]
+    },
+    "italic_available": false,
+    "styles": [
+      "normal"
+    ],
+    "variable_axes": [],
+    "subsets": [
+      "latin",
+      "latin-ext"
+    ],
+    "scripts": null,
+    "license": {
+      "metadata_identifier": "OFL",
+      "terms_reviewed": false
+    },
+    "platform_availability": null
+  },
+  "technical_evidence": {
+    "category": [
+      "metadata"
+    ],
+    "weights": [
+      "metadata"
+    ],
+    "italic_available": [
+      "metadata"
+    ],
+    "styles": [
+      "metadata"
+    ],
+    "variable_axes": [
+      "metadata"
+    ],
+    "subsets": [
+      "metadata"
+    ],
+    "license": [
+      "metadata"
+    ]
+  },
+  "intended_uses": [],
+  "judgments": [],
+  "source_tags": [
+    {
+      "tag": "/Expressive/Active",
+      "raw_weight": 10.0,
+      "location": null,
+      "scope": "unlocated_source_assignment",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 102
+    },
+    {
+      "tag": "/Expressive/Business",
+      "raw_weight": 30.0,
+      "location": null,
+      "scope": "unlocated_source_assignment",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 103
+    },
+    {
+      "tag": "/Expressive/Competent",
+      "raw_weight": 10.0,
+      "location": null,
+      "scope": "unlocated_source_assignment",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 104
+    },
+    {
+      "tag": "/Expressive/Cute",
+      "raw_weight": 5.0,
+      "location": null,
+      "scope": "unlocated_source_assignment",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 105
+    },
+    {
+      "tag": "/Expressive/Excited",
+      "raw_weight": 10.0,
+      "location": null,
+      "scope": "unlocated_source_assignment",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 106
+    },
+    {
+      "tag": "/Expressive/Happy",
+      "raw_weight": 11.0,
+      "location": null,
+      "scope": "unlocated_source_assignment",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 107
+    },
+    {
+      "tag": "/Expressive/Loud",
+      "raw_weight": 64.0,
+      "location": null,
+      "scope": "unlocated_source_assignment",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 108
+    },
+    {
+      "tag": "/Expressive/Rugged",
+      "raw_weight": 60.0,
+      "location": null,
+      "scope": "unlocated_source_assignment",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 109
+    },
+    {
+      "tag": "/Expressive/Vintage",
+      "raw_weight": 76.0,
+      "location": null,
+      "scope": "unlocated_source_assignment",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 110
+    },
+    {
+      "tag": "/Serif/Fat Face",
+      "raw_weight": 90.0,
+      "location": null,
+      "scope": "unlocated_source_assignment",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 115
+    },
+    {
+      "tag": "/Serif/Modern",
+      "raw_weight": 90.0,
+      "location": null,
+      "scope": "unlocated_source_assignment",
+      "evidence_ids": [
+        "tags"
+      ],
+      "status": "unreviewed",
+      "source_row": 116
+    }
+  ],
+  "evidence": [
+    {
+      "id": "metadata",
+      "url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/abrilfatface/METADATA.pb",
+      "retrieved_at": "2026-10-21",
+      "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+      "source_blob": "cf6907fdf0e7107d5926994832fbf1434242ce28",
+      "source_kind": "provider_metadata",
+      "paraphrase": "Family identity, category, styles, variable ranges where present, subset labels, and license identifier. License terms and font binaries have not been checked."
+    },
+    {
+      "id": "tags",
+      "url": "https://github.com/google/fonts/blob/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/tags/all/families.csv",
+      "retrieved_at": "2026-10-21",
+      "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+      "source_kind": "provider_human_assessed_tags",
+      "paraphrase": "Exact family-name match. Raw assignments retain variant locations; quality tags excluded from the exploratory record."
+    }
+  ],
+  "review": {
+    "reviewed_at": null,
+    "reviewer": null,
+    "recommendation_eligible": false,
+    "eligibility_reason": "Metadata and raw tags collected only. Intended role, license terms, required characters, and context-specific appearance need review.",
+    "rubric_version": null,
+    "open_questions": [
+      "Read family About and designer documentation for intended uses.",
+      "Check license text and character coverage for a specific brief.",
+      "Review source tag scope and the 5 proposed preference dimensions.",
+      "No rendered text or pairing tests performed."
+    ]
+  },
+  "maintenance": {
+    "created_at": "2026-10-21",
+    "updated_at": "2026-10-21",
+    "last_source_check_at": "2026-10-21",
+    "source_revision": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6"
+  }
+}
