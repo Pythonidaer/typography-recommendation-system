@@ -1,0 +1,102 @@
+{
+  "version": "0.1",
+  "status": "draft_for_discussion",
+  "created_at": "2026-10-21",
+  "measurement": "perceived_character_of_rendered_text",
+  "locale": "en-US",
+  "moods": [
+    {
+      "id": "calm",
+      "label": "Calm",
+      "working_definition": "Quiet and restful.",
+      "boundary": "A calm impression does not necessarily mean thin, small, or easy to read.",
+      "source_tag_candidates": [
+        "/Expressive/Calm"
+      ],
+      "mapping_status": "direct_label",
+      "approved_mapping": false,
+      "numeric_scale": null
+    },
+    {
+      "id": "playful",
+      "label": "Playful",
+      "working_definition": "Lighthearted and mischievous.",
+      "boundary": "Playful does not automatically mean appropriate for children.",
+      "source_tag_candidates": [
+        "/Expressive/Playful"
+      ],
+      "mapping_status": "direct_label",
+      "approved_mapping": false,
+      "numeric_scale": null
+    },
+    {
+      "id": "cheerful",
+      "label": "Cheerful",
+      "working_definition": "Upbeat and optimistic.",
+      "boundary": "Distinguish a positive feeling from playfulness.",
+      "source_tag_candidates": [
+        "/Expressive/Happy"
+      ],
+      "mapping_status": "related_label",
+      "approved_mapping": false,
+      "numeric_scale": null
+    },
+    {
+      "id": "energetic",
+      "label": "Energetic",
+      "working_definition": "Lively and active.",
+      "boundary": "Distinguish energy from bold weight or merely attracting attention.",
+      "source_tag_candidates": [
+        "/Expressive/Active",
+        "/Expressive/Excited"
+      ],
+      "mapping_status": "related_labels_do_not_merge",
+      "approved_mapping": false,
+      "numeric_scale": null
+    },
+    {
+      "id": "elegant",
+      "label": "Elegant",
+      "working_definition": "Graceful and refined.",
+      "boundary": "Distinguish refinement from ornate decoration or assumed luxury.",
+      "source_tag_candidates": [
+        "/Expressive/Sophisticated",
+        "/Expressive/Fancy"
+      ],
+      "mapping_status": "related_labels_do_not_merge",
+      "approved_mapping": false,
+      "numeric_scale": null
+    },
+    {
+      "id": "rugged",
+      "label": "Rugged",
+      "working_definition": "Rough and sturdy.",
+      "boundary": "This is an appearance impression, not a judgment of technical quality.",
+      "source_tag_candidates": [
+        "/Expressive/Rugged"
+      ],
+      "mapping_status": "direct_label",
+      "approved_mapping": false,
+      "numeric_scale": null
+    }
+  ],
+  "dimensions_kept_separate": {
+    "style_period": [
+      "vintage",
+      "futuristic"
+    ],
+    "project_context": [
+      "business"
+    ],
+    "attention": [
+      "loud"
+    ],
+    "technical_and_reading": [
+      "weight",
+      "width",
+      "legibility",
+      "readability"
+    ]
+  },
+  "scores_collected": false
+}

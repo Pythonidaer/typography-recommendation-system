@@ -1,0 +1,114 @@
+{
+  "version": "0.1",
+  "status": "draft_not_run",
+  "vocabulary_version": "0.1",
+  "role_conditions": {
+    "heading": {
+      "text": "A place by the river",
+      "css_font_size_px": 40,
+      "line_height": 1.2
+    },
+    "body": {
+      "text": "The path follows the river past a row of houses. A footbridge connects the two streets near the station.",
+      "css_font_size_px": 20,
+      "line_height": 1.5
+    }
+  },
+  "shared_controls": {
+    "foreground": "#202124",
+    "background": "#ffffff",
+    "available_width_css_px": 360,
+    "letter_spacing_em": 0,
+    "font_optical_sizing": "none",
+    "font_synthesis": "none",
+    "font_feature_settings": "normal",
+    "note": "Research controls, not website styling. Verify full settings and rendering before collecting answers."
+  },
+  "instances": [
+    {
+      "id": "notosans-normal-research",
+      "family_id": "notosans",
+      "style": "normal",
+      "axis_settings": {
+        "wght": 400,
+        "wdth": 100
+      },
+      "static_weight": null,
+      "scope": "Research instance; not a family-wide mood claim.",
+      "render_verified": false
+    },
+    {
+      "id": "merriweather-normal-research",
+      "family_id": "merriweather",
+      "style": "normal",
+      "axis_settings": {
+        "wght": 400,
+        "wdth": 100,
+        "opsz": 18
+      },
+      "static_weight": null,
+      "scope": "Research instance; not a family-wide mood claim.",
+      "render_verified": false
+    },
+    {
+      "id": "robotomono-normal-research",
+      "family_id": "robotomono",
+      "style": "normal",
+      "axis_settings": {
+        "wght": 400
+      },
+      "static_weight": null,
+      "scope": "Research instance; not a family-wide mood claim.",
+      "render_verified": false
+    },
+    {
+      "id": "caveat-normal-research",
+      "family_id": "caveat",
+      "style": "normal",
+      "axis_settings": {
+        "wght": 400
+      },
+      "static_weight": null,
+      "scope": "Research instance; not a family-wide mood claim.",
+      "render_verified": false
+    },
+    {
+      "id": "abrilfatface-normal-research",
+      "family_id": "abrilfatface",
+      "style": "normal",
+      "axis_settings": {},
+      "static_weight": 400,
+      "scope": "Research instance; not a family-wide mood claim.",
+      "render_verified": false
+    }
+  ],
+  "trial_format": {
+    "options_per_trial": 4,
+    "attribute_count_per_trial": 1,
+    "family_names_hidden": true,
+    "positions_varied": true,
+    "initial_trial_block": 5,
+    "outcomes": [
+      "selected_option",
+      "none_fit",
+      "too_similar",
+      "skip"
+    ]
+  },
+  "response_fields": [
+    "participant_id",
+    "participant_kind",
+    "trial_id",
+    "attribute_id",
+    "definition_version",
+    "role_condition",
+    "instance_ids",
+    "displayed_order",
+    "selected_instance_id",
+    "outcome",
+    "settings_snapshot",
+    "environment",
+    "created_at"
+  ],
+  "responses": []
+}

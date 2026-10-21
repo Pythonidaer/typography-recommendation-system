@@ -69,3 +69,15 @@ Metadata from that same revision seeded 5 partial family records. No font binari
 Reviewed each pilot family’s pinned DESCRIPTION.en_us.html and OFL.txt and Noto Sans’s article/ARTICLE.en_us.html. Additional pinned upstream README checks and limitations are in pilot-source-review.md. Sources support intended-use attribution, not measured readability claims.
 
 Inspected 1 normal binary per family using fontTools; hashes, source URLs, axis defaults, and sample strings are in research/source-audit/pilot-character-checks.json. This checks Unicode character mappings only. No visual, shaping, italic-file, or reader tests were completed.
+
+## Mood vocabulary and comparison protocol, October 21, 2026
+
+Reviewed the official Google Fonts tagging process and the authors’ full 2014 font-selection paper. The latter is a close precedent for attribute-specific comparisons and relative attribute estimation; it is not validation of our proposed vocabulary or four-option trial. Its substantial observed disagreement motivates preserving individual responses.
+
+- https://googlefonts.github.io/gf-guide/tags.html
+- https://www.dgp.toronto.edu/~donovan/font/fontSelection.pdf
+
+Also reviewed the 2017 Arabic-typeface study abstract and study context as a reminder that script/population must be recorded. No claim of cross-cultural invariance is made:
+https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2017.01229/full
+
+The MDPI emotion-based recommendation paper at https://www.mdpi.com/2076-3417/14/3/1123 returned 429; its methods have not been reviewed and do not support our protocol.

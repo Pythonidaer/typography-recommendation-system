@@ -1,41 +1,37 @@
 # Research checkpoint
 
 Updated: October 21, 2026
-Current stage: batch 1 source review and limited character checks complete; visual/attribute review next.
+Current stage: mood vocabulary and comparison protocol drafted; no tests run.
 
 ## Completed
 
-- Source coverage audit at upstream Google Fonts revision 45e3d5269e4a17d823f6d84470bc084dc5ae46f6.
-- 5 category-spanning family records, now marked needs_review and ineligible for recommendations.
-- Read each pinned provider description and family OFL.txt; read Noto Sans’s longer About article.
-- Recorded attributed intended uses, license source details, exact document blobs, source shortcomings, and scope boundaries.
-- Inspected 1 normal binary per family. Printable ASCII and 3 documented example strings map in all 5; report preserves hashes and axes.
-- Compared availability of the 5 proposed mood traits. Only Roboto Mono has source assignments for all 5; unknowns remain unknown.
+- Existing source audit, 5-family documentation review, and limited character checks remain available.
+- Reviewed a primary research precedent for attribute-specific font comparisons and relative attribute estimation.
+- Drafted 6 mood words with working definitions and source-mapping caveats: Calm, Playful, Cheerful, Energetic, Elegant, Rugged.
+- Separated mood from style period, business context, attention, reading suitability, and personal liking.
+- Documented the difference between a four-sample grid and a two-axis quadrant map.
+- Drafted a comparison protocol and explicit normal instances for the existing 5 families; no visual rendering or responses collected.
 
-## Active batch (do not expand)
+## Exact next step
 
-Noto Sans, Merriweather, Roboto Mono, Caveat, Abril Fatface. Records: research/fonts/<id>.json. See docs/pilot-source-review.md.
+Discuss the mood vocabulary with Johnny before implementing comparison UI. Ask which words to keep, rename, or add; clarify definitions using concrete examples when useful. The user explicitly wants moods established first. The six words are a proposal, not a fixed requirement or established scientific taxonomy.
 
-No personality judgments, combined scores, pairing recommendations, or validated recommendations exist.
+After vocabulary feedback, prepare actual controlled text examples using research/protocols/mood-comparison-draft.json. Verify fonts render, roles and settings are comparable, and the words describe useful distinctions. Only then collect attribute judgments. Project preference questions remain separate.
 
-## Exact next task
+## Active font batch
 
-Prepare a bounded research comparison protocol for these 5 families with identical content and explicit variants. Separate heading and body settings. Define what each proposed question is intended to measure and prepare concrete examples for Johnny’s feedback. No UI implementation or new family batch is needed yet.
+Noto Sans, Merriweather, Roboto Mono, Caveat, Abril Fatface. All 5 are needs_review and recommendation_eligible=false. No numeric judgments or combined scores have been assigned. Do not add more families before reviewing this batch.
 
-Account for source-location differences; do not interpolate scores or turn unlocated assignments into full-family guarantees. Resolve how missing traits will be reviewed or excluded before any combined ranking.
+## Important distinctions
 
-## Validation
+A click saying “most playful” concerns perceived character; a click saying “I would use this” concerns preference. Neither directly specifies how important playfulness is for a project. Provider tags, human judgments, AI suggestions, and project preferences must remain separate.
 
-All updated JSON records parse and retain resolvable evidence references. Intended uses remain source_stated. Licenses have dated, pinned evidence. The character-check script records exact source-file hashes and limits its claims to cmap presence. Existing audit tests pass. No browser, visual, shaping, or reader verification has been done.
+A four-option winner does not order the 3 unselected options. Repeated choices by one person do not establish population consensus. No arbitrary human/AI vote pooling or source-score conversion is approved.
 
-## Findings to preserve
+## Validation and limits
 
-Caveat has explicit body-text intent despite being handwriting. Abril Fatface is not the complete Abril family. Noto Sans is not the entire Noto collection. Merriweather’s pinned upstream README is unfilled template text. Raw trait coverage is too uneven for a combined 5-trait ranking of this batch.
-
-## User input
-
-No decision is needed for the completed source review. Bring Johnny concrete examples when choosing wording and evaluating appearance; do not ask them to resolve metadata or source-discovery work.
+Vocabulary and protocol JSON are draft structures with stable IDs, definitions, and explicit instances. No rendering, participant answers, statistical calibration, or recommendation-model validation has occurred. The existing five-trait coverage gaps remain unresolved. Draft source mappings for related words are not numeric equivalences.
 
 ## Deferred
 
-Behance access, competitor comparison, pairing research, system-font expansion, score calibration, UI design, and framework selection remain pending. The earlier arbitrary sample queue remains superseded.
+Behance access, systematic competitor comparison, pairing research, system-font expansion, numeric calibration, product UI, and framework selection remain pending.
