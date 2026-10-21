@@ -2,7 +2,15 @@
 
 A guided assessment to help people choose font families for a design.
 
-Status: planning and research. No recommendation engine or interface has been built.
+Status: a small editorial walkthrough is available for testing. It uses 8 curated families and transparent rules; it is not a validated catalogue-wide recommendation engine.
+
+## Test the walkthrough
+
+https://pythonidaer.github.io/typography-recommendation-system/
+
+GitHub Actions builds and deploys the static site from site/. Start with the portfolio example or enter your own brief. The four-step flow returns the requested 1-3 families, keeps replacements separate, and checks Japanese character requirements. Family selection comes before styling choices.
+
+For local setup, see [the pilot guide](docs/walkthrough-pilot.md).
 
 ## Agreed direction
 
@@ -44,4 +52,4 @@ The main research challenge is describing fonts consistently enough to support u
 - [Current checkpoint](research/checkpoint.md): progress and the next bounded task.
 - [Font record template](research/font-record.template.json): a draft record, not a researched font.
 
-Read [AGENTS.md](AGENTS.md) before contributing. Start each session with the checkpoint. Design and implementation follow research; no framework or hosting choice is settled.
+Read [AGENTS.md](AGENTS.md) before contributing. Start each session with the checkpoint. The current walkthrough is a buildless HTML/JavaScript pilot hosted on GitHub Pages. Research and calibration remain separate from its editorial rules.

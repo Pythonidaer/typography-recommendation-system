@@ -1,7 +1,7 @@
 # Research checkpoint
 
 Updated: October 21, 2026
-Current stage: broader vocabulary discovery and source-availability audit; first guided test prepared. No participant responses or calibrated scores.
+Current stage: sequential editorial pilot deployed through GitHub Pages; research and calibration remain incomplete. Read the latest deployment update below before older research next-task notes.
 
 ## Latest agreed direction
 
@@ -61,3 +61,13 @@ Japanese is needed for the example’s main heading, not requested for navigatio
 Reviewed GOV.UK’s Learning about users and their needs, W3C WAI’s Diverse Abilities and Barriers, W3C’s cognitive content usability Note, and Microsoft’s Inclusive 101. Added docs/audience-needs.md with source limits, proposed overlapping profile dimensions, functional questions, and links to purpose, legibility, and readability. These resources support research and needs organisation; they are not font-to-demographic recommendation tables or a validated taxonomy.
 
 The next independent preparation can turn a project brief into task-specific evaluation questions. Keep age and diagnoses as optional context, unknown needs explicit, audience profiles separate from font traits, and later styling decisions deferred. No audience persona, human response, font score, Japanese test, or eligibility change was generated. The outstanding preview count correction and language review remain as noted above.
+
+## Sequential pilot and GitHub Pages deployment, October 21, 2026
+
+The user requested a deployable four-step walkthrough to test on their computer and clarified that GitHub Pages is the required destination. Moved the tested buildless app into site/ and added .github/workflows/pages.yml. README now identifies the walkthrough and the small-pool limitation. The earlier research-only and five-candidate next-task notes above are historical preparation, not current deployment instructions.
+
+The editorial-pilot-0.1 pool includes Chakra Petch, IBM Plex Sans, Special Elite, Rock Salt, Black Ops One, Merriweather, DotGothic16, and Noto Sans JP. This does not create new researched font records or change recommendation_eligible on the original five-family research set. Read docs/walkthrough-pilot.md and site/engine.js for the rule scope and unvalidated priorities. No trained mood scores, participant judgments, or catalogue-wide accuracy were created.
+
+The flow collects purpose, reading task, language and character requirements, requested count, optional reading needs, a visual direction, and independent retro/rough priorities. It returns 1-3 distinct families, provides source-linked reasons after the character review, and supports in-slot replacements and locally downloadable feedback. No color, weight, size, motion, or texture controls were added. Japanese font files and sample coverage were checked in the earlier private prototype; this deployment builds pinned assets and reruns count, coverage, replacement, and unsupported-case checks. Browser QA of the full example path completed before migration.
+
+Next: confirm the Actions deployment and public URL, then Johnny tests the walkthrough. Preserve actual feedback separately from synthetic tests. Explain that purpose/open text supplies context and roles; this pilot does not perform semantic matching or turn reading needs into unsupported font ratings. A request for 3 families with Japanese throughout is explicitly unsupported by the 2-family Japanese subset in this pool.

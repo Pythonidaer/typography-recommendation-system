@@ -28,3 +28,9 @@ Read README.md and research/checkpoint.md first. Read the relevant docs before c
 Apply the Mailchimp-inspired guidance in Pythonidaer/llm-instruction-toolkit under design/content-and-tone: best-practices.md, mailchimp-tone-voice.md, mailchimp-writing-goals-principles.md, and mailchimp-grammar-mechanics.md. Read current guidance before drafting product copy. Use clear, considerate, conversational teaching; define useful technical terms; avoid hype and forced humor. No emoji. Preserve full visible resource URLs where useful.
 
 Do not start UI implementation or select a stack as part of a research-only task. Validate changed records and links; distinguish source checks from browser or reader testing.
+
+## Authorised pilot and deployment
+
+The user explicitly requested a sequential assessment and deployment to this repository’s GitHub Pages site. The current buildless app lives in site/; .github/workflows/pages.yml builds assets and deploys on pushes to main. The research-only restriction above does not block requested pilot work. Keep 1-3 families exactly, in-slot replacements, Japanese requirements, character-first neutral results, and no styling controls. Editorial rule priorities are versioned in docs/walkthrough-pilot.md and site/engine.js; they are not measured personality scores or validation of the research records. Read docs/content-and-tone.md before changing copy.
+
+Run python scripts/build_pilot_site.py and node scripts/test-pilot.cjs for app changes. Generated font assets are ignored; the build downloads them from the pinned Google Fonts revision, instantiates regular styles, includes licenses, and computes exact shipped-file character maps. Do not put Sites hosting manifests or credentials in this repository.
